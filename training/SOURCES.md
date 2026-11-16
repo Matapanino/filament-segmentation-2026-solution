@@ -16,7 +16,7 @@ privacy clean-up. "Changed" says what the clean-up changed; "no" means the copy 
   and `train_done_c1536_f0.json` are the records of the fold 0 run.
 - **Filter and repair:** the final fitting run recorded the hash of each of its 154 input files. The 96 that are not
   package files are copied here (two evidence files over 1 MB are listed but not copied), each with the recorded hash.
-  The other 58 are this repository's `src/filseg` at commit `3f6524cd` and are not copied.
+  The other 58 are this repository's `src/filseg` at an earlier development commit (`3f6524cd`, not part of this repository's public history) and are not copied.
   `finish.py`, `stage.py`, `render_kernel.py`, `paired_vs_ref.py` and `cli_ms125.json` predate the run that used them.
 
 ## Counts
