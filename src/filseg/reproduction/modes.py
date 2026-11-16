@@ -54,7 +54,7 @@ MFMAP_MODES = {
 def _chain_modes():
     from .chain import load_recipe, names
     return {n: dict(label=r['label'], ref=r['submission']['ref'], sha256=r['csv']['sha256'], kwargs=dict(recipe=n))
-            for n, r in ((n, load_recipe(n)) for n in names())}
+            for n, r in ((n, load_recipe(n)) for n in names()) if r['csv']['sha256']}   # a recipe whose CSV is not pinned yet is not a mode
 
 
 CHAIN_MODES = _chain_modes()

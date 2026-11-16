@@ -9,7 +9,7 @@ REPO = Path(__file__).resolve().parents[1]
 DIST = {'numpy': 'numpy', 'scipy': 'scipy', 'pandas': 'pandas', 'cv2': 'opencv-python-headless', 'pycocotools': 'pycocotools',
         'skimage': 'scikit-image', 'sklearn': 'scikit-learn', 'kagglehub': 'kagglehub', 'torch': 'torch',
         'safetensors': 'safetensors', 'segmentation_models_pytorch': 'segmentation-models-pytorch', 'transformers': 'transformers',
-        'matplotlib': 'matplotlib'}
+        'matplotlib': 'matplotlib', 'lightgbm': 'lightgbm', 'xgboost': 'xgboost', 'catboost': 'catboost'}
 # Imported by the notebooks' own code cells; provided by the Jupyter runtime that executes them (recorded, not pinned).
 RUNTIME = {'IPython'}
 

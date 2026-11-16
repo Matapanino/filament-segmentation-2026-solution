@@ -1,6 +1,6 @@
 """P-cand: the P-nat repair with one threshold per kept candidate, predicted by the deployment regressor.
 
-The helpers below are copied verbatim from the cross-validated lane (detect_20261111/pcand_tau/pcand.py,
+The helpers below are copied verbatim from the cross-validated implementation (detect_20261111/pcand_tau/pcand.py,
 SHA256 87e96105ccc78adc0cf690547cc3f6f3e0b5e2d61bf899a6f118e7731540e201): the tau grid, the snap and tie rules,
 the target score and choice used to build the training rows, the window features and the per-candidate repair.
 With every threshold equal to pnat.TAU the repair returns exactly pnat.repair's masks (tested).
@@ -10,6 +10,7 @@ deployment regressor -> snap to the grid -> per-candidate repair of the kept see
 import hashlib
 import importlib.metadata
 import pickle
+import warnings
 from pathlib import Path
 
 import numpy as np
@@ -120,8 +121,16 @@ def _sklearn_version():
     return importlib.metadata.version('scikit-learn')
 
 
-def load_regressor(path, sha256):
-    """Hash-checked deployment regressor; returns a predictor mapping (n, 64) features to snapped thresholds."""
+def mean_raw(models, x):
+    """Plain mean of the models' predictions of x, each as float64 (the 4-regressor repair: np.mean over the stacked
+    predictions in the given order). One model gives its own predictions unchanged."""
+    return np.mean(np.stack([np.asarray(m.predict(x), float).ravel() for m in models]), axis=0)
+
+
+def load_regressor(path, sha256, members=()):
+    """Hash-checked deployment regressor; returns a predictor mapping (n, 64) features to snapped thresholds.
+    members: further fitted regressors of the same 64 features (chain.repair_trees); the threshold is then the snap of
+    the plain mean of this regressor's and the members' predictions (mean_raw), with the same grid and tie rule."""
     data = Path(path).read_bytes()
     if hashlib.sha256(data).hexdigest() != sha256:
         raise ValueError('Regressor file hash differs from the pinned value')
@@ -136,7 +145,11 @@ def load_regressor(path, sha256):
         x = np.asarray(x, float)
         if x.ndim != 2 or x.shape[1] != len(FEATURES) or not np.isfinite(x).all():
             raise ValueError('Expected finite (n, 64) features')
-        raw = [float(v) for v in model.predict(x)]
+        if members:
+            with warnings.catch_warnings():   # LightGBM's wrapper was fitted on a named frame; the columns are FEATURES
+                warnings.filterwarnings('ignore', message='X does not have valid feature names')
+                raw = [float(v) for v in mean_raw([model, *members], x)]
+        else:raw = [float(v) for v in model.predict(x)]
         predictor.raw.append(raw)
         return [snap(v) for v in raw]
     predictor.raw = []

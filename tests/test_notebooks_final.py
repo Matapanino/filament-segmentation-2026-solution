@@ -92,7 +92,7 @@ def test_maps_notebook_uses_the_known_paths_helper():
 
 
 PUBLISHED_REPOSITORY = 'https://github.com/Matapanino/filament-segmentation-2026-solution.git'
-RELEASE_TAG = 'v1.1'   # the tag of the published repository's release commit (a commit cannot name its own sha); v1.0 had no chain modes
+RELEASE_TAG = 'v1.1'   # the tag of the published repository's release commit (a commit cannot name its own sha)
 
 
 @pytest.mark.parametrize('name', ['reproduce_maps.ipynb', 'reproduce_submission.ipynb', 'pipeline.ipynb', 'reproduce_mf_views.ipynb'])

@@ -421,7 +421,7 @@ def infer_recipe_maps(images, release_root, output, recipe, names=None, gpu=0, k
     images (a folder or the archive, pkg pipeline.prepare_images); keys: a subset of the test images (smoke)."""
     import torch
     if not torch.cuda.is_available():raise RuntimeError('Neural inference requires the authorized GPU runtime')
-    if image_set is None and 'T4' not in torch.cuda.get_device_name(gpu):raise RuntimeError('This validation lane is restricted to Kaggle T4')
+    if image_set is None and 'T4' not in torch.cuda.get_device_name(gpu):raise RuntimeError('This validation run is restricted to Kaggle T4')
     import cv2
     from .determinism import configure, environment
     from .pipeline import prepare_images, read_image

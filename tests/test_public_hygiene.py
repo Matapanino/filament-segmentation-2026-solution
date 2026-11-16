@@ -8,7 +8,7 @@ import pytest
 
 REPO = Path(__file__).resolve().parents[1]
 NOTEBOOKS = sorted((REPO / 'notebooks').glob('*.ipynb'))
-DOCS = [REPO / 'README.md', REPO / 'docs/reproduction_notes.md', REPO / 'campaigns/INDEX.md', REPO / 'kaggle/README.md']
+DOCS = [REPO / 'README.md', REPO / 'docs/reproduction_notes.md', REPO / 'docs/submissions.md', REPO / 'docs/reference.md', REPO / 'campaigns/INDEX.md', REPO / 'kaggle/README.md']
 PRIVATE = {
     'private Kaggle slug': re.compile(r'masayakawamata/[a-z0-9][a-z0-9-]*'),
     'e-mail address': re.compile(r'[A-Za-z0-9._%+-]+@[A-Za-z0-9-]+\.[A-Za-z]{2,}'),
@@ -16,6 +16,7 @@ PRIVATE = {
     'Drive remote': re.compile(r'gdrive:|kaggle-harness-lake'),
     'old repository': re.compile(r'solar-filament-seg-2026|repro-package-20261111'),
     'Japanese text': re.compile(r'[぀-ヿ一-鿿]'),
+    'internal name': re.compile(r'(?<![a-z])astra(?![a-z])|orchestrator|outline\.md', re.I),
 }
 
 
@@ -39,7 +40,7 @@ def test_documents_have_no_export_or_slot_markers():
         assert '<!--slot:' not in text and 'EXPORT:' not in text and '**TBD**' not in text, name
 
 
-@pytest.mark.parametrize('doc', ['README.md', 'docs/reproduction_notes.md'])
+@pytest.mark.parametrize('doc', ['README.md', 'docs/reproduction_notes.md', 'docs/submissions.md', 'docs/reference.md'])
 def test_every_relative_link_and_image_of_a_document_exists(doc):
     path = REPO / doc
     targets = re.findall(r'\]\(([^)\s]+)\)', path.read_text())
@@ -50,7 +51,7 @@ def test_every_relative_link_and_image_of_a_document_exists(doc):
 
 
 def test_readme_shows_the_report_and_the_two_figures():
-    for name in ('docs/technical_report.pdf', 'docs/architecture.png', 'docs/example_segmentations.png'):
+    for name in ('docs/technical_report.pdf', 'docs/pipeline.png', 'docs/example_segmentations.png'):
         assert (REPO / name).is_file() and (REPO / name).stat().st_size > 10_000, name
 
 

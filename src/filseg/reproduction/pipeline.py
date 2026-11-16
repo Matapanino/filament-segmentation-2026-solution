@@ -66,7 +66,7 @@ def run_maps(images,weights,output,mf_precision='bf16',budget_seconds=7200,names
     from .inference import unet_map,mf_map
     from .determinism import configure,environment,save_npz,archive_content_sha,module_trace
     if not torch.cuda.is_available():raise RuntimeError('Neural inference requires the authorized GPU runtime')
-    if image_set is None and 'T4' not in torch.cuda.get_device_name(0):raise RuntimeError('This validation lane is restricted to Kaggle T4')
+    if image_set is None and 'T4' not in torch.cuda.get_device_name(0):raise RuntimeError('This validation run is restricted to Kaggle T4')
     start=time.monotonic();output=Path(output);output.mkdir(parents=True,exist_ok=True)
     root,manifest=resolve_assets(weights);files=prepare_images(images,output/'test_images',image_set=image_set)
     torch.set_num_threads(2);cv2.setNumThreads(2)

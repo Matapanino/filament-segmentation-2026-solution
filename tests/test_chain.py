@@ -26,6 +26,8 @@ CHAIN = Path(__file__).resolve().parents[1] / 'src/filseg/reproduction/data/chai
 # name: (CSV sha256, rows, weight, cutoff, map sets, U-Net test maps, Kaggle submission ref), in documentation order
 EXPECTED = {
     'ms125': ('f05ea0d7b6fc8f9345586b193c2866cd654f7fad1b838d609e41af5f46de80ed', 1134, 0.55, 0.35, 2, 'fold5mean', 58367893),
+    'ms125m4': ('219def27e1081c23131ae56ee193683c48369434e7c2e0b9cd68effbc3cfda26', 1121, 0.55, 0.325, 2, 'fold5mean', 58411930),
+    'ms125m4r4': ('79638003f7aa0f62c10e2948a09fe085a1594f53f099ab375811214156dd689f', 1121, 0.55, 0.325, 2, 'fold5mean', 58414228),
     'ms125d4': ('c73318cca158dca7f0b9688de9a4fbc49ef0981e76c0acae140bdf8a589f950c', 1139, 0.55, 0.35, 2, 'fold5mean', 58368642),
     'ms4': ('a3abcb959da41f8db2d895a06e290b8da821147b1b4c26af105cea12cda5ce24', 1143, 0.55, 0.35, 3, 'fold5mean', 58369061),
     'f1c15u': ('af512e390bb4a365ff5ee0434c0ea2607e529759c0eab79d1c85b595027d395b', 1141, 0.55, 0.325, 1, 'fold5mean', 58360056),

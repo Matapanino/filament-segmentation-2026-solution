@@ -7,7 +7,15 @@ Each submission is a recipe, data/chain/<name>.json (data/chain/index.json lists
              'fold5mean' (the per-pixel mean of the five cross-validation fold models' maps, uint8);
   weight     the blend weight w of the Mask2Former map: blend = w MF + (1 - w)/2 full + (1 - w)/2 local;
   selector   the instance filter fitted for this map (the 68 P-combo features, its own cutoff), a file in data/chain/;
+  trees      (ms125m4 only) a LightGBM, an XGBoost and a CatBoost model of the same 68 features (native files in
+             data/chain/, sha256, the library versions that saved them); the filter probability is then the plain mean
+             of the selector's and the three models' probabilities, kept at the recipe's cutoff (the selector file's
+             own cutoff is not used);
   regressor  the mask-repair regressor: 'package' (weights/regressor.pkl) or the one refitted on this map's candidates;
+  repair_trees (ms125m4r4 only) a LightGBM, an XGBoost and a CatBoost regressor of the same 64 repair features, fitted on
+             the same rows as the regressor (scikit-learn-API pickles in data/chain/, sha256, the library versions that
+             saved them); the per-mask threshold is then the snap of the plain mean of the four regressors' predictions
+             (the regressor first), on the same grid with the same tie rule (pcand.load_regressor);
   csv        the sha256 and row count of the submitted CSV.
 The CSV stage is the package's own (pipeline.image_stages) with the MF map = the level mean over every archive and the
 blend with weight w; everything else (SHIP_R3, features, selector, P-cand repair, RLE) is unchanged. The arithmetic is
@@ -70,11 +78,58 @@ def repo_release(name):
 
 
 def selector(recipe):
-    """The recipe's hash-checked selector (refit.load_selector), with the P-combo order and the recipe's cutoff."""
+    """The recipe's hash-checked selector (refit.load_selector), with the P-combo order and the recipe's cutoff. A recipe
+    with trees gets the mean4 selector: the same state plus the three hash-checked tree models (refit.apply_selector)."""
     from . import refit
     s = refit.load_selector(CHAIN / recipe['selector']['file'], recipe['selector']['sha256'])
+    if 'trees' in recipe:
+        if s['feature_order'] != refit.PCOMBO_FEATURES or recipe['cutoff'] not in refit.CHAIN_CUTOFF_GRID:raise ValueError('Chain selector differs from its recipe')
+        return refit.check(dict(s, threshold=recipe['cutoff'], mean4=trees(recipe['trees'])))
     if s['feature_order'] != refit.PCOMBO_FEATURES or s['threshold'] != recipe['cutoff']:raise ValueError('Chain selector differs from its recipe')
     return s
+
+
+def trees(spec):
+    """{'lgbm', 'xgb', 'cat': probability function of a 68-column float matrix} from the recipe's native model files,
+    each hash-checked, loaded only under the library versions that saved them (as the CSV kernel that pinned the CSV read
+    them: LightGBM Booster.predict, XGBoost and CatBoost predict_proba[:, 1])."""
+    # One OpenMP thread, as in the CSV kernel that pinned the CSV; set before the libraries load (on macOS, LightGBM's
+    # OpenMP runtime crashed when torch's was already loaded and this was unset). The probabilities do not depend on it.
+    os.environ.setdefault('OMP_NUM_THREADS', '1')
+    import catboost, lightgbm, xgboost
+    for lib in (lightgbm, xgboost, catboost):
+        if lib.__version__ != spec['versions'][lib.__name__]:raise ValueError(f"{lib.__name__} must be {spec['versions'][lib.__name__]} (installed {lib.__version__})")
+    path = {}
+    for a in ('lgbm', 'xgb', 'cat'):
+        p = CHAIN / spec[a]['file']
+        if not spec[a]['sha256'] or _sha(p) != spec[a]['sha256']:raise ValueError(f'{p.name}: tree model hash differs from the recipe')
+        path[a] = str(p)
+    lg = lightgbm.Booster(model_file=path['lgbm'])
+    xg = xgboost.XGBClassifier(); xg.load_model(path['xgb'])
+    ca = catboost.CatBoostClassifier(); ca.load_model(path['cat'])
+    return dict(lgbm=lg.predict, xgb=lambda x: xg.predict_proba(x)[:, 1], cat=lambda x: ca.predict_proba(x)[:, 1])
+
+
+def repair_trees(spec):
+    """[lgbm, xgb, cat]: the recipe's three extra repair regressors (pickled LGBMRegressor, XGBRegressor and
+    CatBoostRegressor), each hash-checked, loaded only under the library versions that saved them."""
+    import pickle
+    os.environ.setdefault('OMP_NUM_THREADS', '1')   # as in chain.trees: one OpenMP thread, set before the libraries load
+    import catboost, lightgbm, xgboost
+    for lib in (lightgbm, xgboost, catboost):
+        if lib.__version__ != spec['versions'][lib.__name__]:raise ValueError(f"{lib.__name__} must be {spec['versions'][lib.__name__]} (installed {lib.__version__})")
+    out = []
+    for a in ('lgbm', 'xgb', 'cat'):
+        p = CHAIN / spec[a]['file']
+        if not spec[a]['sha256'] or _sha(p) != spec[a]['sha256']:raise ValueError(f'{p.name}: repair model hash differs from the recipe')
+        out.append(pickle.loads(p.read_bytes()))
+    return out
+
+
+def repair(recipe, reg):
+    """The recipe's P-cand predictor (pcand.load_regressor of reg = regressor(recipe, ...)), with its repair_trees if any."""
+    from . import pcand
+    return pcand.load_regressor(*reg, members=repair_trees(recipe['repair_trees']) if 'repair_trees' in recipe else ())
 
 
 def regressor(recipe, weights_root):
@@ -165,7 +220,7 @@ def image_rows(recipe_name, images, roots, keys, weights=None):
     maps = _open(stored_files(r, roots), test_keys()); names = [a['name'] for a in r['archives']]; out = {}
     for key in keys:
         a = {n: z[key] for n, z in maps.items()}; _check(a)
-        v = image_stages(read_image(files[key]), a, model, pcand=P.load_regressor(*reg), selector=sel, chain=dict(names=names, weight=r['weight']))
+        v = image_stages(read_image(files[key]), a, model, pcand=repair(r, reg), selector=sel, chain=dict(names=names, weight=r['weight']))
         out[key] = [x for x, k in zip(v['rles'], v['keep']) if k]
     return out
 
@@ -183,7 +238,7 @@ def run_chain_csv(images, weights, release, output, recipe, strict=True, image_s
         release = repo_release(recipe)
         if release is None:raise FileNotFoundError(f'The repository does not hold the maps of {recipe}: attach the release files and pass their folder')
     roots = [release] if isinstance(release, (str, Path)) else list(release)
-    r, model, sel, reg, P = _setup(recipe, weights); predictor = P.load_regressor(*reg)
+    r, model, sel, reg, P = _setup(recipe, weights); predictor = repair(r, reg)
     files = prepare_images(images, output / 'test_images', image_set=image_set)
     found = stored_files(r, roots, strict); paths, seen = (found, None) if strict else found
     maps = _open(paths, test_keys() if image_set is None else sorted(files)); names = [a['name'] for a in r['archives']]
@@ -200,6 +255,8 @@ def run_chain_csv(images, weights, release, output, recipe, strict=True, image_s
     result = dict(status='complete', recipe=recipe, images=len(files), candidates=sum(x['candidates'] for x in per.values()), kept=sum(counts.values()), csv=csv,
                   expected_csv_sha256=r['csv']['sha256'], matches_expected=csv['sha256'] == r['csv']['sha256'], validation=check,
                   weight=r['weight'], cutoff=r['cutoff'], selector_sha256=r['selector']['sha256'], regressor_sha256=reg[1], unet=r['unet'],
+                  **({'trees': {a: r['trees'][a]['sha256'] for a in ('lgbm', 'xgb', 'cat')}} if 'trees' in r else {}),
+                  **({'repair_trees': {a: r['repair_trees'][a]['sha256'] for a in ('lgbm', 'xgb', 'cat')}} if 'repair_trees' in r else {}),
                   maps='stored (hash-checked)' if strict else dict(rule='re-inferred, hashes recorded', archives=seen),
                   pcand_totals={k: sum(x['pcand'][k] for x in per.values()) for k in ('kept', 'fallback', 'changed', 'added', 'removed')},
                   per_image=per, model_fits=0, submission_api_calls=0, elapsed_seconds=time.monotonic() - start)

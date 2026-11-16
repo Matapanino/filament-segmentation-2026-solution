@@ -1,6 +1,6 @@
 """MF-map variants (D4 TTA, tiled native-scale reading and their combination), written before the package module.
 
-The GPU code reuses the CV lanes' inference code: mf_d4.py is detect_20261113/mftta/d4.py and mf_tile.py is
+The GPU code reuses the cross-validation inference code: mf_d4.py is detect_20261113/mftta/d4.py and mf_tile.py is
 detect_20261113/mfhires/tile.py, byte for byte. The new test map sets are additions: the five archives of the map set
 d7aa6a41... are untouched, the variant archives are MF{k}_tta and MF{k}_tiled (uint16, value / 510, the stored format),
 and the CSV stage reads the variant MF map only when a variant is named. Synthetic data only; no model, no fitting.
@@ -17,7 +17,7 @@ from test_pnat import keep_all_model, synthetic_maps
 
 D4_SHA256 = '70510616c1e390149513041e50658cea1b9d92aaf3882e592026156199701e6b'     # detect_20261113/mftta/d4.py
 TILE_SHA256 = 'bd9af95699650e3fec2f6eb9e359c801af2ac67467a8cfd0dba227aea9ef6e47'   # detect_20261113/mfhires/tile.py
-# Archive sha256 of the package's deterministic T4 maps (pkg_final hash_check.json) and of the lanes' T4 test outputs
+# Archive sha256 of the package's deterministic T4 maps (pkg_final hash_check.json) and of the cross-validation runs' T4 test outputs
 # (mftta test_tta_MF{k}.npz, mfhires test_tiled_MF{k}.npz).
 ARCHIVES = {
     'full': '832e7ff901f2f7d6f0c973d08b2e0f644f977e790954993d3dbff5c38ff242dd',
@@ -49,7 +49,7 @@ def variant_maps(base=None, tta_shift=0, tiled_shift=0):
     return maps
 
 
-# ---------------------------------------------------------------- the lanes' inference code, byte for byte
+# ---------------------------------------------------------------- the cross-validation inference code, byte for byte
 def test_vendored_view_modules_are_the_cv_sources_byte_for_byte():
     from filseg.reproduction import mf_d4, mf_tile
     assert hashlib.sha256(Path(mf_d4.__file__).read_bytes()).hexdigest() == D4_SHA256
@@ -158,7 +158,7 @@ def test_variant_mf_maps():
     hires = mfmaps.variant_mf(maps, 'mfhires'); comb = mfmaps.variant_mf(maps, 'mfcomb')
     assert hires.dtype == comb.dtype == np.float32
     assert np.array_equal(hires, six(mfmaps.MF_ARCHIVES['mfhires'])) and np.array_equal(comb, six(mfmaps.MF_ARCHIVES['mfcomb']))
-    # the CV lanes' per-image map is (a + b) / 1020; at test the three folds are averaged: the same value up to rounding
+    # the cross-validation per-image map is (a + b) / 1020; at test the three folds are averaged: the same value up to rounding
     mix = lambda a, b: (a.astype(np.float32) + b.astype(np.float32)) / np.float32(1020)
     lane = sum(mix(maps[f'MF{k}'], maps[f'MF{k}_tiled']) for k in range(3)) / np.float32(3)
     assert np.allclose(hires, lane, atol=1e-6)
@@ -256,7 +256,7 @@ def test_variant_selector_roles_read_pcombo_features_and_need_a_pinned_cutoff(mo
 
 
 def test_mftta_cutoff_is_pinned_before_the_ship_fit():
-    """Stage 2 of mfmap_ship: the mftta cutoff is the median of the CV lane's 100 nested cutoffs (0.35; sorted values 50 and 51
+    """Stage 2 of mfmap_ship: the mftta cutoff is the median of the cross-validation run's 100 nested cutoffs (0.35; sorted values 50 and 51
     both 0.35), pinned before the deployment fit; the variants that were not adopted stay refused."""
     from filseg.reproduction import refit
     assert refit.MFMAP_THRESHOLDS == {'mftta': 0.35}

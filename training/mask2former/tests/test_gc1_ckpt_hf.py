@@ -1,7 +1,7 @@
 """GC1: activation checkpointing / channels_last on the real HF Mask2Former (Swin-T, pretrained), CPU, tiny crop.
 
-Needs transformers 4.57.1 + the cached pretrained weights (host: HF_HUB_OFFLINE=1). Skipped where transformers is absent
-(the Mac venv). Checks: (1) the default cfg applies nothing (loss and grads bit-identical); (2) checkpointing each part
+Needs transformers 4.57.1 + the cached pretrained weights (offline: HF_HUB_OFFLINE=1). Skipped where transformers is absent
+(e.g. a lightweight test environment). Checks: (1) the default cfg applies nothing (loss and grads bit-identical); (2) checkpointing each part
 gives the same loss and parameter gradients (fp32 and bf16 autocast) and really drops saved activations;
 (3) channels_last gives the same loss/grads within fp32 conv rounding.
 """

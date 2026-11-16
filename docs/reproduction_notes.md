@@ -1,6 +1,6 @@
 # Reproduction notes
 
-The README's quick start runs everything in one Kaggle notebook. This page holds what you need only to run the pipeline in other ways, to check its outputs, or to see the training recipe and implementation constants that the report leaves out.
+The README's reproduction steps run everything in one Kaggle notebook. This page holds what you need only to run the pipeline in other ways, to check its outputs, or to see the training recipe and implementation constants that the report leaves out.
 
 ## Get the code
 
@@ -9,7 +9,7 @@ git clone https://github.com/Matapanino/filament-segmentation-2026-solution.git
 cd filament-segmentation-2026-solution
 ```
 
-Every file the final submission (`"ms125"`) and the earlier pipeline read is in the clone (`weights/`, `weights/final/`); nothing else is downloaded. The other later submissions also read the release files: one dataset of models and stored maps, listed with bytes and SHA-256 in `src/filseg/reproduction/data/chain/release_files.json`.
+Every file the final submission (`"ms125"`) and the earlier pipeline read is in the clone (`weights/`, `weights/final/`); nothing else is downloaded. `"ms125m4"` and `"ms125m4r4"` also read only `weights/final/`. The other later submissions read the release files: one dataset of models and stored maps, listed with bytes and SHA-256 in `src/filseg/reproduction/data/chain/release_files.json`. That dataset is private (not published), so those modes cannot be rebuilt from this repository alone.
 
 ## Expected results
 
@@ -47,6 +47,8 @@ Every `MODE` rebuilds one of our submissions and checks its CSV against the hash
 | Refit: all four groups | `"pcombo"` | `35abbeed91108e40ddbd18c094c901d116441e363b10c31aa8092988d8e8f6e6` | 58278257 |
 | All four groups + 8-view Mask2Former | `"mftta"` | `3cdd3f06feec44b7b091d1807626c85dfbdcaf44afb285392e440b80432549ac` | 58299400 |
 | Crop-1536 Mask2Former, 8 views + 1.25× scale; 5-fold U-Nets **(final)** | `"ms125"` | `f05ea0d7b6fc8f9345586b193c2866cd654f7fad1b838d609e41af5f46de80ed` | 58367893 |
+| Crop-1536 Mask2Former, 8 views + 1.25× scale; final filter averaged with LightGBM, XGBoost and CatBoost; refitted repair; 5-fold U-Nets | `"ms125m4"` | `219def27e1081c23131ae56ee193683c48369434e7c2e0b9cd68effbc3cfda26` | 58411930 |
+| Crop-1536 Mask2Former, 8 views + 1.25× scale; four-classifier filter; repair threshold averaged over four regressors; 5-fold U-Nets | `"ms125m4r4"` | `79638003f7aa0f62c10e2948a09fe085a1594f53f099ab375811214156dd689f` | 58414228 |
 | Crop-1536 Mask2Former, 8 views + 1.25× in 8 views | `"ms125d4"` | `c73318cca158dca7f0b9688de9a4fbc49ef0981e76c0acae140bdf8a589f950c` | 58368642 |
 | Crop-1536 Mask2Former, 8 views + 1.25× (8) + 1.5× (4 views) | `"ms4"` | `a3abcb959da41f8db2d895a06e290b8da821147b1b4c26af105cea12cda5ce24` | 58369061 |
 | Crop-1536 Mask2Former, 8 views | `"f1c15u"` | `af512e390bb4a365ff5ee0434c0ea2607e529759c0eab79d1c85b595027d395b` | 58360056 |
@@ -60,18 +62,20 @@ Every `MODE` rebuilds one of our submissions and checks its CSV against the hash
 
 ## Run time
 
-On one Kaggle Tesla T4: the five networks take 850 s for the 180 test images (4.7 s per image), with peak GPU memory 1.3 GiB allocated (1.9 GiB reserved). The 8-view Mask2Former maps of `"mftta"` take another 2505 s. Building the final CSV on CPU, including the filter, the regressor and the repair, takes 329 s; the filter keeps 1036 of 1428 test candidates. Installing the pinned environments comes on top.
+For the final submission (`"ms125"`, the default), the whole notebook took 540 s (about 9 min) on Kaggle CPU, of which 422 s build the CSV from the stored maps (the filter keeps 1134 of 1522 test candidates). Most pinned packages were already installed in that run; installing the rest can add time.
+
+For the earlier pipeline, on one Kaggle Tesla T4: the five networks take 850 s for the 180 test images (4.7 s per image), with peak GPU memory 1.3 GiB allocated (1.9 GiB reserved). The 8-view Mask2Former maps of `"mftta"` take another 2505 s. Building the `"pcombo"` CSV on CPU, including the filter, the regressor and the repair, takes 329 s; the filter keeps 1036 of 1428 test candidates. Installing the pinned environments comes on top.
 
 ## The later submissions: stored maps
 
-The ten modes from `"ms125"` on are recipes (`src/filseg/reproduction/data/chain/<mode>.json`). Each recipe names:
+The twelve modes from `"ms125"` on are recipes (`src/filseg/reproduction/data/chain/<mode>.json`). Each recipe names:
 
 - **Mask2Former test maps**: one archive per fold model and map set (5 × 1 to 5 × 3 archives), with the model file, the input size and the views that made it. Each archive holds one uint16 map per test image (value / 510 = probability): the per-pixel maximum over queries of sigmoid(mask logit) × class probability at the network output, averaged over the views after undoing each flip or rotation, resized bilinearly to 2048 and rounded. The recipe's Mask2Former map is the level mean of all its archives (integer sum / (510 n), float32).
 - **U-Net test maps**: the package's fold-2 maps (`unet_package_*.npz`, identical to the GPU stage's output) or the per-pixel mean of the five fold models' maps (`unet_fold5mean_*.npz`, uint8, rint of the mean).
 - **Blend weight** w: p = w · Mask2Former + (1 − w)/2 · full + (1 − w)/2 · local, in the package's float32 arithmetic.
 - **Instance filter** (68 features, its own cutoff) and **repair regressor**: refitted on this map's candidates of all 707 training images, stored next to the recipe and hash-checked.
 
-These stored maps were made on an NVIDIA RTX 3090 (PyTorch 2.5.1, native BF16) when the submissions were built. Building the CSV from them is deterministic CPU work: it reproduces every submitted CSV byte for byte. The final submission's maps and models are in the repository (`weights/final/`, plain git, 48 MB parts, hash-checked when reassembled); the other recipes find theirs in the release files by name.
+These stored maps were made on an NVIDIA RTX 3090 (PyTorch 2.5.1, native BF16) when the submissions were built. Building the CSV from them is deterministic CPU work: it reproduces every submitted CSV byte for byte. The final submission's maps and models are in the repository (`weights/final/`, plain git, 48 MB parts, hash-checked when reassembled); the other recipes find theirs in the private release files by name.
 
 ## Re-running the networks of the chain modes
 
@@ -153,7 +157,7 @@ The package does not retrain; these settings produced the weights in `weights/`.
 - The redraw window is a rectangle aligned with the mask's principal axes, extended at each end by 25% of its length and width (at least 32 px).
 - A redrawn pixel must be at least 3 px from every other kept mask.
 - The regressor (scikit-learn `HistGradientBoostingRegressor`) predicts the repair threshold τ, snapped to a grid of 9 values from 0.20 to 0.60.
-- The one-threshold variant (`"pnat"`) uses τ = J/(1+J) = 0.4017, with J = 0.671 the mean matched IoU.
+- The one-threshold variant (`"pnat"`) uses τ = J/(1+J) = 0.4017, with J = 0.6713 the mean matched IoU.
 
 ## Weights
 
@@ -171,4 +175,4 @@ Our first submission was built before the reproduction package existed, and the 
 
 ## Release tag
 
-Opened outside a checkout, each notebook clones this repository and checks out the tag `v1.1` (`SOURCE_TAG` in its first code cell), the commit these documents describe. Keep `v1.1` on that commit; `v1.0` is the earlier release without the later submissions.
+Opened outside a checkout, each notebook clones this repository and checks out the tag `v1.1` (`SOURCE_TAG` in its first code cell), the release of the final submission `"ms125"`. Keep `v1.1` on that commit. The modes `"ms125m4"` and `"ms125m4r4"` were added after `v1.1`: run them from a checkout of the branch `final-ms125` (command line or the notebooks opened inside the checkout), or, on Kaggle, set `SOURCE_TAG = "origin/final-ms125"` in the first code cell of `pipeline.ipynb`. The default path (tag `v1.1`, `MODE = "ms125"`) needs neither.

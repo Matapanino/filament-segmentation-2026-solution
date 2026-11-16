@@ -4,7 +4,7 @@ Reference = pcand's own pworker.py (byte copy in case/; never run as a main here
 adds exactly pworker.image_pass_arm's keep patterns and 9-tau tables (the chain keys unchanged); the 100 refits, the
 deployment fit and the refit pass 2 equal pworker's fit_task_arm, deployment_fit and pass2_arm('refit') on the same state.
 Without the flag nothing is added (chain2m exactly). The flag refuses arms not in the call and multi-level arms (the C5 LR39
-row rule is not defined for overlapping level versions; orchestrator decision 4, 2026-11-14).
+row rule is not defined for overlapping level versions; a design decision, 2026-11-14).
 """
 import hashlib, json, os, sys, tempfile, types, unittest
 from pathlib import Path

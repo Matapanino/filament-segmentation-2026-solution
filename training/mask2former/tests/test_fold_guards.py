@@ -1,4 +1,4 @@
-"""Fold guards (astra code review 2026-11-14): eval/export must use the model's training fold; resume must not change it."""
+"""Fold guards (added after a code review, 2026-11-14): eval/export must use the model's training fold; resume must not change it."""
 import pytest
 
 import eval_ckpt

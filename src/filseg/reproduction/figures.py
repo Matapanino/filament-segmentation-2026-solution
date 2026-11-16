@@ -203,7 +203,7 @@ def _illustrate_chain(key, images, release, output, mode, recipe, run, weights=N
         captured.append([m.copy() for m in masks])
         return masks
 
-    value = image_stages(raw, maps, model, instance_stage=instances, pcand=P.load_regressor(*reg), selector=selector, chain=dict(names=names, weight=r['weight']))
+    value = image_stages(raw, maps, model, instance_stage=instances, pcand=chain.repair(r, reg), selector=selector, chain=dict(names=names, weight=r['weight']))
     check_stages(value['stages'], recorded[key]['stages'])
     keep = np.asarray(value['keep'], bool)
     if int(keep.sum()) != recorded[key]['kept']:raise ValueError('Kept count differs from the CSV run')

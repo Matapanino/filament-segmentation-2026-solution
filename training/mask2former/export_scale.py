@@ -28,7 +28,7 @@ import torch
 
 HERE = Path(__file__).resolve().parent
 R = HERE.parent
-for _p in (R / 'code', R / 'a1native'):          # host: filament/code ; Mac: filament-main/a1native
+for _p in (R / 'code', R / 'a1native'):          # the training code next to this folder (either layout)
     if _p.is_dir():
         sys.path.insert(0, str(_p))
 

@@ -57,7 +57,7 @@ PCOMBO_THRESHOLD = 0.35                        # the median of pcombo's 100 nest
 # The deployment selector fitted on Kaggle CPU (detect_20261112/refit_ship): two fits gave these exact bytes.
 SELECTOR_FILE = Path(__file__).parent / 'data/refit_selector.json'
 SELECTOR_SHA256 = '05759a2561e702f1fa4c044c36e32a1e867be15a1f6122451f090edabd2fd2fe'
-# The deployment selectors of the later ship lanes, fitted on Kaggle CPU the same way (two fits, identical bytes).
+# The deployment selectors of the later submissions, fitted on Kaggle CPU the same way (two fits, identical bytes).
 PINNED = {'fresh_ctrl': (SELECTOR_FILE, SELECTOR_SHA256),
           'pneigh': (Path(__file__).parent / 'data/pneigh_selector.json', '12237dd42263df43ae81c894ef585af9d8f82b6910d99dd228349759afe7408c'),
           'mfrich': (Path(__file__).parent / 'data/mfrich_selector.json', 'bf499652dafb7bd2533c63fa2449761454ccd5ee137548d2945b9d8501d78556'),
@@ -68,7 +68,7 @@ PINNED = {'fresh_ctrl': (SELECTOR_FILE, SELECTOR_SHA256),
           'mfvar': (Path(__file__).parent / 'data/mfvar_selector.json', '53f4db37e99351451047d2c1c7f9be1377fe1d18332edc864048770aed06cc27')}
 
 # MF-map variant roles (mfmaps.py): the P-combo recipe (68 features in PCOMBO_FEATURES order) refitted on the candidates of
-# the variant's out-of-fold MF maps, each with its own cutoff (the median of its CV lane's 100 nested cutoffs). A role is
+# the variant's out-of-fold MF maps, each with its own cutoff (the median of its cross-validation run's 100 nested cutoffs). A role is
 # usable only once its cutoff and selector file are pinned (MFMAP_THRESHOLDS, PINNED).
 MFMAP_ROLES = {v: f'deployment_refit_{v}_full707_mf_mixture' for v in ('mftta', 'mfhires', 'mfcomb')}
 MFMAP_THRESHOLDS = {'mftta': 0.35}             # mftta: the median of detect_20261113/mftta's 100 nested cutoffs (values 50 and 51: 0.35)
@@ -78,7 +78,7 @@ MFVAR_THRESHOLD = 0.3                          # the median of detect_20261113/m
 
 
 # Chain roles (chain.py): the P-combo recipe (68 features in PCOMBO_FEATURES order) refitted, in the same call, on the
-# candidates of one chain map (blend weight w); its cutoff is that call's median nested cutoff, a value of the CV lanes'
+# candidates of one chain map (blend weight w); its cutoff is that call's median nested cutoff, a value of the cross-validation runs'
 # threshold grid. The recipe pins the selector file (sha256) and the cutoff; chain.selector checks both.
 CHAIN_ROLE = re.compile(r'deployment_refit_chain2_w[0-9]{2}_full707_mf_mixture')
 CHAIN_CUTOFF_GRID = tuple(round(i * .025, 6) for i in range(41))
@@ -181,4 +181,8 @@ def apply_selector(rows, context_rows, model, neighbour_rows=None, mfrich_rows=N
         z = (x - np.asarray(model['scaler_mean'])) / np.asarray(model['scaler_scale'])
         probability = expit(z @ np.asarray(model['coef']).T + np.asarray(model['intercept'])).ravel()
     if not np.isfinite(probability).all():raise ValueError('Nonfinite selector probability')
+    if 'mean4' in model and len(x):
+        # Chain mean4 selector (chain.trees): the plain mean of this probability and the three tree models' of the same rows
+        probability = np.mean([probability] + [np.asarray(model['mean4'][a](x), float) for a in ('lgbm', 'xgb', 'cat')], axis=0)
+        if not np.isfinite(probability).all():raise ValueError('Nonfinite mean4 probability')
     return x, probability, probability >= model['threshold']

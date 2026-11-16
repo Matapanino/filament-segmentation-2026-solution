@@ -8,7 +8,7 @@ Reports on the held-out fold (default 2, 141 images):
   (the as-run host-parity PQ);
 - solar-disk pixel AP of the foreground map (package formula max_q(sigmoid(mask_q) * score_q), bilinear to 2048,
   quantised to 0..510): positives = union of all GT instances of all annotation sets; negatives = other pixels of the
-  solar disk (Otsu threshold, largest connected component, holes filled; the mfhires lane's definition); AP pooled over
+  solar disk (Otsu threshold, largest connected component, holes filled; the mfhires experiment's definition); AP pooled over
   images from per-level histograms (exact for the 511 quantised levels). Small-object AP: positives = pixels of GT-union
   connected components < 1024 px, negatives as above (other positives excluded).
 The view follows the run's input_scale (1.0 -> the native 2048 image, 0.5 -> the package 1024 INTER_AREA view).

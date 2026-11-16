@@ -7,7 +7,7 @@ GPU (Kaggle T4 only, inference only): for every test image and each of MF0, MF1 
   tiled  nine 1024x1024 tiles of the native 2048 image at stride 512, the foreground of each tile Hann-blended on a
          512-px canvas (mf_tile.py, a byte-identical copy of detect_20261113/mfhires/tile.py);
 both upsampled to 2048 (bilinear) and quantised like the package maps (rint(x 510), uint16). The forward pass and the
-foreground formula max_q(sigmoid(mask_q) x score_q) are the lanes' (and filseg.reproduction.inference.mf_map's).
+foreground formula max_q(sigmoid(mask_q) x score_q) are the cross-validation code's (and filseg.reproduction.inference.mf_map's).
   views  (opt-in, views=('tta', 'views'); the MF-var mode) the 8 inverse-transformed D4 views of the TTA pass itself, each
          upsampled and quantised like the TTA map, one (8, 2048, 2048) uint16 array per image in mf_d4.TRANSFORMS order
          (detect_20261113/mfvar/gpu_views.py); view 0 is the identity view. The TTA archives of that pass are the ones
@@ -21,7 +21,7 @@ CPU: the MF probability map of a variant is the level mean of its archives (arit
   mftta    (T0 + T1 + T2) / 1530                         the three-fold mean of the TTA maps;
   mfhires  (M0 + M1 + M2 + H0 + H1 + H2) / 3060          the three-fold mean of (package map + tiled map) / 2;
   mfcomb   (T0 + T1 + T2 + H0 + H1 + H2) / 3060          the three-fold mean of (TTA map + tiled map) / 2.
-The CV lanes read one out-of-fold model per image as (a + b) / 1020; at test the three fold models are averaged, as
+Cross-validation reads one out-of-fold model per image as (a + b) / 1020; at test the three fold models are averaged, as
 for the package MF mean. Everything downstream (blend .25 MF + .375 full + .375 local, SHIP_R3, features, selector,
 P-cand repair) reads this map in place of the package MF mean.
 """
@@ -45,7 +45,7 @@ KINDS = ('tta', 'tiled', 'views')
 MF_ARCHIVES = dict(mftta=TTA, mfhires=FOLDS + TILED, mfcomb=TTA + TILED)
 MAP_SETS = dict(package=('full', 'local') + FOLDS, **{v: ('full', 'local') + a for v, a in MF_ARCHIVES.items()})
 # Map-set sha256 (sha256 of the JSON of the archive sha256, sorted keys, as for the package map set) expected from the
-# package maps and the CV lanes' T4 test outputs (mftta test_tta_MF{k}.npz, mfhires test_tiled_MF{k}.npz).
+# package maps and the cross-validation runs' T4 test outputs (mftta test_tta_MF{k}.npz, mfhires test_tiled_MF{k}.npz).
 EXPECTED_MAP_SETS = dict(package='d7aa6a41fafc26b07ce89b306b884f6667ebb68b86289ea4745ee44c0b0d195f',
                          mftta='44ee26c7d4284b02103f005935611b0911d8f1fe20e1693bf73f0eb21fff9cc2',
                          mfhires='6f97d421381f6470ff7748726bad27fcc89fde0c74fdf5dc2f9610125e54255e',
@@ -139,7 +139,7 @@ def run_mf_view_maps(images, weights, output, budget_seconds=6600, names=FOLDS, 
     from .pipeline import prepare_images, read_image, save
     from .mf_views_io import ViewsWriter
     if not torch.cuda.is_available():raise RuntimeError('Neural inference requires the authorized GPU runtime')
-    if 'T4' not in torch.cuda.get_device_name(0):raise RuntimeError('This validation lane is restricted to Kaggle T4')
+    if 'T4' not in torch.cuda.get_device_name(0):raise RuntimeError('This validation run is restricted to Kaggle T4')
     if not torch.cuda.is_bf16_supported():raise RuntimeError('Installed PyTorch cannot execute original MF BF16')
     start = time.monotonic(); output = Path(output); output.mkdir(parents=True, exist_ok=True)
     root, manifest = resolve_assets(weights); files = prepare_images(images, output / 'test_images')

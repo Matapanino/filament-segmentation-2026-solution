@@ -291,7 +291,7 @@ def test_cli_mfvar_mode_reaches_run_csv_with_the_views(monkeypatch):
 
 # ---------------------------------------------------------------- the deployed MF-var selector in the package
 # Fitted on Kaggle CPU (mfvar_ship Stage 1a, kernel fit2): two fits gave these exact bytes (as did the earlier fit kernel); the
-# 100 saved 'mfvar' and the 100 saved 'mftta' CV selectors of the mfvar lane were refitted exactly from the same bank.
+# 100 saved 'mfvar' and the 100 saved 'mftta' CV selectors of the mfvar run were refitted exactly from the same bank.
 MFVAR_SELECTOR_SHA256 = '53f4db37e99351451047d2c1c7f9be1377fe1d18332edc864048770aed06cc27'
 
 
