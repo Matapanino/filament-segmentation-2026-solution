@@ -27,35 +27,35 @@ Every `MODE` of the notebook (`--mode` on the command line) rebuilds one of our 
 
 | Submission | `MODE` | CV PQ ↑, 425 images | CV PQ ↑, all 707 images | Public LB | Private LB |
 | --- | --- | ---: | ---: | ---: | ---: |
-| First filter, no repair | `"equivalent"` | 0.418 | 0.419 | 0.36 | after the close |
-| First filter, one-threshold repair | `"pnat"` | 0.419 | 0.421 | 0.36 | after the close |
-| First filter, per-object repair | `"pcand"` | 0.421 | 0.422 | 0.37 | after the close |
-| Refit: + context | `"fresh_ctrl"` | 0.426 | 0.426 | 0.37 | after the close |
-| Refit: + context + neighbours | `"pneigh"` | 0.426 | 0.427 | 0.37 | after the close |
-| Refit: + context + Mask2Former shape | `"mfrich"` | 0.427 | 0.429 | 0.38 | after the close |
-| Refit: all four groups | `"pcombo"` | 0.428 | 0.430 | 0.38 | after the close |
-| All four groups + 8-view Mask2Former | `"mftta"` | 0.429 | 0.431 | 0.37 | after the close |
-| **Crop-1536 Mask2Former, 8 views + 1.25× scale; refitted filter and repair; 5-fold U-Nets (final)** | **`"ms125"`** | — | **0.4566** (server) | **0.40** | after the close |
-| Crop-1536 Mask2Former, 8 views + 1.25× scale; final filter averaged with LightGBM, XGBoost and CatBoost; refitted repair; 5-fold U-Nets | `"ms125m4"` | — | 0.4584 (Kaggle) | 0.40 | after the close |
-| Crop-1536 Mask2Former, 8 views + 1.25× scale; four-classifier filter; repair threshold averaged over four regressors; 5-fold U-Nets | `"ms125m4r4"` | — | 0.4589 (Kaggle) | 0.40 | after the close |
-| Crop-1536 Mask2Former, 8 views + 1.25× scale; filter = TabPFN 3.5 classifier alone; repair threshold = TabPFN 3.5 regressor alone; 5-fold U-Nets | not in this repository yet | — | 0.4590 (Kaggle) | 0.40 | after the close |
-| Crop-1536 Mask2Former, 8 views + 1.25× scale; filter and repair threshold = plain means of five models (the four of `"ms125m4r4"` + TabPFN 3.5); 5-fold U-Nets | not in this repository yet | — | 0.4591 (Kaggle) | 0.40 | after the close |
-| Crop-1536 Mask2Former, 8 views + 1.25× scale in 8 views; refitted filter and repair; 5-fold U-Nets | `"ms125d4"` | — | 0.4572 (server) | 0.40 | after the close |
-| Crop-1536 Mask2Former, 8 views + 1.25× (8 views) + 1.5× (4 views); refitted filter and repair; 5-fold U-Nets | `"ms4"` | — | 0.4574 (server) | 0.40 | after the close |
-| Crop-1536 Mask2Former, 8 views; refitted filter and repair; 5-fold U-Nets | `"f1c15u"` | — | 0.4549 (Kaggle) | 0.40 | after the close |
-| Crop-768 + crop-1024 Mask2Former, 8 views; refitted filter; 5-fold U-Nets | `"c7c10d4_un5"` | — | 0.4514 (Kaggle) | 0.40 | after the close |
-| Crop-768 + crop-1024 Mask2Former; refitted filter and repair; 5-fold U-Nets | `"c7c10_refit_un5"` | — | 0.4450 (Kaggle) | 0.40 | after the close |
-| Crop-768 + crop-1024 Mask2Former; refitted filter; 5-fold U-Nets | `"c7c10_un5"` | — | 0.4441 (Kaggle) | 0.40 | after the close |
-| Crop-768 + crop-1024 Mask2Former; refitted filter | `"c7c10"` | — | 0.4441 (Kaggle) | 0.40 | after the close |
-| Crop-768 Mask2Former; refitted filter | `"c768"` | — | 0.4402 (Kaggle) | 0.40 | after the close |
-| Crop-768 Mask2Former, Mask2Former weight 0.25; refitted filter | `"c768_w25"` | — | 0.4359 (Kaggle) | 0.38 | after the close |
+| First filter, no repair | `"equivalent"` | 0.418 | 0.419 | 0.36 | 0.33 |
+| First filter, one-threshold repair | `"pnat"` | 0.419 | 0.421 | 0.36 | 0.34 |
+| First filter, per-object repair | `"pcand"` | 0.421 | 0.422 | 0.37 | 0.34 |
+| Refit: + context | `"fresh_ctrl"` | 0.426 | 0.426 | 0.37 | 0.34 |
+| Refit: + context + neighbours | `"pneigh"` | 0.426 | 0.427 | 0.37 | 0.33 |
+| Refit: + context + Mask2Former shape | `"mfrich"` | 0.427 | 0.429 | 0.38 | 0.35 |
+| Refit: all four groups | `"pcombo"` | 0.428 | 0.430 | 0.38 | 0.35 |
+| All four groups + 8-view Mask2Former | `"mftta"` | 0.429 | 0.431 | 0.37 | 0.34 |
+| **Crop-1536 Mask2Former, 8 views + 1.25× scale; refitted filter and repair; 5-fold U-Nets (final)** | **`"ms125"`** | — | **0.4566** (server) | **0.40** | **0.37** |
+| Crop-1536 Mask2Former, 8 views + 1.25× scale; final filter averaged with LightGBM, XGBoost and CatBoost; refitted repair; 5-fold U-Nets | `"ms125m4"` | — | 0.4584 (Kaggle) | 0.40 | 0.37 |
+| Crop-1536 Mask2Former, 8 views + 1.25× scale; four-classifier filter; repair threshold averaged over four regressors; 5-fold U-Nets | `"ms125m4r4"` | — | 0.4589 (Kaggle) | 0.40 | 0.37 |
+| Crop-1536 Mask2Former, 8 views + 1.25× scale; filter = TabPFN 3.5 classifier alone; repair threshold = TabPFN 3.5 regressor alone; 5-fold U-Nets | not in this repository yet | — | 0.4590 (Kaggle) | 0.40 | 0.36 |
+| Crop-1536 Mask2Former, 8 views + 1.25× scale; filter and repair threshold = plain means of five models (the four of `"ms125m4r4"` + TabPFN 3.5); 5-fold U-Nets | not in this repository yet | — | 0.4591 (Kaggle) | 0.40 | 0.37 |
+| Crop-1536 Mask2Former, 8 views + 1.25× scale in 8 views; refitted filter and repair; 5-fold U-Nets | `"ms125d4"` | — | 0.4572 (server) | 0.40 | 0.37 |
+| Crop-1536 Mask2Former, 8 views + 1.25× (8 views) + 1.5× (4 views); refitted filter and repair; 5-fold U-Nets | `"ms4"` | — | 0.4574 (server) | 0.40 | 0.37 |
+| Crop-1536 Mask2Former, 8 views; refitted filter and repair; 5-fold U-Nets | `"f1c15u"` | — | 0.4549 (Kaggle) | 0.40 | 0.36 |
+| Crop-768 + crop-1024 Mask2Former, 8 views; refitted filter; 5-fold U-Nets | `"c7c10d4_un5"` | — | 0.4514 (Kaggle) | 0.40 | 0.36 |
+| Crop-768 + crop-1024 Mask2Former; refitted filter and repair; 5-fold U-Nets | `"c7c10_refit_un5"` | — | 0.4450 (Kaggle) | 0.40 | 0.36 |
+| Crop-768 + crop-1024 Mask2Former; refitted filter; 5-fold U-Nets | `"c7c10_un5"` | — | 0.4441 (Kaggle) | 0.40 | 0.36 |
+| Crop-768 + crop-1024 Mask2Former; refitted filter | `"c7c10"` | — | 0.4441 (Kaggle) | 0.40 | 0.36 |
+| Crop-768 Mask2Former; refitted filter | `"c768"` | — | 0.4402 (Kaggle) | 0.40 | 0.35 |
+| Crop-768 Mask2Former, Mask2Former weight 0.25; refitted filter | `"c768_w25"` | — | 0.4359 (Kaggle) | 0.38 | 0.35 |
 
 
 The later submissions (from `"ms125"`) were compared on all 707 images, so their 425-image column is left empty; "server" or "Kaggle" names the CPU that measured the value (the two agree to 0.00001 PQ on the same run). Changing only the test-time U-Net maps (the "5-fold U-Nets" rows) leaves the cross-validation unchanged, because validation always reads one out-of-fold model per network. The public leaderboard shows two decimals and does not separate these variants.
 
 The two TabPFN rows were built on Kaggle and have no `MODE` yet: Kaggle submissions 58420651 (CSV `474eda9a9f743679824f67c8ec8eba42899df20c71f5c10256b4b10993468cf5`) and 58420900 (CSV `61e4bff9e650a8f66dc2502ed98fccb9af80307156b2262f12bae2c8dec6006d`). See [Post-processing variants](#post-processing-variants).
 
-**Private leaderboard.** The private leaderboard scores will be added after the competition closes.
+**Private leaderboard.** Added after the competition closed; like the public one, it shows two decimals. The final submission scores 0.37, which no submission of ours beats.
 
 `"mftta"` averages each Mask2Former model of `"pcombo"` over 8 flips and right-angle rotations of its input: +0.0012 [−0.0009, +0.0033] PQ over `"pcombo"` on all 707 images (17/20 partitions) and +0.0005 [−0.0018, +0.0029] on the 425 validation images (11/20); both intervals include zero, so our rule did not adopt it.
 

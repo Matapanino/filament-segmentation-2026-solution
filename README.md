@@ -31,13 +31,13 @@ All modules are in `src/filseg/reproduction/`. The [technical report](docs/techn
 ## Results
 
 | | `MODE` | CV PQ (707 training images) | Public LB | Private LB |
-| --- | --- | ---: | ---: | --- |
-| **Final submission** | `"ms125"` | **0.4566** | **0.40** | added after the competition closes |
-| Final submission with a four-classifier filter (its logistic regression averaged with LightGBM, XGBoost and CatBoost) | `"ms125m4"` | 0.4584 | 0.40 | added after the competition closes |
-| Four-classifier filter and a four-regressor repair threshold (its gradient-boosted regressor averaged with LightGBM, XGBoost and CatBoost) | `"ms125m4r4"` | 0.4589 | 0.40 | added after the competition closes |
-| Earlier, simpler pipeline (all networks run in the notebook) | `"pcombo"` | 0.4296 | 0.38 | added after the competition closes |
+| --- | --- | ---: | ---: | ---: |
+| **Final submission** | `"ms125"` | **0.4566** | **0.40** | **0.37** |
+| Final submission with a four-classifier filter (its logistic regression averaged with LightGBM, XGBoost and CatBoost) | `"ms125m4"` | 0.4584 | 0.40 | 0.37 |
+| Four-classifier filter and a four-regressor repair threshold (its gradient-boosted regressor averaged with LightGBM, XGBoost and CatBoost) | `"ms125m4r4"` | 0.4589 | 0.40 | 0.37 |
+| Earlier, simpler pipeline (all networks run in the notebook) | `"pcombo"` | 0.4296 | 0.38 | 0.35 |
 
-Mode names: `ms125` = the final recipe (Mask2Former also reads a 1.25× zoomed view); `m4` = keep/drop filter averaged over four classifiers; `r4` = repair threshold averaged over four regressors; `pcombo` = the earlier pipeline from mid-competition. The final submission is not the highest-CV row: all three `ms125` rows score 0.40 on the public leaderboard, which cannot rank them, so we kept the simplest.
+Mode names: `ms125` = the final recipe (Mask2Former also reads a 1.25× zoomed view); `m4` = keep/drop filter averaged over four classifiers; `r4` = repair threshold averaged over four regressors; `pcombo` = the earlier pipeline from mid-competition. The final submission is not the highest-CV row: all three `ms125` rows score 0.40 on the public leaderboard, which cannot rank them, so we kept the simplest (all three also score 0.37 on the private leaderboard).
 
 CV PQ is pooled over all images, scoring each annotator's labels separately; the final value was measured on our own CPU server, the other three on Kaggle CPU (the two agree to 0.00001 PQ on the same run). Every submission, how to rebuild it with `MODE`, and our validation protocol: [docs/submissions.md](docs/submissions.md).
 
