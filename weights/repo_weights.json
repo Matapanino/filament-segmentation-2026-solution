@@ -1,0 +1,136 @@
+{
+  "schema": "filseg-repo-weights-v1",
+  "part_bytes": 48000000,
+  "files": {
+    "MF0.safetensors": {
+      "bytes": 189922264,
+      "sha256": "f776a41d4db3c0b795e582eeba0f28325350808071b02ae09f7759d000c4341e",
+      "md5": "425312c0a52fd4da11568975330733fd",
+      "parts": [
+        {
+          "file": "parts/MF0.safetensors.000",
+          "bytes": 48000000,
+          "sha256": "128589a30c5663ea922aa183ec58e040f94556172ccdc63eb82fe3b3704e11e2"
+        },
+        {
+          "file": "parts/MF0.safetensors.001",
+          "bytes": 48000000,
+          "sha256": "42fa3365dbd5791dc45038a2f180fc918c6b57655dfde6d41cca2e92a0b53077"
+        },
+        {
+          "file": "parts/MF0.safetensors.002",
+          "bytes": 48000000,
+          "sha256": "d82dc8819c87ca46160a15401b87b8c763e70f19925ac98656641f8571c87640"
+        },
+        {
+          "file": "parts/MF0.safetensors.003",
+          "bytes": 45922264,
+          "sha256": "b6b92e0dd70def4e3e1568ff7434d1c73476182baeb9cd45c229d9fe30ebfe91"
+        }
+      ]
+    },
+    "MF1.safetensors": {
+      "bytes": 189922264,
+      "sha256": "b6f8849d404b388bac6a2be9724817bd64096ddfd91002ffcc7422088280323b",
+      "md5": "b89e6c4e2748c15b8a6822ce92d87fac",
+      "parts": [
+        {
+          "file": "parts/MF1.safetensors.000",
+          "bytes": 48000000,
+          "sha256": "abdbae54e33232d0c4f19938427c802da1ad309acb4f7e00fbdb2567b8ffe5ea"
+        },
+        {
+          "file": "parts/MF1.safetensors.001",
+          "bytes": 48000000,
+          "sha256": "b28c3a4d5b6f775c383efbc096de7b2bf1bf65928c5ea4ae3a22eb6d585549c1"
+        },
+        {
+          "file": "parts/MF1.safetensors.002",
+          "bytes": 48000000,
+          "sha256": "21ccde03edd8182dd3afc63e5f7a343c8879fd088d651de3ed3b470df68538ce"
+        },
+        {
+          "file": "parts/MF1.safetensors.003",
+          "bytes": 45922264,
+          "sha256": "a68a74ff45d491a5e590516bce124addd2c3a186deb7cbd6f7811ad67ff8a40d"
+        }
+      ]
+    },
+    "MF2.safetensors": {
+      "bytes": 189922264,
+      "sha256": "5c0b6c9d8f2f33434fd492873aaac843d4b5537518d9e34869fca76af63b938c",
+      "md5": "9eba03c829b74dd2536234a9cd8739d1",
+      "parts": [
+        {
+          "file": "parts/MF2.safetensors.000",
+          "bytes": 48000000,
+          "sha256": "397bf0e25462c01a4d098c8b5ace1aba3c702c5effd5aa60644f2d22347ce75c"
+        },
+        {
+          "file": "parts/MF2.safetensors.001",
+          "bytes": 48000000,
+          "sha256": "6557c65a8f1e607bf4121d951b2f9daed4bdbc722574029e2873aab8e5439414"
+        },
+        {
+          "file": "parts/MF2.safetensors.002",
+          "bytes": 48000000,
+          "sha256": "78a2f11bdedcf25f56780343f6d79cadcf13c0fa4fb6f2c88081366231cc92da"
+        },
+        {
+          "file": "parts/MF2.safetensors.003",
+          "bytes": 45922264,
+          "sha256": "b2e42db8a11db9916873555c0515da3df063ad54e05c3d2a344857308167142f"
+        }
+      ]
+    },
+    "full.safetensors": {
+      "bytes": 25224852,
+      "sha256": "ebb594539d6d71b35ef816dc65826e895c7c17e6fd727dcfa18cf256aadde78d",
+      "md5": "83ee154f2873cada1afd5957de8c9845",
+      "parts": []
+    },
+    "local.safetensors": {
+      "bytes": 25224852,
+      "sha256": "722e2fcd94d6e7e6938f94cb0a306a70f837de84313455d092b04d8bf79fa48d",
+      "md5": "d6affe7cb3bc88d73fd926b12faaecd2",
+      "parts": []
+    },
+    "mf_config.json": {
+      "bytes": 79763,
+      "sha256": "86e17340334de554d19f0ed176ca97ada069b72a40dfc880db6d07043e9a56ec",
+      "md5": "8bbed34fbff4d75dbdfb43335bb755a5",
+      "parts": []
+    },
+    "quality_model.json": {
+      "bytes": 3916,
+      "sha256": "dbb530cf270b69e049380d7b9ff1690ce5a57be6c3ae04f1ea1675fc08740606",
+      "md5": "d36a968ddb51eca4a7829633539b2d8a",
+      "parts": []
+    },
+    "regressor.pkl": {
+      "bytes": 476988,
+      "sha256": "b4dcd7d1ec79fc6c42135733721c53d107ea53f1cefe2934c7fd2c95acba6798",
+      "md5": "39bc07493566b77f5dda811432c4ca5e",
+      "parts": []
+    },
+    "reproduction_weights.json": {
+      "bytes": 3435,
+      "sha256": "d52fb0b30c500cb0c53404fa6762d5c97f75e3806159fb09d019dbb2cc6f1734",
+      "md5": "b6a535c9a4326296b09d8191120aa44f",
+      "parts": []
+    }
+  },
+  "provenance": {
+    "dataset": "masayakawamata/filament-repro-weights-1111",
+    "dataset_version": 2,
+    "byte_identical_to_dataset": true,
+    "not_stored": {
+      "MF0.bin": "historical incumbent map archive; read only by the `finalize` diagnostic, never by maps or csv",
+      "MF1.bin": "historical incumbent map archive; read only by the `finalize` diagnostic, never by maps or csv",
+      "full.bin": "historical incumbent map archive; read only by the `finalize` diagnostic, never by maps or csv",
+      "local.bin": "historical incumbent map archive; read only by the `finalize` diagnostic, never by maps or csv",
+      "m2f_public.bin": "historical incumbent map archive; read only by the `finalize` diagnostic, never by maps or csv",
+      "pcand_regressor.json": "descriptive record of regressor.pkl (training summary); never loaded, the regressor bytes are pinned in pcand.REGRESSOR_SHA256"
+    }
+  }
+}

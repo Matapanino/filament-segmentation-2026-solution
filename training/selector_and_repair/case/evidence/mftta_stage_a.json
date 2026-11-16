@@ -1,0 +1,65 @@
+{
+ "stage_a_passed": true,
+ "identity_exact": false,
+ "scope": "filament-mftta-1113-gpu-train",
+ "archives": {
+  "mf_identity_fold0.npz": {
+   "bytes": 14611048,
+   "sha256": "368585a4c0044cefe3e234907d8a2c0d7414ccb57c71b7ce15afcfb28ed40ccd",
+   "md5": "c6974091aacbba45658a96dfd3f71ffd"
+  },
+  "mf_tta_fold0.npz": {
+   "bytes": 17250185,
+   "sha256": "4b242268450b1abd28bb4bf9afca2d78593ce337ce38b2327cdd09aa23d20c63",
+   "md5": "568b57578324d466309a29c505180ff9"
+  },
+  "mf_identity_fold1.npz": {
+   "bytes": 15399288,
+   "sha256": "37c3f6e16d320bf371690541101e9c8bdee58477ddb84ae6d425e10744eaead1",
+   "md5": "783fef75c68542bbd5f5b762181d799f"
+  },
+  "mf_tta_fold1.npz": {
+   "bytes": 17947381,
+   "sha256": "9f35649f0bd30d100547fff75780ef81e6919baca01dd913ba99cfed6d67e0fe",
+   "md5": "abd7c4aef21846e3e0800e0f9e9496cb"
+  },
+  "mf_identity_fold2.npz": {
+   "bytes": 15289198,
+   "sha256": "a0b018dfb8072901cd165a1f49dd2f4119856369b56ce71414ab1d5ad2a8ac0f",
+   "md5": "0e9202052c90ca0166b925d2237e2060"
+  },
+  "mf_tta_fold2.npz": {
+   "bytes": 18481616,
+   "sha256": "b9d932635272dc0d53fbe8b713ccee98e0d379bc293484d888ae01aa7c18d91b",
+   "md5": "ead51c3807000bc3de87b45c04f9ca1f"
+  },
+  "mf_identity_fold3.npz": {
+   "bytes": 12971731,
+   "sha256": "ef80c4e920dcc617ad6022bc5fd1d342312bb8b9801d90d6de0ba63540db8585",
+   "md5": "faafb19ab71357f8cb9ca6496dbe3f8a"
+  },
+  "mf_tta_fold3.npz": {
+   "bytes": 15657870,
+   "sha256": "c91ff3c6f5d20af2ae499bbafbf43325726a651bbc0cf97ea601957cf3ead1a9",
+   "md5": "48fea4196675b79167fd547a9a3b05e2"
+  },
+  "mf_identity_fold4.npz": {
+   "bytes": 15292484,
+   "sha256": "1781dba5f7a38e5068adda1b26761150c1f5c245988a134f2047d41f45adc308",
+   "md5": "e3f0491d940c9bcafdb0d96702193a61"
+  },
+  "mf_tta_fold4.npz": {
+   "bytes": 17957100,
+   "sha256": "16326804e6357f05433aaac24a80bc0d7f0944b596f65b4dbfaefb3ed0b6c8ad",
+   "md5": "76f06537d31dd1b910a5d26ec8795822"
+  }
+ },
+ "checks": {
+  "ar1b": true,
+  "align": true,
+  "provenance_sanity": true,
+  "producer_split": true,
+  "images_707": true,
+  "model_fits_zero": true
+ }
+}

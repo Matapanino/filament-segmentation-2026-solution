@@ -1,0 +1,13 @@
+{
+  "id": "masayakawamata/filament-m1-unet-5fold",
+  "title": "filament-m1-unet-5fold",
+  "code_file": "train_m1.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": ["masayakawamata/filseg-lib"],
+  "competition_sources": ["filament-segmentation-2026"],
+  "kernel_sources": []
+}

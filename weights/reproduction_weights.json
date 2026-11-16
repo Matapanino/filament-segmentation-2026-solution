@@ -1,0 +1,79 @@
+{
+  "schema": "filseg-inference-only-v1",
+  "networks": {
+    "full": {
+      "file": "full.safetensors",
+      "bytes": 25224852,
+      "sha256": "ebb594539d6d71b35ef816dc65826e895c7c17e6fd727dcfa18cf256aadde78d",
+      "md5": "83ee154f2873cada1afd5957de8c9845",
+      "tensor_state_sha256": "42b624a2888ccd6b22ecd8e3204c8fc282d46ab18ee8e643c487898300cd39a6",
+      "original_checkpoint_sha256": "f451152f2fc8bc51e2c84751b75c19fec66778e197d85f78bb1cf4edfe3c526e",
+      "export_input_sha256": "36866905eba389b0993446d22b0fb35b6b4a4ae2a05bd4497422cc886b0c277c",
+      "checkpoint_state": "model",
+      "fold": 2,
+      "epoch": 12
+    },
+    "local": {
+      "file": "local.safetensors",
+      "bytes": 25224852,
+      "sha256": "722e2fcd94d6e7e6938f94cb0a306a70f837de84313455d092b04d8bf79fa48d",
+      "md5": "d6affe7cb3bc88d73fd926b12faaecd2",
+      "tensor_state_sha256": "0d0c9fa97118a5e87595b0b4aa0b0652e96271fe0d7ba2de66a99bdbc9e35a1d",
+      "original_checkpoint_sha256": "faba8d15e6d62c5c12bdf79a3c3105f2ca48497764e203e4e83c07a1341727dd",
+      "export_input_sha256": "846863872a7cf45de42dd6a4dcc31009cd2de30a97155c596e250a7011f3db4e",
+      "checkpoint_state": "model",
+      "fold": 2,
+      "epoch": 12
+    },
+    "MF0": {
+      "file": "MF0.safetensors",
+      "bytes": 189922264,
+      "sha256": "f776a41d4db3c0b795e582eeba0f28325350808071b02ae09f7759d000c4341e",
+      "md5": "425312c0a52fd4da11568975330733fd",
+      "tensor_state_sha256": "30f184da9d796657c058008e1a1564dfeddd94a2fdcf2804736d328e02f837e1",
+      "original_checkpoint_sha256": "bd667cec7bbe53a8290dfe941d1d2f917ad8f7083f19134d18f432233d513a3f",
+      "export_input_sha256": "bd667cec7bbe53a8290dfe941d1d2f917ad8f7083f19134d18f432233d513a3f",
+      "checkpoint_state": "ema",
+      "fold": 0,
+      "epoch": 12
+    },
+    "MF1": {
+      "file": "MF1.safetensors",
+      "bytes": 189922264,
+      "sha256": "b6f8849d404b388bac6a2be9724817bd64096ddfd91002ffcc7422088280323b",
+      "md5": "b89e6c4e2748c15b8a6822ce92d87fac",
+      "tensor_state_sha256": "baa79c1054df8efea8337bc3ae95ec95fd5d3ab13936a98864ec5f290a6c2101",
+      "original_checkpoint_sha256": "2e2e2c03f467385d18107cc7a96141e55cebc6b2f7048584eb99c753e637a6a9",
+      "export_input_sha256": "2e2e2c03f467385d18107cc7a96141e55cebc6b2f7048584eb99c753e637a6a9",
+      "checkpoint_state": "ema",
+      "fold": 1,
+      "epoch": 12
+    },
+    "MF2": {
+      "file": "MF2.safetensors",
+      "bytes": 189922264,
+      "sha256": "5c0b6c9d8f2f33434fd492873aaac843d4b5537518d9e34869fca76af63b938c",
+      "md5": "9eba03c829b74dd2536234a9cd8739d1",
+      "tensor_state_sha256": "0db6c7744e3b3633afcad8a6a21a1b1f5656c6e97909a1e4b6dfe24db9fcad3d",
+      "original_checkpoint_sha256": "cfc395a0daf26972fbe8c2c9229defb61d02c21cb6cb4c701e3e68e497ac86c0",
+      "export_input_sha256": "aeb2c9998dd6edf200e24bbfe19db6c00c6251b5602cda4af62b2c9ed15c75d2",
+      "checkpoint_state": "ema",
+      "fold": 2,
+      "epoch": 12
+    }
+  },
+  "files": {
+    "mf_config.json": {
+      "bytes": 79763,
+      "sha256": "86e17340334de554d19f0ed176ca97ada069b72a40dfc880db6d07043e9a56ec",
+      "md5": "8bbed34fbff4d75dbdfb43335bb755a5"
+    },
+    "quality_model.json": {
+      "bytes": 3916,
+      "sha256": "dbb530cf270b69e049380d7b9ff1690ce5a57be6c3ae04f1ea1675fc08740606",
+      "md5": "d36a968ddb51eca4a7829633539b2d8a"
+    }
+  },
+  "source_dataset": "masayakawamata/filament-repro-source-1111",
+  "model_fits": 0
+}

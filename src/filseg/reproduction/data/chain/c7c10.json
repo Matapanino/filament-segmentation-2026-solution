@@ -1,0 +1,168 @@
+{
+ "name": "c7c10",
+ "label": "Mask2Former crop-768 + crop-1024; refit selector; fold-2 U-Nets",
+ "csv": {
+  "sha256": "b11258ecd18d603c67b8db2870bae0d0cf47e24ff246964c0a80f3b0a43a59fe",
+  "rows": 1094
+ },
+ "submission": {
+  "ref": 58328986,
+  "date_utc": "2026-11-14 02:41",
+  "public_score": "0.40"
+ },
+ "weight": 0.55,
+ "cutoff": 0.35,
+ "selector": {
+  "file": "selector_c7c10_refit_un5.json",
+  "sha256": "a4ecdf79961bccf5e046307e2f79463d11ba166aaef76517db3b2adaff38ec60"
+ },
+ "regressor": "package",
+ "unet": "package",
+ "sets": 2,
+ "archives": [
+  {
+   "name": "NEW0_0",
+   "fold": 0,
+   "set": 0,
+   "run_id": "c768_f0",
+   "file": "mf_c768_f0_test.npz",
+   "bytes": 15595988,
+   "sha256": "b8f56c575e3c036744157a11808d9157649b118845e775e9c0aafeb409bf1ed8",
+   "model": "mfmodel_c768_f0.safetensors",
+   "size": 2048,
+   "views": [
+    "id"
+   ]
+  },
+  {
+   "name": "NEW0_1",
+   "fold": 0,
+   "set": 1,
+   "run_id": "c1024_f0",
+   "file": "mf_c1024_f0_test.npz",
+   "bytes": 13576464,
+   "sha256": "10c6264f1e4bd41808dcd3f2bb27c6a4d91c279f8f5d5069a7629770cbfe420c",
+   "model": "mfmodel_c1024_f0.safetensors",
+   "size": 2048,
+   "views": [
+    "id"
+   ]
+  },
+  {
+   "name": "NEW1_0",
+   "fold": 1,
+   "set": 0,
+   "run_id": "c768_f1",
+   "file": "mf_c768_f1_test.npz",
+   "bytes": 17254440,
+   "sha256": "3406b53355ed322f5b89f861ae9f32b13dea928efd086360a0c7ee117637beec",
+   "model": "mfmodel_c768_f1.safetensors",
+   "size": 2048,
+   "views": [
+    "id"
+   ]
+  },
+  {
+   "name": "NEW1_1",
+   "fold": 1,
+   "set": 1,
+   "run_id": "c1024_f1",
+   "file": "mf_c1024_f1_test.npz",
+   "bytes": 14215521,
+   "sha256": "941926ffa9916633eb764ca5356d5499497e334130c5e8edaddff6e8070de6ff",
+   "model": "mfmodel_c1024_f1.safetensors",
+   "size": 2048,
+   "views": [
+    "id"
+   ]
+  },
+  {
+   "name": "NEW2_0",
+   "fold": 2,
+   "set": 0,
+   "run_id": "w1_crop768_4k",
+   "file": "mf_w1_crop768_4k_test.npz",
+   "bytes": 16649176,
+   "sha256": "92024cd68f1524da6b2ed1c76c83a2be3b00a6b11a4c9a189f97e07eedf6dff2",
+   "model": "mfmodel_c768_f2.safetensors",
+   "size": 2048,
+   "views": [
+    "id"
+   ]
+  },
+  {
+   "name": "NEW2_1",
+   "fold": 2,
+   "set": 1,
+   "run_id": "w2_c1024_4k",
+   "file": "mf_w2_c1024_4k_test.npz",
+   "bytes": 14330658,
+   "sha256": "08d747de338a12c42a136cdb90926f4b6cd43061f947eeed403a13a2dd82321e",
+   "model": "mfmodel_c1024_f2.safetensors",
+   "size": 2048,
+   "views": [
+    "id"
+   ]
+  },
+  {
+   "name": "NEW3_0",
+   "fold": 3,
+   "set": 0,
+   "run_id": "c768_f3",
+   "file": "mf_c768_f3_test.npz",
+   "bytes": 16163623,
+   "sha256": "33ca938b705fbbba8ac74817e47aae37266ef5d547a69ddcfea841ea32e109a7",
+   "model": "mfmodel_c768_f3.safetensors",
+   "size": 2048,
+   "views": [
+    "id"
+   ]
+  },
+  {
+   "name": "NEW3_1",
+   "fold": 3,
+   "set": 1,
+   "run_id": "c1024_f3",
+   "file": "mf_c1024_f3_test.npz",
+   "bytes": 14327682,
+   "sha256": "b2e1ff43358ac07e4c4ca344f786f070c81536180def11082d9fdaad5066c7e7",
+   "model": "mfmodel_c1024_f3.safetensors",
+   "size": 2048,
+   "views": [
+    "id"
+   ]
+  },
+  {
+   "name": "NEW4_0",
+   "fold": 4,
+   "set": 0,
+   "run_id": "c768_f4",
+   "file": "mf_c768_f4_test.npz",
+   "bytes": 15891420,
+   "sha256": "44d8c5cfcf4af3fd361e742d02f56fe3b9dc77af55ed910efa010b3ab5f8e070",
+   "model": "mfmodel_c768_f4.safetensors",
+   "size": 2048,
+   "views": [
+    "id"
+   ]
+  },
+  {
+   "name": "NEW4_1",
+   "fold": 4,
+   "set": 1,
+   "run_id": "c1024_f4",
+   "file": "mf_c1024_f4_test.npz",
+   "bytes": 14344696,
+   "sha256": "00b87ebffc984e1bfeb5178cae185e32fcb46d952cbd25ae17ee1c4be68d3c45",
+   "model": "mfmodel_c1024_f4.safetensors",
+   "size": 2048,
+   "views": [
+    "id"
+   ]
+  }
+ ],
+ "cv": {
+  "pq_all707": 0.444051,
+  "instrument": "Kaggle CPU"
+ }
+}

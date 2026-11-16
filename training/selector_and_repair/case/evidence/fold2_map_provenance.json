@@ -1,0 +1,58 @@
+{
+ "full": {
+  "manifest_file": "evidence/original_full_raw_1024_f2_s42.json",
+  "manifest_sha256": "e59ae5d9c99d7a5ed486890ea656541c3951b6efb956f185a608a4df7667a0ed",
+  "manifest_remote": "<artifact-store>/<project>/detect_20261106/oof_bank5/A/phaseA/artifacts/original_full_raw_1024_f2_s42/manifest.json",
+  "sibling_map_remote": "<artifact-store>/<project>/detect_20261106/oof_bank5/A/phaseA/artifacts/original_full_raw_1024_f2_s42/oof_prob.npz",
+  "dataset_map": {
+   "dataset": "<kaggle-user>/filament-archm2f-oof-1108",
+   "bytes": 3440656,
+   "denominator": 255,
+   "filename": "full.bin",
+   "md5": "dd0f56e3d854622b0b7fc12a0f007088",
+   "sha256": "1d7a12bf4d138be701ea83a45684b29cfd1e0bed231c79fc7fe868b9bd353731"
+  },
+  "drive_sibling_md5_equals_dataset_md5": true,
+  "validation_equals_fold2": true,
+  "train_equals_other566": true,
+  "train_validation_overlap": 0,
+  "smoke_subset": false
+ },
+ "local": {
+  "manifest_file": "evidence/original_local_raw_clahe_detail_f2_s42.json",
+  "manifest_sha256": "eb783f6b3e11a7c3978097cd6f76f6b70fffee4ec97da3c6ccfda41081ba24b8",
+  "manifest_remote": "<artifact-store>/<project>/detect_20261106/oof_bank5/A/phaseA/artifacts/original_local_raw_clahe_detail_f2_s42/manifest.json",
+  "sibling_map_remote": "<artifact-store>/<project>/detect_20261106/oof_bank5/A/phaseA/artifacts/original_local_raw_clahe_detail_f2_s42/oof_prob.npz",
+  "dataset_map": {
+   "dataset": "<kaggle-user>/filament-archm2f-oof-1108",
+   "bytes": 3826569,
+   "denominator": 255,
+   "filename": "local.bin",
+   "md5": "aef9755065b739d6b87ba2a99568384c",
+   "sha256": "126008cca779b238854c2eca1313a915f948e3780e6806031eeb1aaff33cb660"
+  },
+  "drive_sibling_md5_equals_dataset_md5": true,
+  "validation_equals_fold2": true,
+  "train_equals_other566": true,
+  "train_validation_overlap": 0,
+  "smoke_subset": false
+ },
+ "m2f_public": {
+  "protocol_file": "evidence/archm2f_fold2_MF_protocol.json",
+  "protocol_sha256": "98baa4e4e8e25c7a0253544247e3c7aa791739695f4b3e4f62dc5c617180384c",
+  "dataset_map": {
+   "dataset": "<kaggle-user>/filament-archm2f-oof-1108",
+   "bytes": 15274239,
+   "denominator": 510,
+   "filename": "m2f_public.bin",
+   "md5": "2ab53c9ea03dab2d077b823bb057878a",
+   "sha256": "8b51bbbfb6ae913d41593e763b2ee1b1eed68d7844464f46ad2759c4697c1d4d"
+  },
+  "fold": 2,
+  "epochs": 12,
+  "validation_equals_fold2": true,
+  "train_equals_other566": true,
+  "train_validation_overlap": 0
+ },
+ "checked_at": "2026-11-11 13:40:26 JST"
+}

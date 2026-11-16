@@ -1,0 +1,241 @@
+{
+ "name": "ms125d4",
+ "label": "Mask2Former crop-1536, 8-view + 1.25x scale 8-view; refit selector and repair; 5-fold U-Nets",
+ "csv": {
+  "sha256": "c73318cca158dca7f0b9688de9a4fbc49ef0981e76c0acae140bdf8a589f950c",
+  "rows": 1139
+ },
+ "submission": {
+  "ref": 58368642,
+  "date_utc": "2026-11-15 04:21",
+  "public_score": "0.40"
+ },
+ "weight": 0.55,
+ "cutoff": 0.35,
+ "selector": {
+  "file": "selector_ms125d4.json",
+  "sha256": "944a4ccc200c37caf7c2c7470e99056225fde37a394650debbe78028c2d6d4e8"
+ },
+ "regressor": {
+  "file": "regressor_ms125d4.pkl",
+  "sha256": "94fbd16e7bf0a36cf599d776210980a3e166025181a893b3055d17e1ba0481ee"
+ },
+ "unet": "fold5mean",
+ "sets": 2,
+ "archives": [
+  {
+   "name": "NEW0_0",
+   "fold": 0,
+   "set": 0,
+   "run_id": "c1536_f0_d4",
+   "file": "mf_c1536_f0_d4_test.npz",
+   "bytes": 14559690,
+   "sha256": "f9eefef116cf7f8631ee944a62bbfdc86619d79705ca40c951bd08be62c5aa31",
+   "model": "mfmodel_c1536_f0.safetensors",
+   "size": 2048,
+   "views": [
+    "id",
+    "rot90",
+    "rot180",
+    "rot270",
+    "flipW",
+    "flipW_rot90",
+    "flipW_rot180",
+    "flipW_rot270"
+   ]
+  },
+  {
+   "name": "NEW0_1",
+   "fold": 0,
+   "set": 1,
+   "run_id": "c1536s125d4_f0",
+   "file": "mf_c1536s125d4_f0_test.npz",
+   "bytes": 14529540,
+   "sha256": "55d538e899dda6716d82607a35bb2c2e7c906ea6f5079ca920d7f64e8067db78",
+   "model": "mfmodel_c1536_f0.safetensors",
+   "size": 2560,
+   "views": [
+    "id",
+    "rot90",
+    "rot180",
+    "rot270",
+    "flipW",
+    "flipW_rot90",
+    "flipW_rot180",
+    "flipW_rot270"
+   ]
+  },
+  {
+   "name": "NEW1_0",
+   "fold": 1,
+   "set": 0,
+   "run_id": "c1536_f1_d4",
+   "file": "mf_c1536_f1_d4_test.npz",
+   "bytes": 14520154,
+   "sha256": "de8eb284cd173199a1bf8109052bfecad663640855960226b023403969a6ff23",
+   "model": "mfmodel_c1536_f1.safetensors",
+   "size": 2048,
+   "views": [
+    "id",
+    "rot90",
+    "rot180",
+    "rot270",
+    "flipW",
+    "flipW_rot90",
+    "flipW_rot180",
+    "flipW_rot270"
+   ]
+  },
+  {
+   "name": "NEW1_1",
+   "fold": 1,
+   "set": 1,
+   "run_id": "c1536s125d4_f1",
+   "file": "mf_c1536s125d4_f1_test.npz",
+   "bytes": 14642008,
+   "sha256": "d11f2e7d5c93b13fa10da633cffdae8f49fd56598d61e87da1ee6c62a0214d7e",
+   "model": "mfmodel_c1536_f1.safetensors",
+   "size": 2560,
+   "views": [
+    "id",
+    "rot90",
+    "rot180",
+    "rot270",
+    "flipW",
+    "flipW_rot90",
+    "flipW_rot180",
+    "flipW_rot270"
+   ]
+  },
+  {
+   "name": "NEW2_0",
+   "fold": 2,
+   "set": 0,
+   "run_id": "w3_c1536_4k_d4",
+   "file": "mf_w3_c1536_4k_d4_test.npz",
+   "bytes": 15543651,
+   "sha256": "a58b708a93f57940aa9cbf618132f1f620c890394fda49cfd7d61e6bbf4f86b5",
+   "model": "mfmodel_c1536_f2.safetensors",
+   "size": 2048,
+   "views": [
+    "id",
+    "rot90",
+    "rot180",
+    "rot270",
+    "flipW",
+    "flipW_rot90",
+    "flipW_rot180",
+    "flipW_rot270"
+   ]
+  },
+  {
+   "name": "NEW2_1",
+   "fold": 2,
+   "set": 1,
+   "run_id": "c1536s125d4_f2",
+   "file": "mf_c1536s125d4_f2_test.npz",
+   "bytes": 15256132,
+   "sha256": "ddf04f12c3cd7c86777b27d2de5994ec2b3f5a082a5da4aa6aca8d8db74b5baa",
+   "model": "mfmodel_c1536_f2.safetensors",
+   "size": 2560,
+   "views": [
+    "id",
+    "rot90",
+    "rot180",
+    "rot270",
+    "flipW",
+    "flipW_rot90",
+    "flipW_rot180",
+    "flipW_rot270"
+   ]
+  },
+  {
+   "name": "NEW3_0",
+   "fold": 3,
+   "set": 0,
+   "run_id": "c1536_f3_d4",
+   "file": "mf_c1536_f3_d4_test.npz",
+   "bytes": 14684019,
+   "sha256": "563c9e41bf677cf0a1b4c2f25cc38f302a973ff8a5894d6a727463a053972a69",
+   "model": "mfmodel_c1536_f3.safetensors",
+   "size": 2048,
+   "views": [
+    "id",
+    "rot90",
+    "rot180",
+    "rot270",
+    "flipW",
+    "flipW_rot90",
+    "flipW_rot180",
+    "flipW_rot270"
+   ]
+  },
+  {
+   "name": "NEW3_1",
+   "fold": 3,
+   "set": 1,
+   "run_id": "c1536s125d4_f3",
+   "file": "mf_c1536s125d4_f3_test.npz",
+   "bytes": 14511636,
+   "sha256": "dbd388de8500765ea11efaf3f0bfb9a2872d344b662ec6730ae37b29e30d947c",
+   "model": "mfmodel_c1536_f3.safetensors",
+   "size": 2560,
+   "views": [
+    "id",
+    "rot90",
+    "rot180",
+    "rot270",
+    "flipW",
+    "flipW_rot90",
+    "flipW_rot180",
+    "flipW_rot270"
+   ]
+  },
+  {
+   "name": "NEW4_0",
+   "fold": 4,
+   "set": 0,
+   "run_id": "c1536_f4_d4",
+   "file": "mf_c1536_f4_d4_test.npz",
+   "bytes": 14836383,
+   "sha256": "795c9aa24962bc58fb69a4e67a5e21905463a068f03e9f8fd76c1ddf9cd1e140",
+   "model": "mfmodel_c1536_f4.safetensors",
+   "size": 2048,
+   "views": [
+    "id",
+    "rot90",
+    "rot180",
+    "rot270",
+    "flipW",
+    "flipW_rot90",
+    "flipW_rot180",
+    "flipW_rot270"
+   ]
+  },
+  {
+   "name": "NEW4_1",
+   "fold": 4,
+   "set": 1,
+   "run_id": "c1536s125d4_f4",
+   "file": "mf_c1536s125d4_f4_test.npz",
+   "bytes": 14771034,
+   "sha256": "641b712d7bad750b4fa07fb2a5d4eabd799eed23ad211e4f650805769d91bf1c",
+   "model": "mfmodel_c1536_f4.safetensors",
+   "size": 2560,
+   "views": [
+    "id",
+    "rot90",
+    "rot180",
+    "rot270",
+    "flipW",
+    "flipW_rot90",
+    "flipW_rot180",
+    "flipW_rot270"
+   ]
+  }
+ ],
+ "cv": {
+  "pq_all707": 0.457156,
+  "instrument": "host CPU"
+ }
+}

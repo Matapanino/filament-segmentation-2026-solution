@@ -1,0 +1,390 @@
+{
+ "files": {
+  "bank_loader.py": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/bank_loader.py",
+   "sha256": "f5ac4d60768651ff0affae71e25f70d5595b7db993e80f49c3caf2180100a495",
+   "verbatim": true
+  },
+  "context_features.py": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/context_features.py",
+   "sha256": "313e87b790d62e00316dbaff73f8521bc07c0af6c8bb0349ea3f74eb2f0a191e",
+   "verbatim": true
+  },
+  "count_plan.py": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/count_plan.py",
+   "sha256": "edde4b1618cd79a0fc3728b65d544df8b43817ca46b8c44ad9f78927ba8f69e4",
+   "verbatim": true
+  },
+  "load_inputs.py": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/load_inputs.py",
+   "sha256": "e8dd108b505b0bb95c8f5ed19933aa41e4d3e08d602142cdfd9541406ceab2d5",
+   "verbatim": true
+  },
+  "mf_features.py": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/mf_features.py",
+   "sha256": "4ec5e961c27d696606ba4c1a0239b1dd6e2534edda293e536e5fb8d93ae35a85",
+   "verbatim": true
+  },
+  "mr.py": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/mr.py",
+   "sha256": "55c34767bcd25ae7bc8a064122b1b959aaa33d2949aa7276acdc43551d27bf76",
+   "verbatim": true
+  },
+  "neigh.py": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/neigh.py",
+   "sha256": "cf03f7a18948c9f29728d6b24268d67f7fa784b5d0553cf9b171f099af779297",
+   "verbatim": true
+  },
+  "pc.py": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/pc.py",
+   "sha256": "8bfadb427d89c7d4f73127c8963dd4868fb243cb06c8963d84b353462d0e7721",
+   "verbatim": true
+  },
+  "pcand.py": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/pcand.py",
+   "sha256": "87e96105ccc78adc0cf690547cc3f6f3e0b5e2d61bf899a6f118e7731540e201",
+   "verbatim": true
+  },
+  "pcand2.py": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/pcand2.py",
+   "sha256": "d85f5ff6f2b9e868c8ab172ade4a8068c271c5822c8d191f3b9b5fbbd30c72bc",
+   "verbatim": true
+  },
+  "pcand_v1_reference.py": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/pcand_v1_reference.py",
+   "sha256": "87e96105ccc78adc0cf690547cc3f6f3e0b5e2d61bf899a6f118e7731540e201",
+   "verbatim": true
+  },
+  "pmerge.py": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/pmerge.py",
+   "sha256": "663ba9117d4d4946bf4de987435652113e62f0fbca4577a122526fca43573d14",
+   "verbatim": true
+  },
+  "pnat.py": {
+   "source": "<workspace>/filament/detect_20261111/pnat_crossfold/pnat.py",
+   "sha256": "dcfb2ce0f2c8a15c6c541bc935811a185d7fc4f5fc69df5e15eda36d3c37d038",
+   "verbatim": true
+  },
+  "presel.py": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/presel.py",
+   "sha256": "822c8b492949c23911ab8ce1231fd877bb717120109ae40d447fbac6fd49421d",
+   "verbatim": true
+  },
+  "refine_ops.py": {
+   "source": "<workspace>/filament/detect_20261111/pnat_crossfold/refine_ops.py",
+   "sha256": "2fbd926ac78eb6b5aeebe1eb0be944988ba12af6074e784668a4c2b389bd9337",
+   "verbatim": true
+  },
+  "rules.py": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/rules.py",
+   "sha256": "7ec706d730166a52bd557f3e6a935c76e045278f123424c78a30dbceaa6b1fbf",
+   "verbatim": true
+  },
+  "run_tests.py": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/run_tests.py",
+   "sha256": "bda9b663de29eca9c09964f65c55354c03850a14c3802a737eb75137a67826da",
+   "verbatim": true
+  },
+  "spatial.py": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/spatial.py",
+   "sha256": "e5333f02d83059ccd2e67e7332f528cef08063fd72da473555eca519f4b773a9",
+   "verbatim": true
+  },
+  "tests/test_context_features.py": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/tests/test_context_features.py",
+   "sha256": "2d8afd6aa58a71293bb27ad1b7926967a61c78a6cffa112840132fd21117148a",
+   "verbatim": true
+  },
+  "tests/test_counts.py": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/tests/test_counts.py",
+   "sha256": "b85947ecb5724a5972f89b397cc497cbc44ad4067c6b70f6f6c6f992a4e47e72",
+   "verbatim": true
+  },
+  "tests/test_mf_features.py": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/tests/test_mf_features.py",
+   "sha256": "8211324b7a47b1674f00b8d2e75e224f94d3b1f29db31d2048fcd0151726df58",
+   "verbatim": true
+  },
+  "tests/test_mr.py": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/tests/test_mr.py",
+   "sha256": "b55267ad1cdc5c513914bd1f75005a66f8d0fd381beeb7bc1ffee7992c0ff28d",
+   "verbatim": true
+  },
+  "tests/test_neigh.py": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/tests/test_neigh.py",
+   "sha256": "05d56a7804a7ab94d14baab4ba86332d6d67d37f38dec165ec6f3f254b51e9c8",
+   "verbatim": true
+  },
+  "tests/test_pcand.py": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/tests/test_pcand.py",
+   "sha256": "1ca4690e73f828f1b03cbbec7a0621bfe7cd937b51719b6df950589d693095db",
+   "verbatim": true
+  },
+  "tests/test_pcand2.py": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/tests/test_pcand2.py",
+   "sha256": "cf63804d21334691479edc05379ad959cd98228ead695a9b3b3b7143ff97a1c3",
+   "verbatim": true
+  },
+  "tests/test_pmerge.py": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/tests/test_pmerge.py",
+   "sha256": "425990500c7d1c042677ae537a97a2bffac3da47cdd4a284db1fb36de5652919",
+   "verbatim": true
+  },
+  "tests/test_pnat.py": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/tests/test_pnat.py",
+   "sha256": "6e23c8133edb9d925fdd9c7eb6c7dc989b4a8073a8b1fe8af12fb9370c4b2f5d",
+   "verbatim": true
+  },
+  "tests/test_presel.py": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/tests/test_presel.py",
+   "sha256": "ae7ae129166b63002e3cd3a1a1d9fc5cbb367825cd96fd7d749ed87582d71b06",
+   "verbatim": true
+  },
+  "tests/test_spatial.py": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/tests/test_spatial.py",
+   "sha256": "7543010d01a0e793ccdccadbe8beb2b76c77805b60fc80958829dbd3d2036509",
+   "verbatim": true
+  },
+  "tests/test_pc.py": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/tests/test_pc.py",
+   "sha256": "8a1c726613f79d669d74170bed7f1e47b30411e3c0a64cd2b49e7699b88b75bc",
+   "verbatim": true
+  },
+  "frozen/contract.py": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/frozen/contract.py",
+   "sha256": "bcc86318ca1bd81cf0a565353bb2c6d648e794b4ed16408f7e31055bf6197b11",
+   "verbatim": true
+  },
+  "frozen/eval/filseg/__init__.py": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/frozen/eval/filseg/__init__.py",
+   "sha256": "150dd4dc812e96a70b6410fb20adc73a1f64bffe22b56d07192f5e5e15472d27",
+   "verbatim": true
+  },
+  "frozen/eval/filseg/acceptance.py": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/frozen/eval/filseg/acceptance.py",
+   "sha256": "3c719308517eab5ee5b55fb39613e2965aaadae03da77ac5ef7352a21f3b9b7e",
+   "verbatim": true
+  },
+  "frozen/eval/filseg/cli.py": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/frozen/eval/filseg/cli.py",
+   "sha256": "2502b1516370a54d227f33d9c6c8bab1e76132142a59abdae77798dbb32023b7",
+   "verbatim": true
+  },
+  "frozen/eval/filseg/coco_io.py": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/frozen/eval/filseg/coco_io.py",
+   "sha256": "69d0aaa351c6753b412d111251b0370965632306226b88c85f12a34ea5ec8a81",
+   "verbatim": true
+  },
+  "frozen/eval/filseg/compfeat.py": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/frozen/eval/filseg/compfeat.py",
+   "sha256": "56483bafa6094f631e19b1b9534a0deebc1a14794b017b36dd22a250dbc7e7f8",
+   "verbatim": true
+  },
+  "frozen/eval/filseg/data/test_filenames.txt": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/frozen/eval/filseg/data/test_filenames.txt",
+   "sha256": "1f7bdacc526384386e4ae4fc9d33f0a194cebf36e3634d587eb80e961bf485be",
+   "verbatim": true
+  },
+  "frozen/eval/filseg/evaluate.py": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/frozen/eval/filseg/evaluate.py",
+   "sha256": "45964e22d1b707689a9523d58f631d4f70f74f211038165380f60be0f280ee49",
+   "verbatim": true
+  },
+  "frozen/eval/filseg/guard.py": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/frozen/eval/filseg/guard.py",
+   "sha256": "881dfdcc29998dc43a178b82d98ae2081de57e8e0919ca03458b37b861a2fa6e",
+   "verbatim": true
+  },
+  "frozen/eval/filseg/instancing.py": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/frozen/eval/filseg/instancing.py",
+   "sha256": "5f5676e7fa811d89127bbf51812f7050f9b7cb5c3ad5e836731051f2498c8842",
+   "verbatim": true
+  },
+  "frozen/eval/filseg/maps.py": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/frozen/eval/filseg/maps.py",
+   "sha256": "498c5b7c65409d5680a7e33a0c921da5ab300f72ed4c7a78d3c6761d557b17c4",
+   "verbatim": true
+  },
+  "frozen/eval/filseg/msiou.py": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/frozen/eval/filseg/msiou.py",
+   "sha256": "71b3d2b1e0cae716933044a2bb8fc897c6faf04eead0d6d7d1c274eb486a906b",
+   "verbatim": true
+  },
+  "frozen/eval/filseg/postproc.py": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/frozen/eval/filseg/postproc.py",
+   "sha256": "99fea8fffd3bc88903bee02ea17982fc051f81bc3c6920c72a10a6de84a56dc4",
+   "verbatim": true
+  },
+  "frozen/eval/filseg/report.py": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/frozen/eval/filseg/report.py",
+   "sha256": "6ebb4893efc9634e35d1283b7c6b55e99ebfb7514c13978793157e029871cf4e",
+   "verbatim": true
+  },
+  "frozen/eval/filseg/splits.py": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/frozen/eval/filseg/splits.py",
+   "sha256": "a010ad4fd4554f743922d8e761231ab5692206516dabffb78d27357fc9487326",
+   "verbatim": true
+  },
+  "frozen/eval/filseg/vendor/__init__.py": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/frozen/eval/filseg/vendor/__init__.py",
+   "sha256": "0a25e2882d5da0340857c8a3e8faa1883c050d0f6011e04e1244d4b414ab0778",
+   "verbatim": true
+  },
+  "frozen/eval/filseg/vendor/miou.py": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/frozen/eval/filseg/vendor/miou.py",
+   "sha256": "cdc8ae8666ecde935d06a1936803eb5886e0d2fc2a9f453b189a9683a9ec848e",
+   "verbatim": true
+  },
+  "frozen/eval/make_time_folds.py": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/frozen/eval/make_time_folds.py",
+   "sha256": "ab82ac5b7e5a8b931bac50cd511a76c3f4318f30880fc46dcc3d872a3b26dcd9",
+   "verbatim": true
+  },
+  "frozen/eval/pq_metric.py": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/frozen/eval/pq_metric.py",
+   "sha256": "77e5ec61e1e05ec63a75fb1edf12832f383fb2eff0723aef02f2982f4c7320b4",
+   "verbatim": true
+  },
+  "frozen/eval/quality_features.py": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/frozen/eval/quality_features.py",
+   "sha256": "a52a0a5162ac0ba1c57d6e3e4a862b4e0d1c2747b061efef96f761a19e30b981",
+   "verbatim": true
+  },
+  "frozen/evaluate.py": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/frozen/evaluate.py",
+   "sha256": "79c749f97b3805abe3a2aa2304134315a8d8e65e7bbe20ca77c98726228a72e4",
+   "verbatim": true
+  },
+  "frozen/evidence/fold_table.json": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/frozen/evidence/fold_table.json",
+   "sha256": "2a2451b3d4d9420137ac3e9c6ecd97a7741100ecf35f8accdc0d2140138118f8",
+   "verbatim": true
+  },
+  "frozen/evidence/mf_inputs.json": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/frozen/evidence/mf_inputs.json",
+   "sha256": "00f76fe3df7f5d4a8b7cd2de059f6d77097317b8c421dfdc008d828160cc82ac",
+   "verbatim": true
+  },
+  "frozen/evidence/mf_result.json": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/frozen/evidence/mf_result.json",
+   "sha256": "a10a2cee5a2137b04e7adcaee1094d4ae473485397e3ac88094dfb9c9284189a",
+   "verbatim": true
+  },
+  "frozen/evidence/triples_protocol.json": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/frozen/evidence/triples_protocol.json",
+   "sha256": "259349a9fe927120ed8d506ae41210dafe22fc062a47cc2ef0558033da046f75",
+   "verbatim": true
+  },
+  "frozen/evidence/triples_result.json": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/frozen/evidence/triples_result.json",
+   "sha256": "35872f3c0f46abd3880ab8965590f584d2561c84f1cafd93dc8d902b315e66b0",
+   "verbatim": true
+  },
+  "frozen/protocol.json": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/frozen/protocol.json",
+   "sha256": "a4e2cb65d62d3b2176b9f5c280524b60f800b661e9e6d5a15bd5ee32a7f3a57e",
+   "verbatim": true
+  },
+  "frozen/results/eval/MF_remote_manifest_verification.json": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/frozen/results/eval/MF_remote_manifest_verification.json",
+   "sha256": "b626f44759076808db9009ab58cadec66553cdb43c809ff545ddca05ef86527a",
+   "verbatim": true
+  },
+  "frozen/revision.py": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/frozen/revision.py",
+   "sha256": "357557588aa64d9e1d1fad7f743931757be156227c5d269b2fd1a13907a79feb",
+   "verbatim": true
+  },
+  "support/bank_inventory.json": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/support/bank_inventory.json",
+   "sha256": "816da28e696fa001016ed459c051a63b115f4967b61bc66172eecc822212bfb6",
+   "verbatim": true
+  },
+  "support/confirmation_inputs.json": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/support/confirmation_inputs.json",
+   "sha256": "e54c4d27f31dfeee019ae96ff11b0defcd8fd8499e10a276b414ad21b22eb06b",
+   "verbatim": true
+  },
+  "support/confirmation_protocol.json": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/support/confirmation_protocol.json",
+   "sha256": "7db3e2c6f51dd418ecd8bc33b3c8255cf55627febffed9fff3a4f5d0dbe41e64",
+   "verbatim": true
+  },
+  "support/confirmation_worker.py": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/support/confirmation_worker.py",
+   "sha256": "4a024da1e85f18cbe6e8ec1ee12ea606eacf5c6d5d1c3a98b411bbedf8c88b05",
+   "verbatim": true
+  },
+  "support/core.py": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/support/core.py",
+   "sha256": "604b28f331515f56404faf04e3e5fd587b094c91b510c0e582e9f35327a80095",
+   "verbatim": true
+  },
+  "support/instrument_source.py": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/support/instrument_source.py",
+   "sha256": "af10e93666331829e4d576426754a81a492353f568489c70d59821360fc4bdd4",
+   "verbatim": true
+  },
+  "evidence/archm2f_fold2_MF_protocol.json": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/evidence/archm2f_fold2_MF_protocol.json",
+   "sha256": "98baa4e4e8e25c7a0253544247e3c7aa791739695f4b3e4f62dc5c617180384c",
+   "verbatim": true
+  },
+  "evidence/fold2_map_provenance.json": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/evidence/fold2_map_provenance.json",
+   "sha256": "9ce5b871112d4f17d3f18fc83bd6eb4f583ce0354c64ccc00d162dbee88cb636",
+   "verbatim": true
+  },
+  "evidence/original_full_raw_1024_f2_s42.json": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/evidence/original_full_raw_1024_f2_s42.json",
+   "sha256": "e59ae5d9c99d7a5ed486890ea656541c3951b6efb956f185a608a4df7667a0ed",
+   "verbatim": true
+  },
+  "evidence/original_local_raw_clahe_detail_f2_s42.json": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/evidence/original_local_raw_clahe_detail_f2_s42.json",
+   "sha256": "eb783f6b3e11a7c3978097cd6f76f6b70fffee4ec97da3c6ccfda41081ba24b8",
+   "verbatim": true
+  },
+  "reference/pcombo_counts.json": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/results/counts.json",
+   "sha256": "291ef95a415f361562fbd7927b9e5def051a7a2c6a7505ee673faf03a08820a6",
+   "verbatim": true
+  },
+  "reference/pcombo_keeps.json": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/results/keeps.json",
+   "sha256": "14017f61f9f5a69a7d85f298e7dfadaaa12929c518aeabad43571cf29ad2a30f",
+   "verbatim": true
+  },
+  "reference/pcombo_selectors.json": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/results/selectors.json",
+   "sha256": "822702561ae4750ded14ed0646c8d6a5d9407e41922ab76399fa93d8976d9ffe",
+   "verbatim": true
+  },
+  "reference/pcombo_fits.json": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/results/fits.json",
+   "sha256": "c2dfc028ed443070bc3508509d26621fcd9ade6dd9273e00345bad3f92061e12",
+   "verbatim": true
+  },
+  "reference/pcombo_science_result.json": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/results/science_result.json",
+   "sha256": "e9bf864b4fcba5df59c0644de14012c69eb88e2d293f66111cd6f0e20c60331b",
+   "verbatim": true
+  },
+  "reference/pcombo_kaggle_receipts.json": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/results/kaggle_receipts.json",
+   "sha256": "185737e8e28ef9572b56d5b8aefa4fa02e0a5c7833016848d6f476f4960b3646",
+   "verbatim": true
+  },
+  "reference/pcombo_audit.json": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/results/audit.json",
+   "sha256": "13ee32b8ee69bce2c97c53bd5cb7f1dc3fe88b5d04ef14efa95e639d108444e9",
+   "verbatim": true
+  },
+  "reference/pcombo_decision.json": {
+   "source": "<workspace>/filament/detect_20261112/pcombo/results/decision.json",
+   "sha256": "34228d1f785686154f87c08e4053924cc7d95137ed2c354c211f0f84bf983d59",
+   "verbatim": true
+  }
+ },
+ "note": "Byte-identical copies of the pcombo lane (pnat.py/refine_ops.py: the P-nat crossfold source recorded by pcombo); reference/pcombo_*.json equal pcombo results and its Kaggle receipts."
+}

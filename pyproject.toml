@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "filseg"
+version = "0.2.0"
+description = "Solar filament instance segmentation — IEEE BigData Cup 2026 (Kaggle filament-segmentation-2026)"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.26",
+    "scipy>=1.11",
+    "pycocotools>=2.0.7",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+filseg = ["data/*.txt", "reproduction/data/*.json", "reproduction/data/*.csv", "reproduction/data/chain/*", "reproduction/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

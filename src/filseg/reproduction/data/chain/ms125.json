@@ -1,0 +1,211 @@
+{
+ "name": "ms125",
+ "label": "Mask2Former crop-1536, 8-view + 1.25x scale (2 views); refit selector and repair; 5-fold U-Nets (final)",
+ "csv": {
+  "sha256": "f05ea0d7b6fc8f9345586b193c2866cd654f7fad1b838d609e41af5f46de80ed",
+  "rows": 1134
+ },
+ "submission": {
+  "ref": 58367893,
+  "date_utc": "2026-11-15 03:54",
+  "public_score": "0.40"
+ },
+ "weight": 0.55,
+ "cutoff": 0.35,
+ "selector": {
+  "file": "selector_ms125.json",
+  "sha256": "67fd2532aab75c4a19526bf1262d1552d1c49f57719ce26678b7f395713d2a2e"
+ },
+ "regressor": {
+  "file": "regressor_ms125.pkl",
+  "sha256": "0558c3c9ba753a310f4d3b808819e3768b1d2447d57725b18de8f99c0542f2b0"
+ },
+ "unet": "fold5mean",
+ "sets": 2,
+ "archives": [
+  {
+   "name": "NEW0_0",
+   "fold": 0,
+   "set": 0,
+   "run_id": "c1536_f0_d4",
+   "file": "mf_c1536_f0_d4_test.npz",
+   "bytes": 14559690,
+   "sha256": "f9eefef116cf7f8631ee944a62bbfdc86619d79705ca40c951bd08be62c5aa31",
+   "model": "mfmodel_c1536_f0.safetensors",
+   "size": 2048,
+   "views": [
+    "id",
+    "rot90",
+    "rot180",
+    "rot270",
+    "flipW",
+    "flipW_rot90",
+    "flipW_rot180",
+    "flipW_rot270"
+   ]
+  },
+  {
+   "name": "NEW0_1",
+   "fold": 0,
+   "set": 1,
+   "run_id": "c1536s125_f0",
+   "file": "mf_c1536s125_f0_test.npz",
+   "bytes": 13179811,
+   "sha256": "0b4192bf360ae57f0672ab8561d2cb027b836edbf16918709c421a7de134207b",
+   "model": "mfmodel_c1536_f0.safetensors",
+   "size": 2560,
+   "views": [
+    "id",
+    "flipW"
+   ]
+  },
+  {
+   "name": "NEW1_0",
+   "fold": 1,
+   "set": 0,
+   "run_id": "c1536_f1_d4",
+   "file": "mf_c1536_f1_d4_test.npz",
+   "bytes": 14520154,
+   "sha256": "de8eb284cd173199a1bf8109052bfecad663640855960226b023403969a6ff23",
+   "model": "mfmodel_c1536_f1.safetensors",
+   "size": 2048,
+   "views": [
+    "id",
+    "rot90",
+    "rot180",
+    "rot270",
+    "flipW",
+    "flipW_rot90",
+    "flipW_rot180",
+    "flipW_rot270"
+   ]
+  },
+  {
+   "name": "NEW1_1",
+   "fold": 1,
+   "set": 1,
+   "run_id": "c1536s125_f1",
+   "file": "mf_c1536s125_f1_test.npz",
+   "bytes": 13240051,
+   "sha256": "f5c3e5121acd668fc4ecdf64ab67672f5e90556342dc581c95247eef318d3b20",
+   "model": "mfmodel_c1536_f1.safetensors",
+   "size": 2560,
+   "views": [
+    "id",
+    "flipW"
+   ]
+  },
+  {
+   "name": "NEW2_0",
+   "fold": 2,
+   "set": 0,
+   "run_id": "w3_c1536_4k_d4",
+   "file": "mf_w3_c1536_4k_d4_test.npz",
+   "bytes": 15543651,
+   "sha256": "a58b708a93f57940aa9cbf618132f1f620c890394fda49cfd7d61e6bbf4f86b5",
+   "model": "mfmodel_c1536_f2.safetensors",
+   "size": 2048,
+   "views": [
+    "id",
+    "rot90",
+    "rot180",
+    "rot270",
+    "flipW",
+    "flipW_rot90",
+    "flipW_rot180",
+    "flipW_rot270"
+   ]
+  },
+  {
+   "name": "NEW2_1",
+   "fold": 2,
+   "set": 1,
+   "run_id": "c1536s125_f2",
+   "file": "mf_c1536s125_f2_test.npz",
+   "bytes": 14068990,
+   "sha256": "e934bc841a1c6474664bd9859e6f9f5ccdc4a63930b7e5d6416bbbde76443f7f",
+   "model": "mfmodel_c1536_f2.safetensors",
+   "size": 2560,
+   "views": [
+    "id",
+    "flipW"
+   ]
+  },
+  {
+   "name": "NEW3_0",
+   "fold": 3,
+   "set": 0,
+   "run_id": "c1536_f3_d4",
+   "file": "mf_c1536_f3_d4_test.npz",
+   "bytes": 14684019,
+   "sha256": "563c9e41bf677cf0a1b4c2f25cc38f302a973ff8a5894d6a727463a053972a69",
+   "model": "mfmodel_c1536_f3.safetensors",
+   "size": 2048,
+   "views": [
+    "id",
+    "rot90",
+    "rot180",
+    "rot270",
+    "flipW",
+    "flipW_rot90",
+    "flipW_rot180",
+    "flipW_rot270"
+   ]
+  },
+  {
+   "name": "NEW3_1",
+   "fold": 3,
+   "set": 1,
+   "run_id": "c1536s125_f3",
+   "file": "mf_c1536s125_f3_test.npz",
+   "bytes": 13296444,
+   "sha256": "9b985aa84dd415589c3507f428a5a5e11a926862b2efd54f3e9d9f82bbf3e64a",
+   "model": "mfmodel_c1536_f3.safetensors",
+   "size": 2560,
+   "views": [
+    "id",
+    "flipW"
+   ]
+  },
+  {
+   "name": "NEW4_0",
+   "fold": 4,
+   "set": 0,
+   "run_id": "c1536_f4_d4",
+   "file": "mf_c1536_f4_d4_test.npz",
+   "bytes": 14836383,
+   "sha256": "795c9aa24962bc58fb69a4e67a5e21905463a068f03e9f8fd76c1ddf9cd1e140",
+   "model": "mfmodel_c1536_f4.safetensors",
+   "size": 2048,
+   "views": [
+    "id",
+    "rot90",
+    "rot180",
+    "rot270",
+    "flipW",
+    "flipW_rot90",
+    "flipW_rot180",
+    "flipW_rot270"
+   ]
+  },
+  {
+   "name": "NEW4_1",
+   "fold": 4,
+   "set": 1,
+   "run_id": "c1536s125_f4",
+   "file": "mf_c1536s125_f4_test.npz",
+   "bytes": 13528025,
+   "sha256": "d1d6f4a454ee5659f367fbc8cb1ad220249d8e1ff1cff23fe54bc18e6eb05aab",
+   "model": "mfmodel_c1536_f4.safetensors",
+   "size": 2560,
+   "views": [
+    "id",
+    "flipW"
+   ]
+  }
+ ],
+ "cv": {
+  "pq_all707": 0.456581,
+  "instrument": "host CPU"
+ }
+}

@@ -1,0 +1,67 @@
+{
+ "scope": "filament-mfhires-1113-gpu-train",
+ "archives": {
+  "mf_identity_fold0.npz": {
+   "bytes": 14611048,
+   "sha256": "368585a4c0044cefe3e234907d8a2c0d7414ccb57c71b7ce15afcfb28ed40ccd",
+   "md5": "c6974091aacbba45658a96dfd3f71ffd"
+  },
+  "mf_tiled_fold0.npz": {
+   "bytes": 31100657,
+   "sha256": "392124466e73d4c2e078753a7bd5eca14cef506d4686f244ad463cc1e427591d",
+   "md5": "1c0ebcebd6e75c5ef8e55b68f7a2af63"
+  },
+  "mf_identity_fold1.npz": {
+   "bytes": 15399288,
+   "sha256": "37c3f6e16d320bf371690541101e9c8bdee58477ddb84ae6d425e10744eaead1",
+   "md5": "783fef75c68542bbd5f5b762181d799f"
+  },
+  "mf_tiled_fold1.npz": {
+   "bytes": 28901494,
+   "sha256": "eb84d485f0f35d32465a4cac1efff10994bb1823c8b018f743066b53c159072f",
+   "md5": "20bbad2b99441e3c2512176ee7d03430"
+  },
+  "mf_identity_fold2.npz": {
+   "bytes": 15289198,
+   "sha256": "a0b018dfb8072901cd165a1f49dd2f4119856369b56ce71414ab1d5ad2a8ac0f",
+   "md5": "0e9202052c90ca0166b925d2237e2060"
+  },
+  "mf_tiled_fold2.npz": {
+   "bytes": 28936459,
+   "sha256": "f8b5e9c37a345436a286d2f5fa524eab367c0480c3fb04a4a0c883c8e3e0a1ee",
+   "md5": "c98d589d5f9409d0c0c395ababf89d53"
+  },
+  "mf_identity_fold3.npz": {
+   "bytes": 12971731,
+   "sha256": "ef80c4e920dcc617ad6022bc5fd1d342312bb8b9801d90d6de0ba63540db8585",
+   "md5": "faafb19ab71357f8cb9ca6496dbe3f8a"
+  },
+  "mf_tiled_fold3.npz": {
+   "bytes": 28078415,
+   "sha256": "5cb4b5d75b0f0d71de78e27bf6f61a939cc9a2a43c4ae19e616163cde191a8c1",
+   "md5": "0b0c73b4dea5e8b83f0e72a3e61e213f"
+  },
+  "mf_identity_fold4.npz": {
+   "bytes": 15292484,
+   "sha256": "1781dba5f7a38e5068adda1b26761150c1f5c245988a134f2047d41f45adc308",
+   "md5": "e3f0491d940c9bcafdb0d96702193a61"
+  },
+  "mf_tiled_fold4.npz": {
+   "bytes": 27932701,
+   "sha256": "5b200c6d7aaddefd0dcebbb8a76daa645af93c8ef26bd4f416009b94252fe498",
+   "md5": "b049069b5e2c6f03918504f86a7fbb7d"
+  }
+ },
+ "R0a": true,
+ "R0b": true,
+ "producer_split": true,
+ "stage0_passed": true,
+ "killed": false,
+ "ap_pooled707": {
+  "a": 0.6939170511641892,
+  "b": 0.6229359221644933,
+  "id": 0.6941483129694778,
+  "ab_sum": 0.6984499915154297,
+  "aid_sum": 0.6949197425237871
+ }
+}

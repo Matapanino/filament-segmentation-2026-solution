@@ -1,0 +1,326 @@
+{
+ "name": "ms4",
+ "label": "Mask2Former crop-1536, 8-view + 1.25x 8-view + 1.5x 4-view; refit selector and repair; 5-fold U-Nets",
+ "csv": {
+  "sha256": "a3abcb959da41f8db2d895a06e290b8da821147b1b4c26af105cea12cda5ce24",
+  "rows": 1143
+ },
+ "submission": {
+  "ref": 58369061,
+  "date_utc": "2026-11-15 04:34",
+  "public_score": "0.40"
+ },
+ "weight": 0.55,
+ "cutoff": 0.35,
+ "selector": {
+  "file": "selector_ms4.json",
+  "sha256": "5bbbc9da036ed1298e5da3fdd5be25e00d24db1346a5bce8a5bdd22f05a007a8"
+ },
+ "regressor": {
+  "file": "regressor_ms4.pkl",
+  "sha256": "bc1e90fe641fb16da208d77be555370e7cad7a69e772bd0423b4956f5e3ad521"
+ },
+ "unet": "fold5mean",
+ "sets": 3,
+ "archives": [
+  {
+   "name": "NEW0_0",
+   "fold": 0,
+   "set": 0,
+   "run_id": "c1536_f0_d4",
+   "file": "mf_c1536_f0_d4_test.npz",
+   "bytes": 14559690,
+   "sha256": "f9eefef116cf7f8631ee944a62bbfdc86619d79705ca40c951bd08be62c5aa31",
+   "model": "mfmodel_c1536_f0.safetensors",
+   "size": 2048,
+   "views": [
+    "id",
+    "rot90",
+    "rot180",
+    "rot270",
+    "flipW",
+    "flipW_rot90",
+    "flipW_rot180",
+    "flipW_rot270"
+   ]
+  },
+  {
+   "name": "NEW0_1",
+   "fold": 0,
+   "set": 1,
+   "run_id": "c1536s125d4_f0",
+   "file": "mf_c1536s125d4_f0_test.npz",
+   "bytes": 14529540,
+   "sha256": "55d538e899dda6716d82607a35bb2c2e7c906ea6f5079ca920d7f64e8067db78",
+   "model": "mfmodel_c1536_f0.safetensors",
+   "size": 2560,
+   "views": [
+    "id",
+    "rot90",
+    "rot180",
+    "rot270",
+    "flipW",
+    "flipW_rot90",
+    "flipW_rot180",
+    "flipW_rot270"
+   ]
+  },
+  {
+   "name": "NEW0_2",
+   "fold": 0,
+   "set": 2,
+   "run_id": "c1536s150h4_f0",
+   "file": "mf_c1536s150h4_f0_test.npz",
+   "bytes": 14623581,
+   "sha256": "9e7496946fcbdab4522b7cfe883ab2ac14c9eaccb6d770a3d865005b8273736b",
+   "model": "mfmodel_c1536_f0.safetensors",
+   "size": 3072,
+   "views": [
+    "id",
+    "flipW",
+    "rot180",
+    "flipH"
+   ]
+  },
+  {
+   "name": "NEW1_0",
+   "fold": 1,
+   "set": 0,
+   "run_id": "c1536_f1_d4",
+   "file": "mf_c1536_f1_d4_test.npz",
+   "bytes": 14520154,
+   "sha256": "de8eb284cd173199a1bf8109052bfecad663640855960226b023403969a6ff23",
+   "model": "mfmodel_c1536_f1.safetensors",
+   "size": 2048,
+   "views": [
+    "id",
+    "rot90",
+    "rot180",
+    "rot270",
+    "flipW",
+    "flipW_rot90",
+    "flipW_rot180",
+    "flipW_rot270"
+   ]
+  },
+  {
+   "name": "NEW1_1",
+   "fold": 1,
+   "set": 1,
+   "run_id": "c1536s125d4_f1",
+   "file": "mf_c1536s125d4_f1_test.npz",
+   "bytes": 14642008,
+   "sha256": "d11f2e7d5c93b13fa10da633cffdae8f49fd56598d61e87da1ee6c62a0214d7e",
+   "model": "mfmodel_c1536_f1.safetensors",
+   "size": 2560,
+   "views": [
+    "id",
+    "rot90",
+    "rot180",
+    "rot270",
+    "flipW",
+    "flipW_rot90",
+    "flipW_rot180",
+    "flipW_rot270"
+   ]
+  },
+  {
+   "name": "NEW1_2",
+   "fold": 1,
+   "set": 2,
+   "run_id": "c1536s150h4_f1",
+   "file": "mf_c1536s150h4_f1_test.npz",
+   "bytes": 14791050,
+   "sha256": "0495633ccbc34bf91a6ac73774939bdbb8fa2363b8be8024caf5d16b6485b5cf",
+   "model": "mfmodel_c1536_f1.safetensors",
+   "size": 3072,
+   "views": [
+    "id",
+    "flipW",
+    "rot180",
+    "flipH"
+   ]
+  },
+  {
+   "name": "NEW2_0",
+   "fold": 2,
+   "set": 0,
+   "run_id": "w3_c1536_4k_d4",
+   "file": "mf_w3_c1536_4k_d4_test.npz",
+   "bytes": 15543651,
+   "sha256": "a58b708a93f57940aa9cbf618132f1f620c890394fda49cfd7d61e6bbf4f86b5",
+   "model": "mfmodel_c1536_f2.safetensors",
+   "size": 2048,
+   "views": [
+    "id",
+    "rot90",
+    "rot180",
+    "rot270",
+    "flipW",
+    "flipW_rot90",
+    "flipW_rot180",
+    "flipW_rot270"
+   ]
+  },
+  {
+   "name": "NEW2_1",
+   "fold": 2,
+   "set": 1,
+   "run_id": "c1536s125d4_f2",
+   "file": "mf_c1536s125d4_f2_test.npz",
+   "bytes": 15256132,
+   "sha256": "ddf04f12c3cd7c86777b27d2de5994ec2b3f5a082a5da4aa6aca8d8db74b5baa",
+   "model": "mfmodel_c1536_f2.safetensors",
+   "size": 2560,
+   "views": [
+    "id",
+    "rot90",
+    "rot180",
+    "rot270",
+    "flipW",
+    "flipW_rot90",
+    "flipW_rot180",
+    "flipW_rot270"
+   ]
+  },
+  {
+   "name": "NEW2_2",
+   "fold": 2,
+   "set": 2,
+   "run_id": "c1536s150h4_f2",
+   "file": "mf_c1536s150h4_f2_test.npz",
+   "bytes": 15396402,
+   "sha256": "e7a538b9e83735d6d9a89a148825b0c85f31f63eee570b4230cfd47c447e0bbf",
+   "model": "mfmodel_c1536_f2.safetensors",
+   "size": 3072,
+   "views": [
+    "id",
+    "flipW",
+    "rot180",
+    "flipH"
+   ]
+  },
+  {
+   "name": "NEW3_0",
+   "fold": 3,
+   "set": 0,
+   "run_id": "c1536_f3_d4",
+   "file": "mf_c1536_f3_d4_test.npz",
+   "bytes": 14684019,
+   "sha256": "563c9e41bf677cf0a1b4c2f25cc38f302a973ff8a5894d6a727463a053972a69",
+   "model": "mfmodel_c1536_f3.safetensors",
+   "size": 2048,
+   "views": [
+    "id",
+    "rot90",
+    "rot180",
+    "rot270",
+    "flipW",
+    "flipW_rot90",
+    "flipW_rot180",
+    "flipW_rot270"
+   ]
+  },
+  {
+   "name": "NEW3_1",
+   "fold": 3,
+   "set": 1,
+   "run_id": "c1536s125d4_f3",
+   "file": "mf_c1536s125d4_f3_test.npz",
+   "bytes": 14511636,
+   "sha256": "dbd388de8500765ea11efaf3f0bfb9a2872d344b662ec6730ae37b29e30d947c",
+   "model": "mfmodel_c1536_f3.safetensors",
+   "size": 2560,
+   "views": [
+    "id",
+    "rot90",
+    "rot180",
+    "rot270",
+    "flipW",
+    "flipW_rot90",
+    "flipW_rot180",
+    "flipW_rot270"
+   ]
+  },
+  {
+   "name": "NEW3_2",
+   "fold": 3,
+   "set": 2,
+   "run_id": "c1536s150h4_f3",
+   "file": "mf_c1536s150h4_f3_test.npz",
+   "bytes": 14724571,
+   "sha256": "c7176ded1f8a1edc14c3d4146b6f5ecca81fdefafaed09a3bdeab6b822b2f127",
+   "model": "mfmodel_c1536_f3.safetensors",
+   "size": 3072,
+   "views": [
+    "id",
+    "flipW",
+    "rot180",
+    "flipH"
+   ]
+  },
+  {
+   "name": "NEW4_0",
+   "fold": 4,
+   "set": 0,
+   "run_id": "c1536_f4_d4",
+   "file": "mf_c1536_f4_d4_test.npz",
+   "bytes": 14836383,
+   "sha256": "795c9aa24962bc58fb69a4e67a5e21905463a068f03e9f8fd76c1ddf9cd1e140",
+   "model": "mfmodel_c1536_f4.safetensors",
+   "size": 2048,
+   "views": [
+    "id",
+    "rot90",
+    "rot180",
+    "rot270",
+    "flipW",
+    "flipW_rot90",
+    "flipW_rot180",
+    "flipW_rot270"
+   ]
+  },
+  {
+   "name": "NEW4_1",
+   "fold": 4,
+   "set": 1,
+   "run_id": "c1536s125d4_f4",
+   "file": "mf_c1536s125d4_f4_test.npz",
+   "bytes": 14771034,
+   "sha256": "641b712d7bad750b4fa07fb2a5d4eabd799eed23ad211e4f650805769d91bf1c",
+   "model": "mfmodel_c1536_f4.safetensors",
+   "size": 2560,
+   "views": [
+    "id",
+    "rot90",
+    "rot180",
+    "rot270",
+    "flipW",
+    "flipW_rot90",
+    "flipW_rot180",
+    "flipW_rot270"
+   ]
+  },
+  {
+   "name": "NEW4_2",
+   "fold": 4,
+   "set": 2,
+   "run_id": "c1536s150h4_f4",
+   "file": "mf_c1536s150h4_f4_test.npz",
+   "bytes": 14870979,
+   "sha256": "8c3120252a8694d1aadf1ad052447e4802d0fbd22bf7084a24e5dc7faac93431",
+   "model": "mfmodel_c1536_f4.safetensors",
+   "size": 3072,
+   "views": [
+    "id",
+    "flipW",
+    "rot180",
+    "flipH"
+   ]
+  }
+ ],
+ "cv": {
+  "pq_all707": 0.457408,
+  "instrument": "host CPU"
+ }
+}

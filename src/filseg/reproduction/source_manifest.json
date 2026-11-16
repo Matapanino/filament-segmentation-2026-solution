@@ -1,0 +1,53 @@
+{
+  "preprocess.py": {
+    "source": "detect_20261106/oof_bank5/frozen/views.py",
+    "sha256": "ed37e0c4cb31b1b0017facd012b2125d5d2dbf5413bf981c835bff0614ca96b8",
+    "byte_identical": true
+  },
+  "instancing.py": {
+    "source": "detect_20261109/mf_crossfold_ship/frozen/filseg/instancing.py",
+    "sha256": "5f5676e7fa811d89127bbf51812f7050f9b7cb5c3ad5e836731051f2498c8842",
+    "byte_identical": true
+  },
+  "postproc.py": {
+    "source": "detect_20261109/mf_crossfold_ship/frozen/filseg/postproc.py",
+    "sha256": "99fea8fffd3bc88903bee02ea17982fc051f81bc3c6920c72a10a6de84a56dc4",
+    "byte_identical": true
+  },
+  "compfeat.py": {
+    "source": "detect_20261109/mf_crossfold_ship/frozen/filseg/compfeat.py",
+    "sha256": "56483bafa6094f631e19b1b9534a0deebc1a14794b017b36dd22a250dbc7e7f8",
+    "byte_identical": true
+  },
+  "acceptance.py": {
+    "source": "detect_20261109/mf_crossfold_ship/frozen/filseg/acceptance.py",
+    "sha256": "3c719308517eab5ee5b55fb39613e2965aaadae03da77ac5ef7352a21f3b9b7e",
+    "byte_identical": true
+  },
+  "features.py": {
+    "source": "detect_20261109/mf_crossfold_ship/frozen/extract_cpu.py",
+    "function": "features_for_mask",
+    "function_sha256": "d82af971bda475adf6fc66f62bf823255b172cd7b08d4b40d262a684b99827e5"
+  },
+  "mf_d4.py": {
+    "source": "detect_20261113/mftta/d4.py",
+    "sha256": "70510616c1e390149513041e50658cea1b9d92aaf3882e592026156199701e6b",
+    "byte_identical": true
+  },
+  "mf_tile.py": {
+    "source": "detect_20261113/mfhires/tile.py",
+    "sha256": "bd9af95699650e3fec2f6eb9e359c801af2ac67467a8cfd0dba227aea9ef6e47",
+    "byte_identical": true
+  },
+  "mf_views_io.py": {
+    "source": "detect_20261113/mfvar/views_io.py",
+    "sha256": "377fac01a4fdaf4f5582d6bdcba3a587553c98d7c41b8f45b1e877adb1e249e3",
+    "byte_identical": true
+  },
+  "view_features.py": {
+    "source": "detect_20261113/mfvar/view_features.py",
+    "sha256": "35089c94885d2386f4038668977a9ceb4da08e8eab1632bb3c0ba4ea851e48be",
+    "byte_identical": false,
+    "change": "import: import mf_features as MF -> from . import mfrich_features as MF"
+  }
+}

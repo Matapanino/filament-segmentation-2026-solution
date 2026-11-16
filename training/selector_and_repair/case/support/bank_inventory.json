@@ -1,0 +1,2223 @@
+{
+  "archive": {
+    "role": "frozen_source",
+    "remote": "<artifact-store>/<project>/detect_20261106/oof_quality/input_archives/b55daa36247abbd8044eff1a587974dfb9fe1d501c09e02f6e4fb9d72714f41f.tar",
+    "owner": "<owner-email>",
+    "verified": true,
+    "bytes": 34447360,
+    "md5": "2e3eabed2ad8f7343aa432148e7ba8e5",
+    "sha256": "b55daa36247abbd8044eff1a587974dfb9fe1d501c09e02f6e4fb9d72714f41f"
+  },
+  "members": {
+    "bank/fold0_s42/V00_R3/features.csv": {
+      "bytes": 858479,
+      "md5": "cd9dce4ac1804e59e89ad80d276958dd",
+      "sha256": "af8e09182a1fc948ba5158e2863485de64378123397d8ea9d4371a541f1bb9f7"
+    },
+    "bank/fold0_s42/V00_R3/iou_records.json": {
+      "bytes": 349173,
+      "md5": "15e5a0cd342592435678333de0989bdf",
+      "sha256": "b64ef303cc27b352f2c4ca21a8e65bd1cfbd6a329e5b359812437424effdba27"
+    },
+    "bank/fold0_s42/V00_R3/labels.csv": {
+      "bytes": 48455,
+      "md5": "ea8b46c1b7cfdbc75ed8e9eafd41fc1e",
+      "sha256": "ca9fd33509a5278f3e1cdb44c2a27caf989e732d8df80596188a5aa5bd9d9ce8"
+    },
+    "bank/fold0_s42/V00_R3/manifest.json": {
+      "bytes": 48147,
+      "md5": "1fd5b173ee5749545887193e56bf3e54",
+      "sha256": "1e3abeafc8585d7c584b47fb9b9bd57e3012d9b77a468a3b46b59d960ec3a791"
+    },
+    "bank/fold1_s42/V00_R3/features.csv": {
+      "bytes": 863561,
+      "md5": "0126c1962d962e8e4148c88125ce84ce",
+      "sha256": "7df6f0ef28299c032ce8256a257eb924c04b622d6637ac7db5f0adebcf44d200"
+    },
+    "bank/fold1_s42/V00_R3/iou_records.json": {
+      "bytes": 361427,
+      "md5": "2a73daaf7355286b65bcb185f0d559c6",
+      "sha256": "a93695a0c10d33fb53db21767c1750cf39855b07bbce77c0310567de53aff976"
+    },
+    "bank/fold1_s42/V00_R3/labels.csv": {
+      "bytes": 49311,
+      "md5": "f04b5b44a3591361394a29db7d2c2844",
+      "sha256": "288ed4505f7c821cba35a10bb0f9eb8e2c43274e060298aaea20c9d153b6df95"
+    },
+    "bank/fold1_s42/V00_R3/manifest.json": {
+      "bytes": 48147,
+      "md5": "dc221d2070fab1821ca34125861bc8dd",
+      "sha256": "53e1c987d7c5c8ec355bee40a91bd6c6ca967f56e8d413a41e79ffe7ecef7afe"
+    },
+    "bank/fold2_s42/V00_R3/features.csv": {
+      "bytes": 956637,
+      "md5": "4004c0a668183a62a240570b99719419",
+      "sha256": "61700051e93a23382af602907811f6691563f28aaf7392fa0ce047e28fb46f81"
+    },
+    "bank/fold2_s42/V00_R3/iou_records.json": {
+      "bytes": 402997,
+      "md5": "fb00377fcc0dba5ac46a64c9d7ba7444",
+      "sha256": "2de9361e843c54d89e6228372f7e11d621df5e25949489577a6d1be1aebae8c1"
+    },
+    "bank/fold2_s42/V00_R3/labels.csv": {
+      "bytes": 52619,
+      "md5": "b1be7e6400c21fa5292af9901a52ec34",
+      "sha256": "ffc2e7d74271eb985b1ae88b2fdf57df0064d00d26244c26c0c93c424d82fba6"
+    },
+    "bank/fold2_s42/V00_R3/manifest.json": {
+      "bytes": 55298,
+      "md5": "c4f0c3b44a4d231d14d1b2aecc6d4fad",
+      "sha256": "0f46e0b8bfa098a7e73d3e2e3cdfc8326c8481931dc45eb0aeaf141bf32b4672"
+    },
+    "bank/fold3_s42/V00_R3/features.csv": {
+      "bytes": 849194,
+      "md5": "e85db7e4f3b1b69ba9af264c472af199",
+      "sha256": "9e33c2f949848c44a2cdfe7dc277690a482ee298dc85620cddbff67f8489db55"
+    },
+    "bank/fold3_s42/V00_R3/iou_records.json": {
+      "bytes": 347330,
+      "md5": "8b578aab81cacacb46da0abe62470f3d",
+      "sha256": "57865bbe961883234d955fcb297a78566593d77493ed790b931ad17cab565c15"
+    },
+    "bank/fold3_s42/V00_R3/labels.csv": {
+      "bytes": 48200,
+      "md5": "73eb3ee7f9cb9d90b6252f1538eea8ee",
+      "sha256": "1ec4d3989d87819299d82c390e7ca37c1a48d943f3f18582c77a58705a2b0169"
+    },
+    "bank/fold3_s42/V00_R3/manifest.json": {
+      "bytes": 48143,
+      "md5": "6dc470076995c6442d897b560740b18f",
+      "sha256": "d6f851389e7750f81f79597270af7eb4c6141eb26eb76149d2b840429ff08ccc"
+    },
+    "bank/fold4_s42/V00_R3/features.csv": {
+      "bytes": 857130,
+      "md5": "5bb905e26ca53303be05ec2b101fcbfd",
+      "sha256": "6cb087676f77dd1d90ceedd9892963098e186cca5b05675728e03aa87307887c"
+    },
+    "bank/fold4_s42/V00_R3/iou_records.json": {
+      "bytes": 373804,
+      "md5": "94ab3b9accba10682a88774a15108093",
+      "sha256": "19a2d18285bac6140fbdea2f6e391c039464c41275f25024f9330e856166e927"
+    },
+    "bank/fold4_s42/V00_R3/labels.csv": {
+      "bytes": 52877,
+      "md5": "c94126c48d4cbb40dd446f3422497323",
+      "sha256": "cadf5f94f64c0b61097e44d3eb0d73903ab072bad07abd1595e99af0eb330dee"
+    },
+    "bank/fold4_s42/V00_R3/manifest.json": {
+      "bytes": 48147,
+      "md5": "99fe84e257aa37719c0cac815a3be4e1",
+      "sha256": "15489add84df120d5b016212c51ab935fa0070cd0e5ca07acdffe00c990b6783"
+    },
+    "bank_manifest.json": {
+      "bytes": 300797,
+      "md5": "489125be61534735e7e3bcee3338bfa2",
+      "sha256": "bfd519866cf75283016b9c60147e59f96175badba6114208da8fa4904d82c730"
+    },
+    "instrument.json": {
+      "bytes": 658115,
+      "md5": "35366445982d7cfe4ec54cbccd793fdc",
+      "sha256": "411d1fe7061b14b5e594072fd931f2bf7a69d1d6b534de03e1c4e132594b0bb2"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110608_n4_logistic_outer0/final.json": {
+      "bytes": 53080,
+      "md5": "bc33784b5851cdd670e5a3b8257bf3e7",
+      "sha256": "4a81178899b8c8b5fc88c0bcb7dc1a7d4a8b636f048957d92951b4b4b1893c7d"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110608_n4_logistic_outer0/inner0.json": {
+      "bytes": 58698,
+      "md5": "339ca804d2e05b83b6121f4ad3a144d9",
+      "sha256": "d21102c572200c4ab9a818cf45d9c8ef583e349b7e7d29ea67ca44f7d2b2febf"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110608_n4_logistic_outer0/inner1.json": {
+      "bytes": 60872,
+      "md5": "e3bc9de3fd3686d3f5bbe58fec4dc3e4",
+      "sha256": "e987ad22e9676b87538edac019e40c6c9e79921adc8f360ac05bf0f5ea06148b"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110608_n4_logistic_outer0/inner2.json": {
+      "bytes": 60177,
+      "md5": "bbd16ef750aec3d1ba9fc01f311968b7",
+      "sha256": "f37310c63f8c00e644488072a616fa1510b369096b05f4ca538df2b417f71680"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110608_n4_logistic_outer1/final.json": {
+      "bytes": 52064,
+      "md5": "c444fa9b34392c361e86249da9c47d44",
+      "sha256": "f4dcc2362c66ac8d7d3a1854d3ddb6abfe33f1dffab53e19a57d62e191082a2f"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110608_n4_logistic_outer1/inner0.json": {
+      "bytes": 59649,
+      "md5": "77e3fc721f3d5bfdd4eab204ccbe76c3",
+      "sha256": "af22719067e9f3ec1ec0f2b7c60619b59dc0dcb2735a258c00537aabba5ae762"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110608_n4_logistic_outer1/inner1.json": {
+      "bytes": 61853,
+      "md5": "a6a21caaffb745a8d2d595abcb19e73e",
+      "sha256": "a2a36dcdf7ec374ccf8080acfee2d7636fb9edc3c00d6b0583586af4c442599a"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110608_n4_logistic_outer1/inner2.json": {
+      "bytes": 59154,
+      "md5": "dbedbf1942787a48735c226834d5079c",
+      "sha256": "3e04513f04fa0fd9f851e242dd65106d6336f13ab93057f380583ecc26760a25"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110608_n4_logistic_outer2/final.json": {
+      "bytes": 51260,
+      "md5": "5bba09f06c37c034a15fe16c810354bc",
+      "sha256": "d7c1834cd456aaae82e1b0ac102b06e5e1dd37b66636576f52a1364e454bd447"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110608_n4_logistic_outer2/inner0.json": {
+      "bytes": 61040,
+      "md5": "c0368dfd0a3ad6b40aa15ea721b0b7bc",
+      "sha256": "54dba570a35c7f710487e677b8feac4ee96cb2c859ec8c0cefc350c6c91f238a"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110608_n4_logistic_outer2/inner1.json": {
+      "bytes": 61658,
+      "md5": "60bba4d98ce8f9288a059ee377ea876e",
+      "sha256": "1a48cc53c78f0e1f7618c8720fcfa71bd88319e543ea5012700c3b3c710a7ced"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110608_n4_logistic_outer2/inner2.json": {
+      "bytes": 58874,
+      "md5": "e8b70f9683d20553c27a6bd24f4c48ee",
+      "sha256": "949f6c396507929a438af548b1e782d59cf3d10843c33f48465339262d068ecb"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110608_n4_logistic_outer3/final.json": {
+      "bytes": 50711,
+      "md5": "da802137736fa2d6384d20a0a4a29aec",
+      "sha256": "ba46a9c0b6221eeae3866bd670c0d5ae2e2d835d7e9e478aad84eb556d22c59e"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110608_n4_logistic_outer3/inner0.json": {
+      "bytes": 62081,
+      "md5": "b4f106a1b5225a5db597df9d0a65e284",
+      "sha256": "41d25ad26bbe304058113abb17f6c533406a299b91cb06005fa3b1dd70c90065"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110608_n4_logistic_outer3/inner1.json": {
+      "bytes": 60357,
+      "md5": "2c2aebcaf2c5875b397b44c3e24cb638",
+      "sha256": "04a4e1da9f1fa7a138633e499b310c6c1e7b4f9083b525ff1b7a883af893e0c7"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110608_n4_logistic_outer3/inner2.json": {
+      "bytes": 59590,
+      "md5": "428e2901ad74d9d87a98e64fc8fcc43e",
+      "sha256": "55518fe40725fe02f05a2107fa81375221a1bc37e13a80c69448437ad582e8f7"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110608_n4_logistic_outer4/final.json": {
+      "bytes": 52894,
+      "md5": "cef46df72d1c31c0a1dab01e7ebc6e09",
+      "sha256": "f3d564999e8c5ddf96c4ab5712ae23665d1389a5a0e0f237bc9eec974d0d03bc"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110608_n4_logistic_outer4/inner0.json": {
+      "bytes": 59228,
+      "md5": "d994e4058eae0e8f8e8f8b299c072250",
+      "sha256": "98dd233f5300446b029532568576e269385f720e31d7009f7d2cbc0d7da89545"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110608_n4_logistic_outer4/inner1.json": {
+      "bytes": 59657,
+      "md5": "402b9d0723e53de0c70b4fae5bd6d26c",
+      "sha256": "07ba5a7bcae039694846f9df08e8b3cf2393058d00b80597a2484226d1558da5"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110608_n4_logistic_outer4/inner2.json": {
+      "bytes": 61055,
+      "md5": "0b2411e1bce9c77fa13a3fcd4278ae9e",
+      "sha256": "7a93fb3a8d9a39afa7542423bc13cc79d9fa5fddcc12fe2a47cffb28d36e432e"
+    },
+    "instrument_reads/five_fold/s42_p2026110608_n4_logistic.json": {
+      "bytes": 151666,
+      "md5": "53d7cb081fea9f301136d9a529e4aabc",
+      "sha256": "5ffb506a629b149b3b87d8b9228f6d22326f44f06a6383b62bb101487a3c32e5"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110616_n4_logistic_outer0/final.json": {
+      "bytes": 51500,
+      "md5": "e93f7a467408668f0454fbf73f7436c5",
+      "sha256": "d86e21c8cea6672095d6d8806032620b7d16626f3a8e6d297b435f64406de42e"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110616_n4_logistic_outer0/inner0.json": {
+      "bytes": 60865,
+      "md5": "0b35e8c02ddbdecc008ec471c3ccfe4c",
+      "sha256": "d39f3458d39a6b5ebd6cc203fb80c67a3a42352bff3383900a6154cbe1951292"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110616_n4_logistic_outer0/inner1.json": {
+      "bytes": 59381,
+      "md5": "4f1fb6c1ee9b63b3c05cd1a6fbffe399",
+      "sha256": "4f46ac84efda9e50de71a8a43234ac0251fbc7f2be3d2d90b205fe6d941a1ecd"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110616_n4_logistic_outer0/inner2.json": {
+      "bytes": 61042,
+      "md5": "3bb60a2823030d476324771756544117",
+      "sha256": "a6d03609730f1788bff33a27fd68c565825fed3cb5f0f384a33002bb180111b2"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110616_n4_logistic_outer1/final.json": {
+      "bytes": 53128,
+      "md5": "759585a66b0a23620268317d331f40aa",
+      "sha256": "b86a5ef1022a394809dd906f6eed5dd09efed23f11ba50b7bfbf2dde13a4d3f8"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110616_n4_logistic_outer1/inner0.json": {
+      "bytes": 60102,
+      "md5": "a59bb8d35f4cc9a4d9dbdc77eaaa1697",
+      "sha256": "3c3d2ef85be27c6aa0dd07f57dc666a8569c6e5780e74dc2b6c22134beb14608"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110616_n4_logistic_outer1/inner1.json": {
+      "bytes": 57148,
+      "md5": "f600b70a6f47dc1737297290ca441e51",
+      "sha256": "245744b2dbe485cba9f8c42113da097315d719fa75a0cbf53fe1b5e0c5a274c8"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110616_n4_logistic_outer1/inner2.json": {
+      "bytes": 62421,
+      "md5": "36d406be87904d5421f20147d18f6c66",
+      "sha256": "e9f5893a7cb480d64df3536de52a535d159b423a06af2629f8f116f85c16bf00"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110616_n4_logistic_outer2/final.json": {
+      "bytes": 51467,
+      "md5": "6db4ca9910691d8441382a8bd1675750",
+      "sha256": "409c49e0fdc052e951e58eb735a743bc3b8568549457c7906df5c16dabed0079"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110616_n4_logistic_outer2/inner0.json": {
+      "bytes": 59530,
+      "md5": "bced808cbaaafda251b684e98fb2fa81",
+      "sha256": "a19a282e1b55913a947ecca8fcb887c0ae61786296999cde7bf315e895d0da65"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110616_n4_logistic_outer2/inner1.json": {
+      "bytes": 59606,
+      "md5": "188ac3ee578c5d31688ddc52b3bfd7b8",
+      "sha256": "8cdf44c4ccbf613a13b941c920f666f07dec588334a2843fc6345d04b8fcf916"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110616_n4_logistic_outer2/inner2.json": {
+      "bytes": 62151,
+      "md5": "44a7fc1b0057acbed3a3063178c06521",
+      "sha256": "8b8ad1298e9b360fa6633134b36432fb9ea240ea639e190853122758413950e8"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110616_n4_logistic_outer3/final.json": {
+      "bytes": 50153,
+      "md5": "72e8cc8d67613733a89365f2a0604b01",
+      "sha256": "9c78ea4f4d3eaeb41f483f8e7cfaf5c961ac71a1ba87cb7c8cf554f81f0c7aab"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110616_n4_logistic_outer3/inner0.json": {
+      "bytes": 59422,
+      "md5": "2316b797cd7824f27b8e769931db1ad2",
+      "sha256": "858860ec72f957fd1af50ffea9edd047d3338d7f8b734861a15f4c7490038481"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110616_n4_logistic_outer3/inner1.json": {
+      "bytes": 60218,
+      "md5": "e9d0b2fb20fc5779101470604e85c012",
+      "sha256": "555d5237ecf312ec12ab7d139efc915f326346e38471473f67ae208c5139c102"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110616_n4_logistic_outer3/inner2.json": {
+      "bytes": 63125,
+      "md5": "3631061ecf15b1e0d053b180a7ab209c",
+      "sha256": "1690f7ac5b2962e8ce618f468ebc554e2db8ce48d408073e665ecd5544cb28f0"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110616_n4_logistic_outer4/final.json": {
+      "bytes": 53802,
+      "md5": "e2a4b854cea13af5b4993c08f896cff5",
+      "sha256": "8c6a09a82ab53151878fa5b9a1e01c5db3dab578b430cd22b1e0d15a07c78fbf"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110616_n4_logistic_outer4/inner0.json": {
+      "bytes": 60246,
+      "md5": "6f4cae475f064b1c51e4db9f5e2c2ffd",
+      "sha256": "9b6a18062bf983c16fc45a4e38e7acdaa93181ee17ce8c9db164a7239c97c923"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110616_n4_logistic_outer4/inner1.json": {
+      "bytes": 59095,
+      "md5": "14c7ac72fbdc1921d25fafa274609ddd",
+      "sha256": "4a60b30119bd513757918a27eeda55907b565e1031b71d96ee27a06be5fc8cb8"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110616_n4_logistic_outer4/inner2.json": {
+      "bytes": 59666,
+      "md5": "a88a73f2c4ab9f698ec16fc7296fc4c3",
+      "sha256": "167ee2959f3af1af4814f6453ffaa710ef0a987464ab16f6f6f2e03606715b72"
+    },
+    "instrument_reads/five_fold/s42_p2026110616_n4_logistic.json": {
+      "bytes": 151681,
+      "md5": "33dde9b717906dbf726a59f1f61b5ed8",
+      "sha256": "6ec253444756be17633ca40a711a4a0adc11ed68a20f12625618122e99ba5ec2"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110610_n4_logistic_outer0/final.json": {
+      "bytes": 51872,
+      "md5": "62ce570e1f507dfee31caeaf18f6cf32",
+      "sha256": "9160ff6bcff73cb8a7b9e317c6a7a6c4d75ba3181900db694e4c9962efd2a767"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110610_n4_logistic_outer0/inner0.json": {
+      "bytes": 60738,
+      "md5": "34d2410d57b214cc7a196830a47e7aae",
+      "sha256": "69e2bc39f0167531980f0192c703034f919c287c34183349855992bf1fe6f7e5"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110610_n4_logistic_outer0/inner1.json": {
+      "bytes": 60189,
+      "md5": "985edd65490831195ff281f8abd26420",
+      "sha256": "6b45c3be95c232686ff54d7d3cebffb894e271cbf66a6e905494ec827d60e555"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110610_n4_logistic_outer0/inner2.json": {
+      "bytes": 60000,
+      "md5": "a923130008fa33d0a4d9aa9e95c8bc83",
+      "sha256": "36c61c022002d84a51c3c6c0700d6b69d9a569d965d8f399bbd02d0868a18b4c"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110610_n4_logistic_outer1/final.json": {
+      "bytes": 51505,
+      "md5": "8d4dd90bbeeec007507993659893cfa2",
+      "sha256": "e0d072bf5f04c568ba27a39a6a3bca0027adcee191d5475d60bb73a9017b0149"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110610_n4_logistic_outer1/inner0.json": {
+      "bytes": 59444,
+      "md5": "5f95df49a489c8a8a6fe3c194ea1cd85",
+      "sha256": "6a526bc32c06f6f5347c2ce7211b95145cf7c892bf8870dfb842cbad35bdde23"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110610_n4_logistic_outer1/inner1.json": {
+      "bytes": 61061,
+      "md5": "1d256d0953ba2a5ff2ed61846c6f5a7b",
+      "sha256": "c6b8c18f623330506f8b542f26ecf655b89c226b152d01ad0fcb502f29c540f2"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110610_n4_logistic_outer1/inner2.json": {
+      "bytes": 60796,
+      "md5": "565d2f20f8f8db31b502a1e68c24d43a",
+      "sha256": "72180a8aae0cdf55abde277ace8a1126895983f8b96da16f48b21c5f4d6fcec4"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110610_n4_logistic_outer2/final.json": {
+      "bytes": 54348,
+      "md5": "443966594fa0b657c02b2a0e94b98684",
+      "sha256": "47da9a287001478936568845b630e7c8cbd25491dcaca509e0c0a75438703c93"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110610_n4_logistic_outer2/inner0.json": {
+      "bytes": 59217,
+      "md5": "16b4dcc7dc6f64f87ab6bb6796d594fc",
+      "sha256": "eb2c55d040f59196d7e6a5132391b2d33aaa1e3fd027e68311d7c52b4fd10890"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110610_n4_logistic_outer2/inner1.json": {
+      "bytes": 59109,
+      "md5": "2cfc1c8408e284700c8be615642ff822",
+      "sha256": "cc10d3df38710cb60ca9eea5cb0fe3c96f80789181e352aff2e93406f1fef46a"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110610_n4_logistic_outer2/inner2.json": {
+      "bytes": 60107,
+      "md5": "90b92a50812d744bde466b1873d09722",
+      "sha256": "5152b0a9f8b16e80a3a509b025e7f75ef7ae157db5245c83268dec3b311660da"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110610_n4_logistic_outer3/final.json": {
+      "bytes": 50083,
+      "md5": "19e7c81327f0a2f9b58e33494472fc52",
+      "sha256": "0523136c1a68960bdd786c9c06b05a390a81fb28687a262a3000f3eb099695c1"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110610_n4_logistic_outer3/inner0.json": {
+      "bytes": 59220,
+      "md5": "14880aa0f68e2134f2eb9dab08404d60",
+      "sha256": "357f47c7541105ac75b88c09e9d02746096d40d6e28455b146e45c6e169fdc8d"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110610_n4_logistic_outer3/inner1.json": {
+      "bytes": 60637,
+      "md5": "fb173e79a4fb5acd286d6d1c1a8bbafb",
+      "sha256": "1c9a228189728616a953ab26d4db2ad1c532d4bb0beee72fe0594eb5c0a950ae"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110610_n4_logistic_outer3/inner2.json": {
+      "bytes": 62871,
+      "md5": "ff3e6ae43469706515743937327e26cf",
+      "sha256": "0bbe763ceed646886b996406376616de5e3c08c1f580127fd4e851bb3fec9eee"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110610_n4_logistic_outer4/final.json": {
+      "bytes": 52242,
+      "md5": "8f806fcf52d2f551766a84158bbe1c13",
+      "sha256": "67d7defa88c043c58a198a9b03c945922251bae7ff2aef7b3854c4bb0e6f4cb6"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110610_n4_logistic_outer4/inner0.json": {
+      "bytes": 60011,
+      "md5": "3e98e5e2a32a0e497ecd41309480c646",
+      "sha256": "4cce1f7f3388cf4d90778b33cac48b184ee77f980b6f6c270704c11aae674f9a"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110610_n4_logistic_outer4/inner1.json": {
+      "bytes": 59706,
+      "md5": "b1030928111311a314973aca92b00c8d",
+      "sha256": "6b8f8d11263c61d8e74ac203692dbf87a536b03fb29da6963355d966fe31056d"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110610_n4_logistic_outer4/inner2.json": {
+      "bytes": 60827,
+      "md5": "cbb58d5b67b4af1bde559aa6af34361b",
+      "sha256": "d130c8badfb0a43f1e1adfc5ea9a67a1842c44cfafacf65f0796ca9aa28c693f"
+    },
+    "instrument_reads/five_fold/s42_p2026110610_n4_logistic.json": {
+      "bytes": 151684,
+      "md5": "35c8eb014ffe674807ff147e7612a2a7",
+      "sha256": "d6bb065e6593b778990b12e5fbf7f7855759d850148c7c431abf0b8f49d04fc9"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110602_n4_logistic_outer0/final.json": {
+      "bytes": 51390,
+      "md5": "a9fed272202ac01ac42b233a46c57ed0",
+      "sha256": "ea3bb893255c249f645336ea5006c5fe00de309dd9967535c44902d5bd27d29c"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110602_n4_logistic_outer0/inner0.json": {
+      "bytes": 62086,
+      "md5": "4318ffd5e4d1040d91433e2a139f1795",
+      "sha256": "8abc608a1f492ae0c4f22ee4c677881188a263b0850db02ce79cf1d21889c500"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110602_n4_logistic_outer0/inner1.json": {
+      "bytes": 59259,
+      "md5": "eb6d85f1829cc6ae82ca3f73704e64c8",
+      "sha256": "c4390083d23bce6de36d10f2636534bfe7678c644db1ade96e3721fd9340a0ec"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110602_n4_logistic_outer0/inner2.json": {
+      "bytes": 59969,
+      "md5": "8780731407e8d4c4e7222e8f84be2d5d",
+      "sha256": "92fc971bacebd48030e24115522d0f2cbf9b52098d18b2f1472be3a644eddb66"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110602_n4_logistic_outer1/final.json": {
+      "bytes": 53522,
+      "md5": "c4039be03b4314e382cf25a04f6ced86",
+      "sha256": "510cdddaba71949a7fc8bc80025e463e11fe8d72cad036194fc6c1fc45ac338a"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110602_n4_logistic_outer1/inner0.json": {
+      "bytes": 57116,
+      "md5": "3b370be54dd4434a917cd4bf5c4a0f9b",
+      "sha256": "754a930771b151baeeaf867b5611c6b0ea34d4107fdbfe509c0cdab1fe1f9370"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110602_n4_logistic_outer1/inner1.json": {
+      "bytes": 62054,
+      "md5": "6a4aef09607e677bf44af0c0aa83dca1",
+      "sha256": "bdd79d4e78bd4c18f68e10189220583c632523202841b0ea134c4157a0963db2"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110602_n4_logistic_outer1/inner2.json": {
+      "bytes": 60143,
+      "md5": "d32cbd11c96a650f03fba4bd095b605f",
+      "sha256": "e7ba53911edffc48e9a4f2225ebac1f8b10de87487a5eca27f080c5d94cd2e82"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110602_n4_logistic_outer2/final.json": {
+      "bytes": 51070,
+      "md5": "5f761fe95dc5bf7e64c4388adffa0cd4",
+      "sha256": "0302b396cb7cd942ba26e3495f904e1f12bcdf457fa261a4bf912141d6bd3b92"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110602_n4_logistic_outer2/inner0.json": {
+      "bytes": 60193,
+      "md5": "b3e5563ec2be583dd7b0e7252109e66e",
+      "sha256": "b8a7afa6e9bdf45de0f719c3038945b0cfc1387b0e56fc1db12b7b0469cec1e5"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110602_n4_logistic_outer2/inner1.json": {
+      "bytes": 60659,
+      "md5": "9355c453a45e159f106c97e55b927bc1",
+      "sha256": "77da68c930fcde4c39508cc50f92a2d26de7e51d5349029e50df5399afe53fb5"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110602_n4_logistic_outer2/inner2.json": {
+      "bytes": 60924,
+      "md5": "6f0e85efc52510f9650e466156c4b082",
+      "sha256": "a8c3ce91437431a6043ae15654e19a8fc0dec14f43bcd456bc9f0dd98d70346b"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110602_n4_logistic_outer3/final.json": {
+      "bytes": 51898,
+      "md5": "ebcfcb740f1bb8fc2a60242f7579e0f0",
+      "sha256": "5ec21b8ec95d699e3c14c661ea85dc950356305032427f9c5229eb5441896a37"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110602_n4_logistic_outer3/inner0.json": {
+      "bytes": 58318,
+      "md5": "0fe7f4883794d0243e6078c761d8e090",
+      "sha256": "341e3728e48e75304eef0a993da9d7ddb309d3bb81e1cd78978aa1b0ab7e1fd5"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110602_n4_logistic_outer3/inner1.json": {
+      "bytes": 61284,
+      "md5": "8bd104484579692518fa4da4781d58b1",
+      "sha256": "1fd19a1d66f20e3fc6840f3ea89e6d9c62d5a036e222e2ec4c55b7816722c1a0"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110602_n4_logistic_outer3/inner2.json": {
+      "bytes": 61280,
+      "md5": "85ba5b8359cf5c1c9e71268b3a340d58",
+      "sha256": "84fe430fc2763ea6cda4740920132c757b8e1392ace16e7d70b09c19157bd94c"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110602_n4_logistic_outer4/final.json": {
+      "bytes": 52124,
+      "md5": "84173d2a6aa0fa3cd532da9a0b4721c9",
+      "sha256": "cd5d05c7f0e279aa822b3e231503e12067b974daa2c9879be0de7788466c3a30"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110602_n4_logistic_outer4/inner0.json": {
+      "bytes": 58902,
+      "md5": "b6dcee3fccdae49a87ae1f45faab67c6",
+      "sha256": "294e71ba7cbad3c3a7441b82faaaa15aef13eefd790caa5995c4fd92471d9350"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110602_n4_logistic_outer4/inner1.json": {
+      "bytes": 61284,
+      "md5": "cb287448298ba3bd3796befe3002e330",
+      "sha256": "5eedd6c639fa14ab8c1304143f091bb3112d2e7a1873b97004192b0c6325c671"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110602_n4_logistic_outer4/inner2.json": {
+      "bytes": 60485,
+      "md5": "b5d752772bd0d00192c18731c708eb56",
+      "sha256": "d600f4e708b75888df62190fd21013ec8ec49b6f48bc40befe9ba5b9d3bf563f"
+    },
+    "instrument_reads/five_fold/s42_p2026110602_n4_logistic.json": {
+      "bytes": 151704,
+      "md5": "3f2b7b22f7d6e72410d810a16169095d",
+      "sha256": "99e8461c089c3ead535601773f82c2775167ea19cb0176c6a05cabcad76f96d4"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110611_n4_logistic_outer0/final.json": {
+      "bytes": 53171,
+      "md5": "2c652846228784c37f399a2bf44c8206",
+      "sha256": "1fa774a8e2e2fdb47a9bc2af6cb15def007428834e6c5bfbd83ee16d7f4c3ac7"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110611_n4_logistic_outer0/inner0.json": {
+      "bytes": 59068,
+      "md5": "83fb0de8243e76f633de7708670365eb",
+      "sha256": "fa8f66622093705be8772b3846c22e7dcaf58b2837e4eb5b246e5a72124c4823"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110611_n4_logistic_outer0/inner1.json": {
+      "bytes": 60778,
+      "md5": "0ab310c99d2c56c007f6e411cec81527",
+      "sha256": "89ab47c9038590fc41dddcd3a190b5975fe20084aafbd18be41b425061462024"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110611_n4_logistic_outer0/inner2.json": {
+      "bytes": 59885,
+      "md5": "f9e3bab0b2b15ceb5b689a126375c240",
+      "sha256": "376792ba692f6c45d5960d91c7c93c64b68e0810bb96a26092e0ce36306d449f"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110611_n4_logistic_outer1/final.json": {
+      "bytes": 51138,
+      "md5": "bfacd61427ceb7e98783ae96fa915b6d",
+      "sha256": "204f15e6dc653a0183692c96a862f53568ca664011f02e8e5e683d78c1073887"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110611_n4_logistic_outer1/inner0.json": {
+      "bytes": 59499,
+      "md5": "61a515845031ab87ea9e0ae7c8499e2a",
+      "sha256": "933fc6c3af3efd8c1fef5c98ab8ef66e98a6442c7da866030b7e5e13da85ed4c"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110611_n4_logistic_outer1/inner1.json": {
+      "bytes": 60477,
+      "md5": "17b63cdb9ab47d42cb6103747e56262f",
+      "sha256": "37f37d2d8caab66b625bc0c4e327a505f9aedbe71524956a53c06802b67e7c25"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110611_n4_logistic_outer1/inner2.json": {
+      "bytes": 61755,
+      "md5": "e6ed6687338d9fadfc6e31b630cf6522",
+      "sha256": "11af33935068a6cd62b1961e9f1ba85382dcb46134dab00b74b2fde1c0a7245c"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110611_n4_logistic_outer2/final.json": {
+      "bytes": 50769,
+      "md5": "dd1ff1604c56d748454cb772859ff51f",
+      "sha256": "55bf0452036c448f33996bd557dd9da8c0484b09f64cbff26aa155b576efb0c2"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110611_n4_logistic_outer2/inner0.json": {
+      "bytes": 60243,
+      "md5": "9cee30000b4cf1972ef13fd5b90e428a",
+      "sha256": "0e490d5b152641c4e2d3004adac4a5592faec5a0c36b942860baa52c25f71195"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110611_n4_logistic_outer2/inner1.json": {
+      "bytes": 59798,
+      "md5": "f1c4c1b55436f2a6bf981521a909071d",
+      "sha256": "6a1f2151aa499b6c5344e1fca0e0fe0f1619e9e403e5dc658db3f4f29b4424d5"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110611_n4_logistic_outer2/inner2.json": {
+      "bytes": 61899,
+      "md5": "ce4bded61412bc73451d7966f097c722",
+      "sha256": "6b7a33c7105bad88d6720f13850dc1341698edea1567934a9e55413791ab75fc"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110611_n4_logistic_outer3/final.json": {
+      "bytes": 50971,
+      "md5": "225443e58fe0274a7f5ac4d7218682d6",
+      "sha256": "e889e67f226fd971094d8f497cb79d7c91e185685c03caa146dfa2b8d450f2a1"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110611_n4_logistic_outer3/inner0.json": {
+      "bytes": 63189,
+      "md5": "cf6b84be497aff243ce0eaf0843cd35b",
+      "sha256": "e88234d77868329d0d7c2306321390ecdbd7c3bc7f298035eadbd9bef738bb38"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110611_n4_logistic_outer3/inner1.json": {
+      "bytes": 59303,
+      "md5": "1279fdedc4ed71b4ad7a117a1e12913b",
+      "sha256": "79d070e5356db45e380627aa58578689ae6a3da4e83ef08001719f3b5424b70d"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110611_n4_logistic_outer3/inner2.json": {
+      "bytes": 59278,
+      "md5": "a4d1774fd610fca0e61bfc9df73ba24f",
+      "sha256": "4432a0355e856bff5ce82d6886bc987ea4484a71e6e41d53323e6d87e4c8d150"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110611_n4_logistic_outer4/final.json": {
+      "bytes": 54027,
+      "md5": "da770fa4360aad21dd7a34a3264b356d",
+      "sha256": "82edd9890159bff6950d5d3e79a209cab7bb8d513ae8a27852f0fee0f8eba664"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110611_n4_logistic_outer4/inner0.json": {
+      "bytes": 59977,
+      "md5": "fc105e8e9141d16a544e2f4343b5f073",
+      "sha256": "3fad5792f7a4e789acea6a67c104bf30d6fa55fb77d8693a173a4192afea8fd5"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110611_n4_logistic_outer4/inner1.json": {
+      "bytes": 60748,
+      "md5": "632dd56ed3f3c4f0710d2fcbf284c756",
+      "sha256": "ed8490f87d21bedb60322c341e9ab40fdd05feb629f2838937dcf103b477fd54"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110611_n4_logistic_outer4/inner2.json": {
+      "bytes": 58051,
+      "md5": "188f0a7ad018625ec62738a4ee1fa35d",
+      "sha256": "2dd82433984c2893f75c1498385a272d08f65a92c322aa633d6b08a8034f8b54"
+    },
+    "instrument_reads/five_fold/s42_p2026110611_n4_logistic.json": {
+      "bytes": 151694,
+      "md5": "e410f5438ef465f2e1cd72a06860c9ae",
+      "sha256": "799413923eacd71521a08afc9b581993775c07f9e75f72660744e252180d2888"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110609_n4_logistic_outer0/final.json": {
+      "bytes": 51410,
+      "md5": "c415e908ee6cdcbaceeb1af4ca514d52",
+      "sha256": "c91d156e4679be4e1d48b29f3e98f58df849b5e9379d6be918b00d3577455a83"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110609_n4_logistic_outer0/inner0.json": {
+      "bytes": 61814,
+      "md5": "d54299bb80ae09c62f7c3c943763d80d",
+      "sha256": "8d97b15d45bc8d2c0e7f3a8c389611821fe7fb137a6ebd9337cd59526771dff9"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110609_n4_logistic_outer0/inner1.json": {
+      "bytes": 59551,
+      "md5": "c2453226c346b4949f5acd06d183426d",
+      "sha256": "06c0f3570e136ac7321906c4a28342003f567b828e848db7ac538ebe90a52b5c"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110609_n4_logistic_outer0/inner2.json": {
+      "bytes": 60010,
+      "md5": "f69c732fe97f948e63164ee5069badbc",
+      "sha256": "876d9436aada6c7ba91e24670cdfab54830ae33b6d46bfeec0f4b4db9b4779f5"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110609_n4_logistic_outer1/final.json": {
+      "bytes": 53483,
+      "md5": "552d8c86e91fadbdee408c1de9a6d546",
+      "sha256": "fb617463a1649eb525c5476cc79450534304271d880c23b31f18cb27ef714937"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110609_n4_logistic_outer1/inner0.json": {
+      "bytes": 62593,
+      "md5": "4de75ce8180e73a7979113d39837feb7",
+      "sha256": "aab14ede7d78d5b597d3a4cbb5cd1ee3b74814822ecd9998db30d283d94d3276"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110609_n4_logistic_outer1/inner1.json": {
+      "bytes": 57463,
+      "md5": "3053c56365dcf700d6fed68ffe189adb",
+      "sha256": "7bf1f82cc1d0db32f6be6935f5846093dc87a948f8e584df6830bdd57c1344f5"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110609_n4_logistic_outer1/inner2.json": {
+      "bytes": 59338,
+      "md5": "bcb4250502394eaa1c6b9c469ea128ae",
+      "sha256": "652bf3ea4596bb066ab9187f45b89d8e33d71ebc1e3082c0bcb5f9e4cfbb8c1f"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110609_n4_logistic_outer2/final.json": {
+      "bytes": 50495,
+      "md5": "e469b18902bbd11a90c013e511a76a13",
+      "sha256": "33274250743325f42aae2b264c9ef76a03cc758c84543d9feb21709c4941a4ce"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110609_n4_logistic_outer2/inner0.json": {
+      "bytes": 59186,
+      "md5": "465e7a808d004de419e0e91d6f1ed644",
+      "sha256": "83c350f1f7709f85f98eb78ff0829fdeb981834d56bf2515fe60c0c4cd2f130a"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110609_n4_logistic_outer2/inner1.json": {
+      "bytes": 59847,
+      "md5": "0dc469a0a77d8d6ac6bd9f3fdec99f76",
+      "sha256": "949db358cec1cf04a24c8c5f960506f86de59ffebd5629d0d81acb7368b1f3ee"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110609_n4_logistic_outer2/inner2.json": {
+      "bytes": 63232,
+      "md5": "904e652ccdecdf887df5ed9f68afcfc5",
+      "sha256": "8f0f7aee92ba1c408edcf6252e1c3575bb9ae410f9f5bf8d84cd2c06b550805d"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110609_n4_logistic_outer3/final.json": {
+      "bytes": 53206,
+      "md5": "869ec5ca4e24075d393c769cf02b7208",
+      "sha256": "943cfd19b5fbffc94be5effbd006e402130202d199bca23162a26b1a85f1483f"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110609_n4_logistic_outer3/inner0.json": {
+      "bytes": 59369,
+      "md5": "d470cccc9bbbe7fda4ea862cc4f3a9d2",
+      "sha256": "c27ab830c16dbecae3537d7f03ccd70017d9cd9c4790423ff959f3d646980810"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110609_n4_logistic_outer3/inner1.json": {
+      "bytes": 60205,
+      "md5": "fc7e592d1dfa4ed8e9e92871e7150522",
+      "sha256": "8bbbf62d5bec1bf3672a1a54d220baa4f380d8ffd14dc213215c89f50552c6f7"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110609_n4_logistic_outer3/inner2.json": {
+      "bytes": 59958,
+      "md5": "dd8ea8908c13675f3562c968e3c84f07",
+      "sha256": "9bd75423e784c07e5a718b07b268c470bdc0fa27fe390de42cf8aa2a004df700"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110609_n4_logistic_outer4/final.json": {
+      "bytes": 51527,
+      "md5": "7892e85b4d0bf1f621112d1f298ce1ab",
+      "sha256": "7a7e10ab1b5bf74da208cb6491d03fb01104b137d4817d6fd78eddbc0a07fe63"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110609_n4_logistic_outer4/inner0.json": {
+      "bytes": 58743,
+      "md5": "759001badd9122dba5aeeefeac52717b",
+      "sha256": "d29fb6fdeb98f06a2eb297d51cf2b36ef5fff50a3f447632210352a1b1fe6421"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110609_n4_logistic_outer4/inner1.json": {
+      "bytes": 58871,
+      "md5": "783353acaad16aa52b8c35dea100c8bf",
+      "sha256": "f772121d651bf934dcd0721dc481da617a1e5a867a6fadf9e37e02b76a020bb0"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110609_n4_logistic_outer4/inner2.json": {
+      "bytes": 63639,
+      "md5": "19c10e273efd88c34221ca07eeb5f4f6",
+      "sha256": "99e9a669f24fc8256f4c737ac9bc21d9d2559719bd2c5f6c0d2eb86db45783bc"
+    },
+    "instrument_reads/five_fold/s42_p2026110609_n4_logistic.json": {
+      "bytes": 151680,
+      "md5": "d6f2a914954459da478dcb273076b13e",
+      "sha256": "50286ab0819842e1cf8f387087bdd552d3f1fa6d02daee47f76f013681c6b0ce"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110618_n4_logistic_outer0/final.json": {
+      "bytes": 52679,
+      "md5": "e8bbd444686a35d291d4ceea6a3ed5e5",
+      "sha256": "398397a5c7a5fad1fb330c9fee80cd16d6ef956a99962476a2b56028c5f07ec5"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110618_n4_logistic_outer0/inner0.json": {
+      "bytes": 58262,
+      "md5": "ce0251a37639a0e394acb4487067d3b2",
+      "sha256": "f9dd27d4309814ea5d1878725e61de260033e48cf743d426caaf4e5ee333b0cb"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110618_n4_logistic_outer0/inner1.json": {
+      "bytes": 61145,
+      "md5": "6043fe0a37ea3562d957195b0b533e32",
+      "sha256": "2de0b4661f216b3fbda3566ffd4779fa514f2b5657da055c985e68e4e406a76f"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110618_n4_logistic_outer0/inner2.json": {
+      "bytes": 60727,
+      "md5": "668ce01bd6a89c226e3d975de7dc12a7",
+      "sha256": "ed2c54b7cbb30c9a2304fd91b2c47994731abc53c9c361e7a56ec33e9efac59e"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110618_n4_logistic_outer1/final.json": {
+      "bytes": 53691,
+      "md5": "2c3c677850b59be4a857c4621db8f1a1",
+      "sha256": "3b4bba8348ab62ea8c66e607b89d4e697acde5df909212ebec51ed8af02edae3"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110618_n4_logistic_outer1/inner0.json": {
+      "bytes": 61439,
+      "md5": "0d15837e60b99118a48e47727495e4fa",
+      "sha256": "450df7aee6c150f73ff9331652404423dbd2e5cbc3100012b48a91b842faddec"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110618_n4_logistic_outer1/inner1.json": {
+      "bytes": 60155,
+      "md5": "631ccf25796ccbc042da91dd86d06214",
+      "sha256": "0883007be2b2bbf3f5d8bd8743e04ea4b55630d1f7247957baeb4464404a1b95"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110618_n4_logistic_outer1/inner2.json": {
+      "bytes": 57447,
+      "md5": "651ad8228ee4d6eba859170518cc3190",
+      "sha256": "95e6371c6e14ba877786e514e1a35177d02289597555da0483ad71877b87456c"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110618_n4_logistic_outer2/final.json": {
+      "bytes": 52231,
+      "md5": "bf4a20f28d16792a28802e8248af3474",
+      "sha256": "f8a678442674c198528d0a24a6182885751699986a6bab51056d8f4082c3ebd6"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110618_n4_logistic_outer2/inner0.json": {
+      "bytes": 58429,
+      "md5": "bdcd5f486445dbec6c2fe79a211eeadf",
+      "sha256": "6210d1cc79cfe32b2726e3fd611c53b6f9924a4ec9bfb078588a967dd68e4821"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110618_n4_logistic_outer2/inner1.json": {
+      "bytes": 60064,
+      "md5": "928d8e4d8a5b7334271155af2a96b747",
+      "sha256": "4afd4be40580e5c33dde6e1fb71097120eabc649be47777d9ab2c69bd7f6ec9f"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110618_n4_logistic_outer2/inner2.json": {
+      "bytes": 61963,
+      "md5": "ce165138f27de3bd4b2c1ddcd6ad2060",
+      "sha256": "99e0bce765efcce37856af37759fb1ba5b410f836a594f83b74a70c5ab6ccf38"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110618_n4_logistic_outer3/final.json": {
+      "bytes": 51282,
+      "md5": "4f2149765aa5ea74501002532cac5423",
+      "sha256": "ab8694bb8cec3f1aad1716c6f86ee120176cf20200c4c7fa72dcc19928e02aa6"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110618_n4_logistic_outer3/inner0.json": {
+      "bytes": 59400,
+      "md5": "9d09503901f1f234a51438557d4381d8",
+      "sha256": "bc15277eee38ca4994c04a0cd3fba321af98cb3da63b00bceafdf29b9217b672"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110618_n4_logistic_outer3/inner1.json": {
+      "bytes": 60784,
+      "md5": "4fabdcb314c31a8d7694c8a065c269cf",
+      "sha256": "dfd4db89052c1acfa05118e03b3c37bfc95adf062193ddccd08a15ec7ef5bb56"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110618_n4_logistic_outer3/inner2.json": {
+      "bytes": 61370,
+      "md5": "390e5fb2a63fd37a7315f6fad1cef8ca",
+      "sha256": "aa439ca98f933ba5ed3e928a0d1536aca71df67fd7c56273b0d2b75e92eb537e"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110618_n4_logistic_outer4/final.json": {
+      "bytes": 50084,
+      "md5": "8c421865fd26a8ddc50b2482bc94e585",
+      "sha256": "84559f59b5811024d42e55c3bcde97833578cd8778b178d243dfb6d0704a6f1e"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110618_n4_logistic_outer4/inner0.json": {
+      "bytes": 61282,
+      "md5": "7dede1367dd6b0a8ee585502d78c622d",
+      "sha256": "d88e75f5f561e58bcc78eebe0c5307b257f6353f4327f5fae9516d81fe584755"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110618_n4_logistic_outer4/inner1.json": {
+      "bytes": 58577,
+      "md5": "ded8932b10065f9a627038388a96507a",
+      "sha256": "b510148877a4be0139a9a513f5826e87e2a26dcbbc6dfb0146b2b10140b8af6b"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110618_n4_logistic_outer4/inner2.json": {
+      "bytes": 62838,
+      "md5": "a05f1b4dac7f5863bbee6bfd3dd6a037",
+      "sha256": "d61890c3466eda5ac4a41da53496e799c8d35098bf4b43dff0f84ecd8e0a48a1"
+    },
+    "instrument_reads/five_fold/s42_p2026110618_n4_logistic.json": {
+      "bytes": 151685,
+      "md5": "ac710f4ca0de281eee8d808738795ad5",
+      "sha256": "1a12862856bb7279c02220336ddd583b1d29c64c138922d5ebec11f4f0296eb8"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110607_n4_logistic_outer0/final.json": {
+      "bytes": 53156,
+      "md5": "4712d408f289021516821e0f65303cf7",
+      "sha256": "9b516ddbc25b4e38c92a92d06e0bb24539e3eff25d3f9f09b20c46aa103453df"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110607_n4_logistic_outer0/inner0.json": {
+      "bytes": 60870,
+      "md5": "1444b2b779e170d24530d1d0d1791f99",
+      "sha256": "b7852c26db32e4d5bdffd1b3a844a0e5b6a0e4bf9ea2ed7f2fe94cc72caeefa7"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110607_n4_logistic_outer0/inner1.json": {
+      "bytes": 60769,
+      "md5": "c8e9f09ece0e58c80ff74e1295b26a4c",
+      "sha256": "d061cc5184b6b43e4486e19df37bf543327e5778791f1c8547c42fea5e07cb65"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110607_n4_logistic_outer0/inner2.json": {
+      "bytes": 57878,
+      "md5": "26185e932a4a8cfe505871fb17ef1984",
+      "sha256": "0db16645dbfd4caca56bd79d0128c1c9439e6a41c8e6adb3d54ed26e4e2c6f7a"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110607_n4_logistic_outer1/final.json": {
+      "bytes": 52590,
+      "md5": "0fe1f39213f0b8d11bc94d975e05f2a8",
+      "sha256": "71edec6559814c28a3637951c6cffe7c0885f46d44561fde3fef1ca3bf4e7e4d"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110607_n4_logistic_outer1/inner0.json": {
+      "bytes": 59834,
+      "md5": "21cafbe290745cc7ecddb38ee38b9719",
+      "sha256": "ecd3e90cbfbd32f2778c8f2be90b9c1bd73f27531241118a7b6f75b0e14b2f0f"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110607_n4_logistic_outer1/inner1.json": {
+      "bytes": 59172,
+      "md5": "a0c39d6e850c30280735fd4b86f1873e",
+      "sha256": "a6b63d2cd922bdd60daba59ef216019158bb40d245446935d365f879b0040d3a"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110607_n4_logistic_outer1/inner2.json": {
+      "bytes": 61151,
+      "md5": "69545613a1b00b80f57eab5ac81d2a6d",
+      "sha256": "3909656c1056fdab5e7979d60bee06789f257e48c8652fcb2ac1549042f27d5f"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110607_n4_logistic_outer2/final.json": {
+      "bytes": 49526,
+      "md5": "6cd2574fc4d12af00caa6c0183e9cf32",
+      "sha256": "26765c858eb82e7c3f80614fc81cca0a85b089a60ba999157393e9b9ee6345a0"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110607_n4_logistic_outer2/inner0.json": {
+      "bytes": 59893,
+      "md5": "0b8a2288217b6f8898ed3af1476bfa2b",
+      "sha256": "aa4086373c0d1d24d9ba4d580b31e9f0442ee2e51b0f06ea660e031c5e4b1d17"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110607_n4_logistic_outer2/inner1.json": {
+      "bytes": 61607,
+      "md5": "c30f25bc857fd55dc04fd948ae369d88",
+      "sha256": "2239f5808ffe79b0c84058c9fae0c39ae1d6641794cbfa709de8cf4ef03f9dd6"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110607_n4_logistic_outer2/inner2.json": {
+      "bytes": 61779,
+      "md5": "04081fa5fcaa1b810c5b915fc5a743b7",
+      "sha256": "62c99f554941d7e8050cfa49047a0f6b0fcc8885c0d9cb4fb6ff791463445cf8"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110607_n4_logistic_outer3/final.json": {
+      "bytes": 54773,
+      "md5": "ed30acf079b8ce2f303f1aa9ae8d6407",
+      "sha256": "57182038a2dce3ef2f259f27e52ab4f9f2b7c11d81731cd6b22b24457e7c395d"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110607_n4_logistic_outer3/inner0.json": {
+      "bytes": 59172,
+      "md5": "ff51456149b3561da893a7c8756139a0",
+      "sha256": "abf46cf53c8ae50be9e911179befd8fa6e7a45bceaf66a6e7f7ca55c684b0079"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110607_n4_logistic_outer3/inner1.json": {
+      "bytes": 59241,
+      "md5": "d6714b42ed57ba0f56229ef7b3991ea8",
+      "sha256": "61c29cd656c1a7cf2363bd95ce9479fd6a5999cf452f09209e923a347bf46c8a"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110607_n4_logistic_outer3/inner2.json": {
+      "bytes": 59622,
+      "md5": "c521530ebfe78d5183a4731dc033e1c3",
+      "sha256": "b8b03a2820b884f5bbf71d9bed48a250a7e251da8a6106f4491a32b1a5f9218f"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110607_n4_logistic_outer4/final.json": {
+      "bytes": 49974,
+      "md5": "c99774a3424b86d0a1f619240882155d",
+      "sha256": "438a568fe888ffe8e6731c3aef084040eb48ba0c2aa2d418527d9682bfd7b01e"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110607_n4_logistic_outer4/inner0.json": {
+      "bytes": 61950,
+      "md5": "02446051373d2434efe8c7efcd7b5db9",
+      "sha256": "e6e46974eef6605281476c502e96aa061edaf75bfae88810116a608c0af61a48"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110607_n4_logistic_outer4/inner1.json": {
+      "bytes": 60339,
+      "md5": "054fd2ce23a330d777ff5c507907062d",
+      "sha256": "b63260ac40c80424ba689fbf1b625f6c60b1217b75dfda54fe3582267b97574b"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110607_n4_logistic_outer4/inner2.json": {
+      "bytes": 60541,
+      "md5": "1cf704a006dc7e1784a681b34cf57464",
+      "sha256": "447993c0ce7e89da0935110ed2ba4380bd5ab39eaf59e9a20a95108edfdd3d17"
+    },
+    "instrument_reads/five_fold/s42_p2026110607_n4_logistic.json": {
+      "bytes": 151685,
+      "md5": "a0db38f83a199fd4723b1d923489fe57",
+      "sha256": "5e33ec7bb517a9071014c2fb1b7251919287c4563352f626123e7f2669efbbe0"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110603_n4_logistic_outer0/final.json": {
+      "bytes": 53647,
+      "md5": "d6959fbd031d384fb8175e1906cad8c1",
+      "sha256": "f68444ca63657542a34c1828570ff4c386ecd5f5d09edb3d594b59070844e66e"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110603_n4_logistic_outer0/inner0.json": {
+      "bytes": 58530,
+      "md5": "b68e996d1cbb81a24ac2ca59e6ae38ef",
+      "sha256": "4a1f81d5d385bb1e75b2604cdd2fd5ff3da47c9838a0a82bf39d353b26157e84"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110603_n4_logistic_outer0/inner1.json": {
+      "bytes": 59385,
+      "md5": "440049c6bd9d14ff2571f29825e6a811",
+      "sha256": "40284dab045b1ba1d5bd587e30204cae23090e0dc756aaabda02115e99f40924"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110603_n4_logistic_outer0/inner2.json": {
+      "bytes": 61089,
+      "md5": "23283ab2c337c3a742e7b902075c5f2d",
+      "sha256": "13a74f2267d7dfd24b0b2e5968ef74b93a14acfb9f4bb2ce34db8b4fba5a3b09"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110603_n4_logistic_outer1/final.json": {
+      "bytes": 51562,
+      "md5": "a50fe36f5d12e11be7978f310dd079ac",
+      "sha256": "1d33fab18de475c6ba41fb31ec5fc0b15f9367eb7b7b4a4bfd6db074dfc7e1e3"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110603_n4_logistic_outer1/inner0.json": {
+      "bytes": 59237,
+      "md5": "b279984bb6d1d390aa02b17759ad12be",
+      "sha256": "51b42c1ad62eda900bfc87fc79fba2835e47ebea17c8bcc306bc073fe4bfa9f3"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110603_n4_logistic_outer1/inner1.json": {
+      "bytes": 59725,
+      "md5": "ae315c4b77925bbf7f1aea2a0e320e1a",
+      "sha256": "650783c27312bbb67b00a2426eff7142803a1f057c23d1a71477ee12982e9ba5"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110603_n4_logistic_outer1/inner2.json": {
+      "bytes": 62222,
+      "md5": "54e81e2d83ffe3f2c29f6f75d004f4f1",
+      "sha256": "88dc16af05fdc2e84130e1553f9b4e1daf404c0f0af0f26a1825611c2bdef0db"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110603_n4_logistic_outer2/final.json": {
+      "bytes": 53593,
+      "md5": "e3e7dc40acbcbdbbe574627c4229c1f5",
+      "sha256": "44136e8efd4bc3900170a030179c6b28082f17026cac19f82e884048e29ff0ea"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110603_n4_logistic_outer2/inner0.json": {
+      "bytes": 60192,
+      "md5": "d252302ed5f02f372cd6b6ab83a0486e",
+      "sha256": "82dc693d6232ec05731601470260048db7bb938ea09297b638a20d8373e43ecc"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110603_n4_logistic_outer2/inner1.json": {
+      "bytes": 60980,
+      "md5": "4a0da79718cd15bce813d554d3208f92",
+      "sha256": "38f8854c364cc997f630421a98beedfe6c6c4f239dd91df31b963cb2f6f31d0a"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110603_n4_logistic_outer2/inner2.json": {
+      "bytes": 58141,
+      "md5": "164ab2ea5eb01ad992fd2c801a98e54c",
+      "sha256": "2a9e1041a720944146402d3097e3dcbd1ce4d60c48c573e5ec423bec4bf226d3"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110603_n4_logistic_outer3/final.json": {
+      "bytes": 51459,
+      "md5": "b8ec1cad80a403546b9c236c74642dd5",
+      "sha256": "602e7888c2f9c9b46131854b8b41abebe717ff0272d113c47fc734306af71add"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110603_n4_logistic_outer3/inner0.json": {
+      "bytes": 62903,
+      "md5": "a0e16f757b7f86c93ea0cb74ace42ef3",
+      "sha256": "480f2c5ea4b0ff965b16acb07d39fc953cf78834cedcf1822cba3069c492d59c"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110603_n4_logistic_outer3/inner1.json": {
+      "bytes": 59375,
+      "md5": "e5eebca858d15958cc872d9ac089fbd2",
+      "sha256": "db6565679de299a378708cc51125716c956d13b5e79a5b517f9441d642bbc7cd"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110603_n4_logistic_outer3/inner2.json": {
+      "bytes": 59008,
+      "md5": "6be6b9a41baa2645051924d1da60f33a",
+      "sha256": "ccc0a89630bcbd7884768351ff1c322b5c5f2343c90d27fdbcda4a443416994b"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110603_n4_logistic_outer4/final.json": {
+      "bytes": 49781,
+      "md5": "756e59350fa43bc03927b5825dc6e5c4",
+      "sha256": "66465a437c2c01bc276b1ea31a9662a1d5d5be0cf48e506ea5cc29d83cc301ed"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110603_n4_logistic_outer4/inner0.json": {
+      "bytes": 62021,
+      "md5": "41c41bf39f8a4a99162d41af478570bf",
+      "sha256": "20b5256b1f032285e602f914cafc7dd371a578e1ab8a402040e0db08b7042df8"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110603_n4_logistic_outer4/inner1.json": {
+      "bytes": 61666,
+      "md5": "56d67ea978d30093a7257a915cb21653",
+      "sha256": "9ed8e8ff6a0c98acb82a1298a35559a0dd418bf0e981e69ae00904ea325fd45b"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110603_n4_logistic_outer4/inner2.json": {
+      "bytes": 59358,
+      "md5": "b0bf799b6e02e111c049dd60803b228d",
+      "sha256": "1ec2b3a897ffeb340e749e142446843eda73091f3422f5866fa418fd3446c1f3"
+    },
+    "instrument_reads/five_fold/s42_p2026110603_n4_logistic.json": {
+      "bytes": 151669,
+      "md5": "d903a423fd53bc88f2c1ccab31aa5ba9",
+      "sha256": "89831645c28fe615853097164a2554985a530ce313fa02b1c22de76c2878007a"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110614_n4_logistic_outer0/final.json": {
+      "bytes": 50994,
+      "md5": "6a0a382c35f831fbf6d84b2b36bbe8bc",
+      "sha256": "91d21fd8b5def25813172729ddf8f4a1548e8fed28ebd78d7597e7fa3a1a9d3c"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110614_n4_logistic_outer0/inner0.json": {
+      "bytes": 61080,
+      "md5": "f01675106193d5ca9e9c3686711f9744",
+      "sha256": "22417cd5075cd615cf7047f35454e1118b73cc814ade95186d828340fa234624"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110614_n4_logistic_outer0/inner1.json": {
+      "bytes": 61028,
+      "md5": "8e44565b2eeff3490fbec3b5041a24cb",
+      "sha256": "802492c2bc66a9238c57826ef4a38e1d73909752c1a7026e19de70217e8c5c63"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110614_n4_logistic_outer0/inner2.json": {
+      "bytes": 59667,
+      "md5": "238a3089140d86be11da07dbf07b9d6e",
+      "sha256": "726c5eb3e2aa37d81e493cb6a7c3318e324b0dbf9ce6c8ff5c0bce4a72e2e8ff"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110614_n4_logistic_outer1/final.json": {
+      "bytes": 54857,
+      "md5": "b5b3d67bace4c8bde428525a341e8854",
+      "sha256": "541788b15e8cfa2356d85ac238befeceea7e1266fdf5d7d1238a16fbb8199be4"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110614_n4_logistic_outer1/inner0.json": {
+      "bytes": 60050,
+      "md5": "632a27d11f8766d670d301e84b89775a",
+      "sha256": "ea6c3d74e221bedf1a15a63fa56223f65ccf5f1ec513a9429916fc6c827d3dc1"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110614_n4_logistic_outer1/inner1.json": {
+      "bytes": 58895,
+      "md5": "79017181f22d97f2b24f77c720e32cd5",
+      "sha256": "482dc8f82e0f8b087ad8f8c1863f862763f8292d9f032e0917da6198db39a411"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110614_n4_logistic_outer1/inner2.json": {
+      "bytes": 58953,
+      "md5": "25614409f09b7dea091c4d27af35bba5",
+      "sha256": "7dae6357ef143a60fedf2597fc1fcabe1b35aa7becffcc2f941e14d895ce48d1"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110614_n4_logistic_outer2/final.json": {
+      "bytes": 50843,
+      "md5": "6654cdcfb5701179eb8be051e417340a",
+      "sha256": "1c44d5660cc3bbb079aaa020200b434eadc4bc1bbeefaa5e8753438c2a354a0b"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110614_n4_logistic_outer2/inner0.json": {
+      "bytes": 63749,
+      "md5": "28bb5342e7c6eb9f934051afb2dfa704",
+      "sha256": "62cb2386ecc69dffb783c4f4bc059812003a52dae7a94882c7b99eb4433f7db7"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110614_n4_logistic_outer2/inner1.json": {
+      "bytes": 59533,
+      "md5": "f57ced71e6a5548aa9a56031d00533b8",
+      "sha256": "36c82133d2059b9d98a2f6988661487f34af7cc1ebcad4e54a9052a257d9794b"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110614_n4_logistic_outer2/inner2.json": {
+      "bytes": 58721,
+      "md5": "252fd34077ecf54f174648d0a6f3a7de",
+      "sha256": "e18999b8bc4e7c37072c3bceaa32bbb702953d273b145e22dfb8f6421a24c42a"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110614_n4_logistic_outer3/final.json": {
+      "bytes": 52355,
+      "md5": "c00be83560c6024c7b9f9a4ad2aefafb",
+      "sha256": "7f229032c1ab52dafc706ab5fadaebfb3d2453505438683facf740ba20bb1813"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110614_n4_logistic_outer3/inner0.json": {
+      "bytes": 63227,
+      "md5": "97e5d282718f78aeb4dd49d0a63e9700",
+      "sha256": "34d3f8f11afe1315320eaaa569f5a2bf54432507367756c443d3ab7c05a24afe"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110614_n4_logistic_outer3/inner1.json": {
+      "bytes": 59645,
+      "md5": "ecc3d9f32d39d52e090cc6d93415ec03",
+      "sha256": "849ada47d5a9f86ef1d8b4a2688afa3aea27c7219a25ef9d6794413182924fe7"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110614_n4_logistic_outer3/inner2.json": {
+      "bytes": 57555,
+      "md5": "81ef67c090b67e569ce6621e8acde875",
+      "sha256": "2cb9b3290c95d6389b6467eb96049d57ebd41d00d2f3f9504b540343d6091b0b"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110614_n4_logistic_outer4/final.json": {
+      "bytes": 50975,
+      "md5": "907f86a2267996f94192e948bf22bca5",
+      "sha256": "13aed701581cf9dde52637cb30ec12216279a3ba1434a6c3b1eb5e14abdb4f95"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110614_n4_logistic_outer4/inner0.json": {
+      "bytes": 61642,
+      "md5": "5d88f564877f0c8d6d2157043f50186c",
+      "sha256": "85d348847f2b81eaf77db312d13728491f12bae627231a88baf28cd844518791"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110614_n4_logistic_outer4/inner1.json": {
+      "bytes": 58625,
+      "md5": "762226eca16d344c88f3321965cc4c15",
+      "sha256": "edde8f58ad3bed75690cc374d091fa2354a11bf25b7c9e0526b28167690711f1"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110614_n4_logistic_outer4/inner2.json": {
+      "bytes": 61530,
+      "md5": "92dc1ec38075f0b65c977a9d278f7c5b",
+      "sha256": "4854b4cb684e9877670fd8aea01aeccfe6be4ec24b998642857c27c0da6cef08"
+    },
+    "instrument_reads/five_fold/s42_p2026110614_n4_logistic.json": {
+      "bytes": 151663,
+      "md5": "3c46f6332a58db24cea75337288d02a9",
+      "sha256": "e818222949bee7d19e446ef8640ebadcdf5ceb6b5e71ec4f5b4c319b33ececdd"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110615_n4_logistic_outer0/final.json": {
+      "bytes": 53085,
+      "md5": "609a3b47a87c585714660539718d718d",
+      "sha256": "a56d53215b0a1afd9a8481cc048fdb6160339e1d4d6f5c0da0bbfce558787a96"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110615_n4_logistic_outer0/inner0.json": {
+      "bytes": 61284,
+      "md5": "5530f2f22712a1d43b2e5980e1d2135b",
+      "sha256": "7dbe1c6716b6a9d9a907792fd5564946bc2c3c1d1a947af70d3b3a88e5c75554"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110615_n4_logistic_outer0/inner1.json": {
+      "bytes": 59031,
+      "md5": "49111133844c8f6d76aa255e4bbf7f78",
+      "sha256": "5fe49d35d30a9a689aa0cc2dee43bdf17bdf37bc1b0bc22cfa319c763eac85ab"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110615_n4_logistic_outer0/inner2.json": {
+      "bytes": 59347,
+      "md5": "1ad45f84caf7f0c4f7ad67a1a78625f5",
+      "sha256": "04e5d9ccbeb1f09959dedf6213b1a8881faa9abd374b1a792572252591ee40f3"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110615_n4_logistic_outer1/final.json": {
+      "bytes": 51696,
+      "md5": "f0fb39e73e484124c55b39a4116af778",
+      "sha256": "e8fa23a503fe0aedfa2ba0f8bd36e8fda5d62521a5c3dd7bcd55526bdac14a1c"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110615_n4_logistic_outer1/inner0.json": {
+      "bytes": 60328,
+      "md5": "6245e82cd6c6636f1140b73a55d79cb5",
+      "sha256": "5b922dc3cb67ce76551cebe977e7bbd567f0240c794768a4973d93aad9f72e79"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110615_n4_logistic_outer1/inner1.json": {
+      "bytes": 60499,
+      "md5": "577f2b65ea638f093bbf17a87cdc551e",
+      "sha256": "3cc2bff7333ec31d8a30daeeebd5efa09224ce5cbba5fafdcf36360ed002104f"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110615_n4_logistic_outer1/inner2.json": {
+      "bytes": 60210,
+      "md5": "0deb5d546f07c109464361f4b12bd70d",
+      "sha256": "c761c49f6cb83e3fd39f50d5c6b4c99487461bb102a53e2eb0449bc53bf73868"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110615_n4_logistic_outer2/final.json": {
+      "bytes": 50661,
+      "md5": "158f7fba400a564024b9c0714165c12b",
+      "sha256": "5ea243d2d0659820b6a2251ca7d51f8ad2ad23b43226fe550d41e1b8b6892e71"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110615_n4_logistic_outer2/inner0.json": {
+      "bytes": 59155,
+      "md5": "0bbc4ec44df72f282573b83faa48fbaa",
+      "sha256": "2d2398c705a313fc9d2ea51c893e299033f95c9da4322f6d481a51dd3170ad58"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110615_n4_logistic_outer2/inner1.json": {
+      "bytes": 59995,
+      "md5": "3386d6846c16fc2d66e6b5e6a89a76c9",
+      "sha256": "35fff2ad57415e60c9c10e21636334acda2748b0b14c08e61b10f0acb9175965"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110615_n4_logistic_outer2/inner2.json": {
+      "bytes": 62917,
+      "md5": "eeee69d378223541f2db225ed1ab166f",
+      "sha256": "6eae7e24bdb4804db0650848dee367f7d789bca7992c0a8741fb7791a73013dd"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110615_n4_logistic_outer3/final.json": {
+      "bytes": 53569,
+      "md5": "afecebdc2f6b096a700a2aa4286f0e6d",
+      "sha256": "859c7acf52c54e9785dd5efe3511f2edba7865a52ff45ad2fd723cb187a1ddd8"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110615_n4_logistic_outer3/inner0.json": {
+      "bytes": 60703,
+      "md5": "af2a07f15cae8de1127c01f1f226ba47",
+      "sha256": "739918c5432272894ae6a19abb33ec85baf68d09f9586323cb813178ac0c4cad"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110615_n4_logistic_outer3/inner1.json": {
+      "bytes": 58626,
+      "md5": "acaca8aaf0ca32c821413fa2ce833c7c",
+      "sha256": "44d2a2c2a5871d7716ca26cfdaf80a5d7f16829302db8a7eb8c8630f6cef5a71"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110615_n4_logistic_outer3/inner2.json": {
+      "bytes": 59979,
+      "md5": "ee41dd016454fe729612e28511c0b305",
+      "sha256": "8e7843c5a4f8566135a46f7cafdaf501b17117c67864c2ad2d68600307a4ddae"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110615_n4_logistic_outer4/final.json": {
+      "bytes": 51049,
+      "md5": "97202ef5d688b1a3cbb1a8fe2bb9bb3c",
+      "sha256": "45d67a724200f6410ee0b2606a90e575acf757bb26b6bc163181cf9a73ec5ab5"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110615_n4_logistic_outer4/inner0.json": {
+      "bytes": 60297,
+      "md5": "4746504340cc5906e1a5d32f45b4a884",
+      "sha256": "b001631af9da722d193a823b0c53a27a9794f3427b3139f7c33e7e206f949eeb"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110615_n4_logistic_outer4/inner1.json": {
+      "bytes": 60204,
+      "md5": "8cecc5dcdcea5f17f526efe6cdae1507",
+      "sha256": "a40433b4ecba24ad2f3f50a37525f32cbfe35eac7294fac5faae72ca551d9b43"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110615_n4_logistic_outer4/inner2.json": {
+      "bytes": 61298,
+      "md5": "d9757c7e69ef6815440fb327a1885815",
+      "sha256": "6d2534697fc048a0d68aba5941434388fbebeac0f0434d571d37202e4ae1ef29"
+    },
+    "instrument_reads/five_fold/s42_p2026110615_n4_logistic.json": {
+      "bytes": 151634,
+      "md5": "cff14a62c11063fb597c7592173cece1",
+      "sha256": "789bdff826703141820caa03ad7b6d22b2d13a5808a1bf1bbd821be98b035b5f"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110613_n4_logistic_outer0/final.json": {
+      "bytes": 53383,
+      "md5": "4a166e761b3429907ae4e23627bc4544",
+      "sha256": "dfe0d8050a33397f3907cf7a88a60b51022d88af450d0f3dba286084fa4f68b3"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110613_n4_logistic_outer0/inner0.json": {
+      "bytes": 60004,
+      "md5": "61692589f66dc42f559424a051db8768",
+      "sha256": "cdffe2eaece557bbf781c3df13a64e974f98dc9c0da7b58bd1ba7dfb0427c95c"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110613_n4_logistic_outer0/inner1.json": {
+      "bytes": 58830,
+      "md5": "de2bca9b985e87187deccf99eda3ddb0",
+      "sha256": "68092d63034508ea55df56355a974fc0f1c059a458d753f431d8dace438d7ad6"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110613_n4_logistic_outer0/inner2.json": {
+      "bytes": 60576,
+      "md5": "ad60110ec6b3ac213a140873d4865c84",
+      "sha256": "f32c3b917e7ee4605f83df74db637490fff82ac5bcc0e8b20b3aad3322e8ca14"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110613_n4_logistic_outer1/final.json": {
+      "bytes": 52071,
+      "md5": "5c549fbd78207b6a58cca0fa4f8c9899",
+      "sha256": "60a8381adac689ee31a057e199476379ea7701ec7611c7c9ec07871ee2b313a5"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110613_n4_logistic_outer1/inner0.json": {
+      "bytes": 59383,
+      "md5": "a9bec94cdaa72e4f78849e9a690d3739",
+      "sha256": "da6405fa6315f35c21b39b1631e824a22991a3a8e6096d75a3f933d33a0349f9"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110613_n4_logistic_outer1/inner1.json": {
+      "bytes": 61287,
+      "md5": "6ea956cc16df7bb8ea554e0f5ad7b472",
+      "sha256": "2594b4c15ae4233853cc54c865a2ee40f8315e60fddf896441b7a83d4e5fbad6"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110613_n4_logistic_outer1/inner2.json": {
+      "bytes": 60085,
+      "md5": "255b2c2f4948de08e16b1ebb4321b4c6",
+      "sha256": "f5ded1d5247db15fc19e8aeec71b3d25568999a3e50fd4dc96d8aa79bf3026ac"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110613_n4_logistic_outer2/final.json": {
+      "bytes": 50915,
+      "md5": "d4a9f8e8c9f817a9f4ffdc18bc5432c2",
+      "sha256": "f6e04f9f67964c1dcdfcd9b3aa6cb897dd822f61fe15222448693758998f85fd"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110613_n4_logistic_outer2/inner0.json": {
+      "bytes": 57147,
+      "md5": "83d0e7c6f0db51650e8ab42ade2da7a8",
+      "sha256": "ca7b53564a429f53826a600b4bc28a7f6b99087bd6116155fccfc659730b812d"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110613_n4_logistic_outer2/inner1.json": {
+      "bytes": 64166,
+      "md5": "e266f6fe69bcf8492fd92616e8f1278e",
+      "sha256": "5e4501fede918fbdd68f5211b5abf780fdc25789527155984a3769d31e14d906"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110613_n4_logistic_outer2/inner2.json": {
+      "bytes": 60620,
+      "md5": "319e6e97f8c3853365a699759f3a21ff",
+      "sha256": "a4fb86f15e1e8eb02949b3182d52149b49a53623409f7ff8fa425df8442c7d7f"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110613_n4_logistic_outer3/final.json": {
+      "bytes": 51892,
+      "md5": "8fecd4ff1e40674ea6fc628b8c2a4f61",
+      "sha256": "81e28016e1f167c97ab6d929120c578bc777b594ed82404e4bdf3709b2a2685c"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110613_n4_logistic_outer3/inner0.json": {
+      "bytes": 60895,
+      "md5": "f9ee9e38f5c9f2be7b674cdff85ac36c",
+      "sha256": "8d8c527ff8a758efae34df8fbf36a5e04f1659faf4659c1da50d48566e10f3bc"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110613_n4_logistic_outer3/inner1.json": {
+      "bytes": 60437,
+      "md5": "2c8c20bdf0d012676f887c39113e7c8f",
+      "sha256": "c8803c52f6655f13b2a6458f6a3185f2370590f5669e694c362540fc035a7b43"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110613_n4_logistic_outer3/inner2.json": {
+      "bytes": 59516,
+      "md5": "3cad345de7a922b10bbde38e7274bf72",
+      "sha256": "ea44b2597a0c3e089f5b6d08126edd120f71763f003b4d49e1ac798ee8f9bec9"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110613_n4_logistic_outer4/final.json": {
+      "bytes": 51864,
+      "md5": "3905d235a7260f2bc92d521c26fbe7ce",
+      "sha256": "3f50825132d4e2e988f92f7037effa7848c7a04d4b24a1702454f1379bb10c0c"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110613_n4_logistic_outer4/inner0.json": {
+      "bytes": 59808,
+      "md5": "34af516b442beb6ee0322ca7b041fb74",
+      "sha256": "7efb427d37716c148f593df7dea2bd6c4c46d9557db9d3f7159cfc8c70601efe"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110613_n4_logistic_outer4/inner1.json": {
+      "bytes": 62657,
+      "md5": "519a3959311a40c7cceb5929053b2df3",
+      "sha256": "907696a3a6535eb2224a82b1267aa7402fcf0c4fd72c8f771bc40df27e3e0bd5"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110613_n4_logistic_outer4/inner2.json": {
+      "bytes": 58541,
+      "md5": "854d2795d8d82920dc6ccded3a016099",
+      "sha256": "5908931c3f6ec846da01598a8734d2d88e55030d8291d6c811f3baa8039e5e6c"
+    },
+    "instrument_reads/five_fold/s42_p2026110613_n4_logistic.json": {
+      "bytes": 151705,
+      "md5": "09d2ca197399c0b40a66d6f14357f154",
+      "sha256": "7e58a5a592a76f5497cd7b9851a006c3af13e5f7dc4b5affee674d9c8d4632bd"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110617_n4_logistic_outer0/final.json": {
+      "bytes": 50878,
+      "md5": "4ba635251f955bf96c276485a224ccc2",
+      "sha256": "971832e15ba35551f3557e3d0a07513a679ebbec08f595b23f5f9a7d59b95017"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110617_n4_logistic_outer0/inner0.json": {
+      "bytes": 59113,
+      "md5": "ae165a77a303193cc25af947e459548b",
+      "sha256": "3804f81a943434632ced1b01c65f11390450ca196746e024aaae06866740a166"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110617_n4_logistic_outer0/inner1.json": {
+      "bytes": 60666,
+      "md5": "4240f06a19a9bae61134a8447aa6947f",
+      "sha256": "1280fe5aaf3605209458a0a1f54a3063761a54193f61ef72bc754e71f530367f"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110617_n4_logistic_outer0/inner2.json": {
+      "bytes": 62178,
+      "md5": "357ea3869c8c863ac243ddcda3be2597",
+      "sha256": "4a1ccf8c35eec4b8ce610a9e9389e17204d071cf2cf7be66c83f8e6c7b868800"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110617_n4_logistic_outer1/final.json": {
+      "bytes": 51578,
+      "md5": "2861f2444cb2f3ab68ff57b58d151a8a",
+      "sha256": "ca1ea923e42d31efd5efbfbaa375d9386f6c2e15fe595d70a3343b18f2d8938a"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110617_n4_logistic_outer1/inner0.json": {
+      "bytes": 59648,
+      "md5": "ad1e8948270c2a2b0a77eef403afef02",
+      "sha256": "3a9aa83d95d505fc3883a71cfbc70f1f51d8a74959924f50f4fad5e17f3e7c06"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110617_n4_logistic_outer1/inner1.json": {
+      "bytes": 61229,
+      "md5": "41d31f9ea49c734f9423571c94b3b0e3",
+      "sha256": "98abaa24db5bebee1ee09ab4661bd853e020e0f4ec014f55f6a74f78ad11fb24"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110617_n4_logistic_outer1/inner2.json": {
+      "bytes": 60266,
+      "md5": "f5c3bb828ea1099cce016b2d3412030b",
+      "sha256": "0fd874f86c094035cb8ce85f83fc0d7784c9282916e8143baa2b55d3d9664635"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110617_n4_logistic_outer2/final.json": {
+      "bytes": 54569,
+      "md5": "ccb201fb1cebb6219961db9677508e32",
+      "sha256": "a09978d05efef14853752906fe7ae43a4545ca30938ec4401afe81b7a0c0951f"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110617_n4_logistic_outer2/inner0.json": {
+      "bytes": 59960,
+      "md5": "e21a716e78d8b62a749cef6c92bb759f",
+      "sha256": "0a0944a647d1b77ea2c7fea35b3ac49c8daa3beffa4f6a3b1b962117b99bfb35"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110617_n4_logistic_outer2/inner1.json": {
+      "bytes": 58290,
+      "md5": "bcbdb5b96c78e78cd4ea861110457fe0",
+      "sha256": "efb0fa8d32e9b741394285959231dc4183d0d8095cc126a03f2256a39ba9a990"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110617_n4_logistic_outer2/inner2.json": {
+      "bytes": 59837,
+      "md5": "83952a90ef7f399d1aacf1d48dddae82",
+      "sha256": "4e358374fe59ae791f506e8843dcd0a9ca20f61a70304c2dedac83cc5a406c0e"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110617_n4_logistic_outer3/final.json": {
+      "bytes": 51604,
+      "md5": "096e619c8bab19b1a9e2190417c0e262",
+      "sha256": "25e1f3332467f515cab58242286a15e601c200f2323f95b3506b6c5ee9f2c03f"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110617_n4_logistic_outer3/inner0.json": {
+      "bytes": 60765,
+      "md5": "8be649b21b27c0af0c7b2b2b79038e14",
+      "sha256": "bda8758cc622b5b9d1fc4f86e79f4e13d1641d55e61596cbb9ca0f50cd077458"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110617_n4_logistic_outer3/inner1.json": {
+      "bytes": 59486,
+      "md5": "519a00eab9b42d43bac72412a19bed12",
+      "sha256": "86171dde1f514b72d743674ec939f9dd992b11faa459f72734b4cfb4854d4921"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110617_n4_logistic_outer3/inner2.json": {
+      "bytes": 60911,
+      "md5": "fcd7bb393cea734b9edb4fcd7392d79f",
+      "sha256": "7fdec19eeaa4867d7f8f27d19de8a436b19602d4db5dc0c120e9944c78948c9f"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110617_n4_logistic_outer4/final.json": {
+      "bytes": 51412,
+      "md5": "a3cfd4e640db79bb08adfb77980e4d13",
+      "sha256": "0b4383b5c238e962bcad67cfe11938f57521ead1582f53c282dd171eca2b8e79"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110617_n4_logistic_outer4/inner0.json": {
+      "bytes": 58553,
+      "md5": "71254976f8a4cca2e9f31d2651fe2e65",
+      "sha256": "664fa4e12c2b066bf30f7e438364881790bd5c3b8e0b843220a33be13638c593"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110617_n4_logistic_outer4/inner1.json": {
+      "bytes": 62449,
+      "md5": "11e243bc83c4efd5a9ecc8c07387d9f1",
+      "sha256": "9a689cffd5cbc2e00fe0d6f1d2a3a8d3cb13375e987ffc1b70b19ee62aee3b83"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110617_n4_logistic_outer4/inner2.json": {
+      "bytes": 60397,
+      "md5": "34e3a20d98a4026cc74aef770f3e511c",
+      "sha256": "be46488e913e716b7bba674c8081fe031f83a8705c56dc97b509669dcecc53bf"
+    },
+    "instrument_reads/five_fold/s42_p2026110617_n4_logistic.json": {
+      "bytes": 151673,
+      "md5": "532d6f4cf08c5f3469fba7558103cb5f",
+      "sha256": "7ec7eb7db257a7554fe2ef1e3af43305a64de26408bec7b71a4cbb5b134a7f40"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110606_n4_logistic_outer0/final.json": {
+      "bytes": 52105,
+      "md5": "bbd49affd3e6c9922e1ea817938bd08f",
+      "sha256": "4fff3f0d17d5a021cf4fe0b6009af7a65c413bfbb6e55451e14c13def7829537"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110606_n4_logistic_outer0/inner0.json": {
+      "bytes": 59613,
+      "md5": "bc583b751b454809f829212d1c9a7682",
+      "sha256": "48c6689107e7194f2475e217e1400733971af4564fd295c32fc080840c51a512"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110606_n4_logistic_outer0/inner1.json": {
+      "bytes": 61501,
+      "md5": "493c73164f97346a3e2c8e4c43b56d3e",
+      "sha256": "1688a5d9fbe13d8d2180ee15850d06f01d56b44a4a825cde78bfaf14c660ff6f"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110606_n4_logistic_outer0/inner2.json": {
+      "bytes": 59561,
+      "md5": "7a840e6f7950a191b79b31771c157def",
+      "sha256": "021e37e17782c63361cf1eae0357c424ab9bda6063bb90e05b869ceff30e1857"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110606_n4_logistic_outer1/final.json": {
+      "bytes": 53582,
+      "md5": "b12cbb7f096ab7927fcb43610bccb88e",
+      "sha256": "ee43414331c073e022e6c1a3734f2e64cb458d1a68cbe51164d988761a1e7e7e"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110606_n4_logistic_outer1/inner0.json": {
+      "bytes": 62601,
+      "md5": "6ac9c4ea5879176d9bd8f73de578e8f6",
+      "sha256": "e2b6d9abf7bbeda604fbc298067a4c5faa8cd4a17137d14b87092a69f0962eeb"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110606_n4_logistic_outer1/inner1.json": {
+      "bytes": 58424,
+      "md5": "d314de35668045c90476d6b5d413a8c4",
+      "sha256": "26d39c198a36f4a6e63accbff6970de6f6d56d8b0881b5dff4de4e9c6a2817bd"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110606_n4_logistic_outer1/inner2.json": {
+      "bytes": 58103,
+      "md5": "d27f0310a10af8e5e2707362665555f4",
+      "sha256": "573797678d290ed1c151cfca324d2a223a6d89c1af881d7a4e435a9f400ff958"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110606_n4_logistic_outer2/final.json": {
+      "bytes": 51650,
+      "md5": "a647f85c3a8b73688fea9743fc58f74b",
+      "sha256": "66b0fdc0816164d5b09da0a9d438f8d60ec5c431971281750254422b6c2efd15"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110606_n4_logistic_outer2/inner0.json": {
+      "bytes": 61721,
+      "md5": "afc56127fcc73faf17be35683e6decad",
+      "sha256": "65d8936090dea454b8469e1c888ce0a091c2d11c916ac2e223865f8204252de3"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110606_n4_logistic_outer2/inner1.json": {
+      "bytes": 59810,
+      "md5": "c2d665cc0eb0ac09e15de11496d643ca",
+      "sha256": "5639e82ba0c3982c4b393cb99342c5a930f953ae309776d102b8203d6b9a35ac"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110606_n4_logistic_outer2/inner2.json": {
+      "bytes": 59667,
+      "md5": "8bee278adaea6d8f48dcd0bf2678f787",
+      "sha256": "8f31ad0210094ab6deed9bee78e9e972e82de2d46ac0dbcb7f161e350707d429"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110606_n4_logistic_outer3/final.json": {
+      "bytes": 51458,
+      "md5": "60fe83d31445dd51eda4063d6b056d69",
+      "sha256": "2d3f75e471437f221d2e015267575f0a9fe86cb56cae3a9978f43acb67268e46"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110606_n4_logistic_outer3/inner0.json": {
+      "bytes": 60930,
+      "md5": "ba200be62f83bf30ad8a2fbaf4c8905a",
+      "sha256": "814e4fc036c58cb5fb266f31f446e5539d71eb4300bfca347695b2fc5e6ff5e7"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110606_n4_logistic_outer3/inner1.json": {
+      "bytes": 60524,
+      "md5": "e019c6477ec246a988cfce1ea1dfa8dd",
+      "sha256": "fc7ccb9cd747b7dfff961692db601b60a92e595ecec2bba4972a9226ffb5ebf8"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110606_n4_logistic_outer3/inner2.json": {
+      "bytes": 59895,
+      "md5": "a0fdd12137e007431761f7522b5a3dab",
+      "sha256": "90150066ebf27c72c7ef53d873e01e6db7e91b76c18ecfee39554e242f920af9"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110606_n4_logistic_outer4/final.json": {
+      "bytes": 51226,
+      "md5": "596300f547129bd41bbfddf59d1ac823",
+      "sha256": "e3074e63d832ed808da4bbbaf281b076dd920d2c3d40f7143d27c15183c2ff94"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110606_n4_logistic_outer4/inner0.json": {
+      "bytes": 61110,
+      "md5": "c155ebd7980614b66e9c65444456b43b",
+      "sha256": "fbe9f5b7aaaa00bb189a6935d3b34bc97f71d7eca6caabecd762315ffdb08330"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110606_n4_logistic_outer4/inner1.json": {
+      "bytes": 58427,
+      "md5": "f89ef225a7da2ab0a0e4c3acb43ac13a",
+      "sha256": "7d1b88c5d7a7f93ec55f4d7421a58521c5944f972901694bb9429a0c0c392d99"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110606_n4_logistic_outer4/inner2.json": {
+      "bytes": 62028,
+      "md5": "adc4f27a634b87ae7fff5fa070597660",
+      "sha256": "3ea48d7c790f9f2af3499f6d8b151c90f07b1d5a81fe0112d672aff30016c072"
+    },
+    "instrument_reads/five_fold/s42_p2026110606_n4_logistic.json": {
+      "bytes": 151654,
+      "md5": "254393551966c0921c910f3e714b694d",
+      "sha256": "0c78cd6ae897d601098446c9aed90811a6315be6df3ccfd92b21f575fdc40632"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110605_n4_logistic_outer0/final.json": {
+      "bytes": 53731,
+      "md5": "27cb1ef1ffd27f783dd4b3f30b0be835",
+      "sha256": "17d62df1cfcc35ac765b0f6ac11506018b1fee0a906561a26f9918d7ad125b6a"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110605_n4_logistic_outer0/inner0.json": {
+      "bytes": 59601,
+      "md5": "e54dccc552bf4a44bed0b9a60d959ca6",
+      "sha256": "b5c7730fe77e5a3d7c70b1569c8ceb4281aff67786e54b61add9fae6e9098931"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110605_n4_logistic_outer0/inner1.json": {
+      "bytes": 59781,
+      "md5": "a753d12d534a792b719c56b3b46ed656",
+      "sha256": "524eb8d00ff5b70664253feed55c9aa9c3abd485e44b3294b8998024e1e63bbf"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110605_n4_logistic_outer0/inner2.json": {
+      "bytes": 59717,
+      "md5": "bafea642c655c0660add1086ea30f8ab",
+      "sha256": "db334f85533a42414aab3fd2bb35f5adc7afa427f99d339deecc473837093549"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110605_n4_logistic_outer1/final.json": {
+      "bytes": 52431,
+      "md5": "9a782050b90cdd7db2cb3155b4303265",
+      "sha256": "6b3484bcc93343901df0c72acec9d9f674f6271780bb9123ff589f72ceee6c24"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110605_n4_logistic_outer1/inner0.json": {
+      "bytes": 60741,
+      "md5": "f8d28df31e977c952f5063172a83eee7",
+      "sha256": "e2b5ed0835010c67e71db4e8d23ae3768f52b81e75c657fa27140a72f8e380ae"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110605_n4_logistic_outer1/inner1.json": {
+      "bytes": 61056,
+      "md5": "a82d415464ebe7d3ece095563997057d",
+      "sha256": "c7b64b23bfb214354299da3026ede32ee817e01b8acf9116d9f99a45e319cea2"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110605_n4_logistic_outer1/inner2.json": {
+      "bytes": 58470,
+      "md5": "046b9111e339ac124b4fa6cfaa16d748",
+      "sha256": "b5c7cc67c77820ba3248587fdaa0b78fe83a4ad37e156a04e0de0129503de278"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110605_n4_logistic_outer2/final.json": {
+      "bytes": 52193,
+      "md5": "0c85f9504f01a5ea7ec9002702a18563",
+      "sha256": "a11de9ea020164effd563ea6b05f7b9f86b40200483116db8bae578405260260"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110605_n4_logistic_outer2/inner0.json": {
+      "bytes": 61417,
+      "md5": "0f97a2ccff958927bbd3e6d15cd15ead",
+      "sha256": "f5bd0bb2fe173f5fdc046e0d00fa00a83dad07e20b2c7181c1215b0bf2b9c8f2"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110605_n4_logistic_outer2/inner1.json": {
+      "bytes": 58372,
+      "md5": "6a59fe0fd6af11d36bbe31dfe606b28f",
+      "sha256": "14875008a46387a243efe6885e5f1771c9c8c7cdce9287ce84359bc38d846d9f"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110605_n4_logistic_outer2/inner2.json": {
+      "bytes": 60915,
+      "md5": "0c8d82a709096601e5d94675952d811a",
+      "sha256": "cf9896d764efe30ff0f4626ae42348c39e854bbfc935c35cf495fec55403fea9"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110605_n4_logistic_outer3/final.json": {
+      "bytes": 49762,
+      "md5": "1dd6cc44953b87ae2b3e5ca88f1c0c24",
+      "sha256": "653bcce5b52fe5cd31f1d89beb3de48f3ef9737cbbe01de0b620c31cea220840"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110605_n4_logistic_outer3/inner0.json": {
+      "bytes": 59354,
+      "md5": "1a64cf740892b72fa90076c8b9e896ec",
+      "sha256": "c1096beef29e9a7af46f2abf6f57351d9b61eb8a9a82b6e686a8eb2086666809"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110605_n4_logistic_outer3/inner1.json": {
+      "bytes": 62293,
+      "md5": "b8694c3f9cc441d0914972013db0e7ed",
+      "sha256": "83a8d90586205518fa6f79f8a2e19f8cb91f79fbf33c17f5cbcb295b5dc1ace4"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110605_n4_logistic_outer3/inner2.json": {
+      "bytes": 61436,
+      "md5": "f4a54bc48187ce796b47ea420161abb3",
+      "sha256": "196517d170c9ec1a5b93e510e5257d042ab3a87e5e4a2514b016072a03c59e94"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110605_n4_logistic_outer4/final.json": {
+      "bytes": 51911,
+      "md5": "7329d1d6ef26aa2007cf95285dad742a",
+      "sha256": "bd73b122862a87f25e4f5e39bee80819b01f1d6dfcc95dc0cc4f8bf9587f18b6"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110605_n4_logistic_outer4/inner0.json": {
+      "bytes": 60980,
+      "md5": "49e9da48dfd4f58127d42efd257c9b62",
+      "sha256": "f7f561edfc509865ddb8dfd9cd4a0bd9b95e61b5023884a4138c49b4019131ed"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110605_n4_logistic_outer4/inner1.json": {
+      "bytes": 59258,
+      "md5": "2b861bf29b3af36c0ee6e2f8a8521aff",
+      "sha256": "7994cd353de96dd2ebf083b4bdc957327538644f3f995837355586a07f0236b6"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110605_n4_logistic_outer4/inner2.json": {
+      "bytes": 60578,
+      "md5": "a729510add71aff710023e2cb9fe8e4b",
+      "sha256": "4ee639b8991c438ee07772bed0ccc215e7364b691c5102076de66ed95fd1672c"
+    },
+    "instrument_reads/five_fold/s42_p2026110605_n4_logistic.json": {
+      "bytes": 151688,
+      "md5": "b50bb6d073c0675e8e4e50f17c41d356",
+      "sha256": "56e81a8c44bd9eabec962906b2191dc72e9627618dd5c7f463d5b8cf6a268a69"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110619_n4_logistic_outer0/final.json": {
+      "bytes": 50682,
+      "md5": "34c6c1e5cd358a1f28279e975fd0cbf7",
+      "sha256": "bd24317cde0cc4f3a750337d95280f3862dde178e02e6c5e9d133a309ec34398"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110619_n4_logistic_outer0/inner0.json": {
+      "bytes": 62259,
+      "md5": "dff33dd61b304e2bab2ef145d4bf693d",
+      "sha256": "731905366bd9d5d6443e9fe20bc1087e0518d0ced385c1f898a2830abd8ae487"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110619_n4_logistic_outer0/inner1.json": {
+      "bytes": 60502,
+      "md5": "9d72ff66853fa16f980fd863d6b25084",
+      "sha256": "347022cc09aacaa9a344dfae71a30eda8eec18ebba1b47d565c98ae04e4d663f"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110619_n4_logistic_outer0/inner2.json": {
+      "bytes": 59326,
+      "md5": "86e1e4c7219b0dc58ef064c3a5f5ec6f",
+      "sha256": "53d6511b5d8b4cfe8ec2341b31909179d92683de4356857a80148f10cf8f1c72"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110619_n4_logistic_outer1/final.json": {
+      "bytes": 52745,
+      "md5": "b6d963ec6c5a2c9c5d3309b55dc4ec3a",
+      "sha256": "a081007af04fe3c61fccfe61e65bbb0ce357d5b1adf0fb743991658c6e687570"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110619_n4_logistic_outer1/inner0.json": {
+      "bytes": 60537,
+      "md5": "e2d7e7baad9616b94b6abf4fd3657d15",
+      "sha256": "cccece8ed14420ed30d6ebd76591e095c769d98ac2c609a9eea41dc738e5d196"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110619_n4_logistic_outer1/inner1.json": {
+      "bytes": 58407,
+      "md5": "d071df4cc9309451887441991d2fe909",
+      "sha256": "214e01a54db12e07571f41088d4aeb167d87666991b93ca17eb70c9ee4c42544"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110619_n4_logistic_outer1/inner2.json": {
+      "bytes": 61067,
+      "md5": "4fd311364858816a0175b22c5e4d3b35",
+      "sha256": "40d595e2e02f7aa737a4eb255e34d3c408fb7d96277f0d173c033825b1920e9c"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110619_n4_logistic_outer2/final.json": {
+      "bytes": 53556,
+      "md5": "466d9e5650d7d34a17e4ddc52d054073",
+      "sha256": "dd188de4ecdd1087cb3b114f2fa54138fb8ade7d3431d0797efbf82184322d8c"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110619_n4_logistic_outer2/inner0.json": {
+      "bytes": 61213,
+      "md5": "d4a5b2afe1b0d6d5c7078f158bed8667",
+      "sha256": "8e68259ae6ccb4d5f72b9fadde8580b6d79794c3071dcec39788c9da350c0fde"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110619_n4_logistic_outer2/inner1.json": {
+      "bytes": 60063,
+      "md5": "03b76b76b0da03ecdc33e12a96c37c5a",
+      "sha256": "01b05df116ea13dbb5433e36ade0b35ce2feb0ae5b586e772e5a2a3f8720e696"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110619_n4_logistic_outer2/inner2.json": {
+      "bytes": 58014,
+      "md5": "0aeb6dfb8e7838ca7f1f2fd21131115b",
+      "sha256": "efef570c9cc6dbf707a11bd7ad3e4395cab56e003ec6e40786e2d83f595b47e2"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110619_n4_logistic_outer3/final.json": {
+      "bytes": 51750,
+      "md5": "036b951853bbc595f04c13c0dbd9fc95",
+      "sha256": "2b1eb49064a2d6d6e6c1a2affd014954a6de79bd28af30fd488d77123e5c8282"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110619_n4_logistic_outer3/inner0.json": {
+      "bytes": 62532,
+      "md5": "56eaef82b2765ab8523ad2032cca8b92",
+      "sha256": "e3c0ebec319d386a5d6b3616dcb6eb12006320577ffb8043357e049ab5eb19ff"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110619_n4_logistic_outer3/inner1.json": {
+      "bytes": 60191,
+      "md5": "ca1cbded8cb7493dd752d7621f3ef750",
+      "sha256": "7ff49946853fd433f608d84e9287dea485ac60c22a5790778c27502afd530200"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110619_n4_logistic_outer3/inner2.json": {
+      "bytes": 58319,
+      "md5": "5e2253c45b5551e16d2cfe7162ff06ba",
+      "sha256": "4421153dfc758e302b68ca615873e14b1613600be50def5ddd0b7bf9045db65b"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110619_n4_logistic_outer4/final.json": {
+      "bytes": 51351,
+      "md5": "e273530058682aecc14466af1be4f41b",
+      "sha256": "8186bdad37a582bd7804ed69a656975492c9d76a6214046dc3ab6965c224309a"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110619_n4_logistic_outer4/inner0.json": {
+      "bytes": 59714,
+      "md5": "0d6ec5c37fabecefd3e9eaf686483eab",
+      "sha256": "326690c1b71dcff8b47611596075e0810b7d0e0c92a053190499852890694624"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110619_n4_logistic_outer4/inner1.json": {
+      "bytes": 61931,
+      "md5": "ad512c91f9309fc3edb23a2d19b52d50",
+      "sha256": "9a47875467bfaae8fc2016bce1d154c02b20346b7de94115cfcb8c48a4c077c8"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110619_n4_logistic_outer4/inner2.json": {
+      "bytes": 59803,
+      "md5": "20cbfdecaaa5ef0c6c825034a0ef6acb",
+      "sha256": "c338cc07289caa8c48d16eeba4997169ffc600fdaa66b4a10117ab4eedeec03e"
+    },
+    "instrument_reads/five_fold/s42_p2026110619_n4_logistic.json": {
+      "bytes": 151648,
+      "md5": "6cdc05672d6399b926dd967df832b107",
+      "sha256": "804ef422f489616bddecea3a3e680cf877ddbfecfa380f50feaf8428a09a8c35"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110612_n4_logistic_outer0/final.json": {
+      "bytes": 50442,
+      "md5": "66ef2331b49f73dec9c4d20df060ab91",
+      "sha256": "671ee00372b9ceb2011528285b176fadd6b712fe3e1ef884397c22b1b5907c21"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110612_n4_logistic_outer0/inner0.json": {
+      "bytes": 61100,
+      "md5": "9e1468dd63292161259f75ab878b982c",
+      "sha256": "4f2f32126865fc1410b65821c3f3862d4f2d54822be6a20f101e3f33c28a45dc"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110612_n4_logistic_outer0/inner1.json": {
+      "bytes": 59859,
+      "md5": "30eedaca84e6a7f61214af965318f9a0",
+      "sha256": "14a6e5cbbb2ee6cfeb3a940ccdee2bf6ce35e2896982394d7b8a9ab725680dd8"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110612_n4_logistic_outer0/inner2.json": {
+      "bytes": 61343,
+      "md5": "21f962077cb896660109e759867a6cb4",
+      "sha256": "a59226e4dc6a709fcad8b62e81d5ee35b3e73e642e6d62f232567591ad3bf031"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110612_n4_logistic_outer1/final.json": {
+      "bytes": 52464,
+      "md5": "5f71cf86ac2bef6217f5dcf37c923790",
+      "sha256": "27d3e7966ea3b238850fed56797cf1c0d9d63af885af0ef67a228af7ca8bd29b"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110612_n4_logistic_outer1/inner0.json": {
+      "bytes": 60962,
+      "md5": "e73959f8470b5afce832540d2931cb30",
+      "sha256": "7010b572dc57a41e109fd8d5272171e7be9c8c26f2b8609e7adaf92b8bb07830"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110612_n4_logistic_outer1/inner1.json": {
+      "bytes": 59797,
+      "md5": "32c069a4839735e880d4c87f1951aaeb",
+      "sha256": "fdf5ffb352c4b2038b618affceefcac54e8f6a6bb92b828c3160e7c8555f7cb7"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110612_n4_logistic_outer1/inner2.json": {
+      "bytes": 59497,
+      "md5": "8e31d00dd56d2819bd613e74c6ea69d6",
+      "sha256": "b0de161c46174837f1d1bfdfb9e71fee55dd6e4ed587ade9fe40553302c7d01f"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110612_n4_logistic_outer2/final.json": {
+      "bytes": 53216,
+      "md5": "31e609235cefbb1fbc531525179ac8e3",
+      "sha256": "b5b6a137422132a68d0f9d1ca8728e84d6f6ad124750d7a567a03b82c61a27c9"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110612_n4_logistic_outer2/inner0.json": {
+      "bytes": 61116,
+      "md5": "13047c7c3acbdc8d9bf5bed45583ddcc",
+      "sha256": "eaccabf0963f3eaf2878e403e4b3a8379ca5f79d44bd82ed2d02622ead050ab3"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110612_n4_logistic_outer2/inner1.json": {
+      "bytes": 60412,
+      "md5": "18e7821ca850861a279e8286baf7f427",
+      "sha256": "eb1da218bf83123fbae9e2404e28092107dcae1ff45788375092a47122b6349e"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110612_n4_logistic_outer2/inner2.json": {
+      "bytes": 58045,
+      "md5": "f4210cbf0900aa910030e7250949cf55",
+      "sha256": "ad96d3fdb0456eff8fdc480935a1323a434147900f9e4e7909f68a81a28a5772"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110612_n4_logistic_outer3/final.json": {
+      "bytes": 50861,
+      "md5": "97cb18cac3f463877797e9fbaa3d44e2",
+      "sha256": "85b0f180a1d67425a3183610b263068c076f5feeb6e8d690301a3932bda06742"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110612_n4_logistic_outer3/inner0.json": {
+      "bytes": 59783,
+      "md5": "ab0cf74f6ab6ddc6c6d81831ef4d1f95",
+      "sha256": "f663e15ff887e9debd883b57fa8751830449ffe4541b25eca659045d8cb4f84f"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110612_n4_logistic_outer3/inner1.json": {
+      "bytes": 60776,
+      "md5": "7d34191782e95ed47d123d9397257f04",
+      "sha256": "00e6fed38fd5fbc75c730670de8a352b7ff4be8898ab54df6fb4a762c0bebe0e"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110612_n4_logistic_outer3/inner2.json": {
+      "bytes": 61438,
+      "md5": "1061474bec65362ce05a0f92e54e9eae",
+      "sha256": "2587a56d348e11182fc60184fc263246a168b7da4e571033c45ad5dbe2e3d58d"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110612_n4_logistic_outer4/final.json": {
+      "bytes": 53036,
+      "md5": "b3518db5593500d61dc7c1d25f08f16a",
+      "sha256": "d1369d6e8d78a7fcc33e16392d5bf229285a5e2b5b067a90e4ce42959be3e532"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110612_n4_logistic_outer4/inner0.json": {
+      "bytes": 61267,
+      "md5": "48588eb43d7e723dfba04d2957ecbbc5",
+      "sha256": "a93cc6307517b25e13ad013f1f4024cdeab1be0b270b2b754158bef3f412e78e"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110612_n4_logistic_outer4/inner1.json": {
+      "bytes": 59080,
+      "md5": "cf4d8a12d7af22a487b98b1d4a8ec7cc",
+      "sha256": "0d882b8a3881b377e50b7274f44a0f60c365f91a4b83c4c9426d8a3052658861"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110612_n4_logistic_outer4/inner2.json": {
+      "bytes": 59516,
+      "md5": "802d826d7b162bfedf56d26a1e279351",
+      "sha256": "4428fa2ae96e4f26cc63f2c355ee88f7cf6093f8eb57967d40ec8ce7856270f8"
+    },
+    "instrument_reads/five_fold/s42_p2026110612_n4_logistic.json": {
+      "bytes": 151698,
+      "md5": "b1bf14a78f8ab247fe080b2271e3b827",
+      "sha256": "1c3eeb6d83a25c32e3a659d88b8c0cbfd305f7bc0417210ca086d952ca837563"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110600_n4_logistic_outer0/final.json": {
+      "bytes": 53481,
+      "md5": "ed04e458032c5b30e803ede004ad299a",
+      "sha256": "eabd7fb4619513a731e8c0b99a1bb5a3a555b4d45fc3f9a701293c1ad5965d6a"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110600_n4_logistic_outer0/inner0.json": {
+      "bytes": 59518,
+      "md5": "4f05b0a71a4ca8b25a0423b47ec897e6",
+      "sha256": "50e13630d6bcdd2121eed2c05a9ca7de395cba785ca8e92fae946bbf5bdd91b1"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110600_n4_logistic_outer0/inner1.json": {
+      "bytes": 59121,
+      "md5": "b86ff68b170132de03249425a6e1f586",
+      "sha256": "8f2b58ff56c71cb680855ddc6c0ce749dda8ac4c51875a43c56d98b877697863"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110600_n4_logistic_outer0/inner2.json": {
+      "bytes": 60607,
+      "md5": "262487f294533acf46f07617d7c0904e",
+      "sha256": "a54092c60162c2a641889250f1072bb662cc1030165682ca7bf3a0784ceea846"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110600_n4_logistic_outer1/final.json": {
+      "bytes": 53399,
+      "md5": "b1258045a2eb05ebe8df2ac6db5a0365",
+      "sha256": "43b77ec6236aa6ee4a987432e6503daaf3684ae3a59f7aec1ed386446af5c134"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110600_n4_logistic_outer1/inner0.json": {
+      "bytes": 60715,
+      "md5": "aab341035b71cbea812dca0a2b77f966",
+      "sha256": "fc09e3ed5df406ebdc86fccedd1eb7d1b3668c82d07ffcfb5a2bca68cc1f86b1"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110600_n4_logistic_outer1/inner1.json": {
+      "bytes": 60275,
+      "md5": "048f6b6ff90e65542c2a8421a60e4f0c",
+      "sha256": "458b53397e3efbbe1f42e071d9d004d147f87a951a9b8ad3d07b2c85b3178b05"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110600_n4_logistic_outer1/inner2.json": {
+      "bytes": 58402,
+      "md5": "b26ceaf359d35971c9b2121685aa7754",
+      "sha256": "42212b525cd81bda21d7f10b3e0dc476f1ca3fcd5b5f332a012ad6a80b57e780"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110600_n4_logistic_outer2/final.json": {
+      "bytes": 51984,
+      "md5": "d8c289f81c8e07051fda7c283d9527e1",
+      "sha256": "1329fe7e52186c4089474053ebbe6c719f9477d9bba56dc719668c66de86b72f"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110600_n4_logistic_outer2/inner0.json": {
+      "bytes": 58193,
+      "md5": "79eaabf9fba679a3e4e9188d6d2b3e5f",
+      "sha256": "cba4835e10f5e9f2babb4c99568ad52efceef65d92cf20b6b9d5802973379b31"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110600_n4_logistic_outer2/inner1.json": {
+      "bytes": 60595,
+      "md5": "5ee683b6e46c5274237f5284984b0e8c",
+      "sha256": "f6ca37d1b58a930da78eaae4a81d1575df2260f4660f0d4af80880bffbdb93f0"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110600_n4_logistic_outer2/inner2.json": {
+      "bytes": 62029,
+      "md5": "b20fe48a876d891eb5fbfa601f4bea04",
+      "sha256": "c000eed0f27cf218a6b1c89940cdb75f482e29b014707aed6a29725f9d38b387"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110600_n4_logistic_outer3/final.json": {
+      "bytes": 49842,
+      "md5": "7c92caa343e83d44a8c43c95e4cdb435",
+      "sha256": "7fef708b752326006125368caf16c55188302dee7b86d183819526e3c5bcef35"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110600_n4_logistic_outer3/inner0.json": {
+      "bytes": 61654,
+      "md5": "9ab9ec99fc920bf056ef2e7c651f9bce",
+      "sha256": "dc0eef550c64f1dd4bf547c9090e5b09fd70d92062ea6be5a2ecdfac3bb81398"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110600_n4_logistic_outer3/inner1.json": {
+      "bytes": 61222,
+      "md5": "b44a84017750905bccec2e3e7f6a1014",
+      "sha256": "2d306530505b06606a1e3dc86f15df67054087a6adb11fb9783e49a81fa13305"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110600_n4_logistic_outer3/inner2.json": {
+      "bytes": 60031,
+      "md5": "508140a2b3be87b61ab519bf7f52bfb0",
+      "sha256": "8377ee07ce7a2bce2a670bd1556fe3a1693ecc6f7ee0aa3bc615ae43f9afe54b"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110600_n4_logistic_outer4/final.json": {
+      "bytes": 51356,
+      "md5": "1d9ca61b392fb0ff45b4b94678b395ac",
+      "sha256": "3ae138466aae14536c03ca41b912de2758db3939b9c0a472057362f4eaf86164"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110600_n4_logistic_outer4/inner0.json": {
+      "bytes": 60902,
+      "md5": "c153cd0837ec73080bbf50569fc3ade4",
+      "sha256": "82d331e4bc86965e0c179b66f06b6176dabefab6461c49a39c18cbb9424eed26"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110600_n4_logistic_outer4/inner1.json": {
+      "bytes": 61828,
+      "md5": "38c78684176130799d2d7f1169f374b5",
+      "sha256": "f51f507ce1629cd984105612971a7469702426dc9c7ecfc09a9de5b5f7cf313e"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110600_n4_logistic_outer4/inner2.json": {
+      "bytes": 58760,
+      "md5": "d30c964920c90cfd1bca5dfcd20656c9",
+      "sha256": "8bed3eaecfea1f68462728dcb8221770ad0a702285f5e4f73a24bca364875df0"
+    },
+    "instrument_reads/five_fold/s42_p2026110600_n4_logistic.json": {
+      "bytes": 151668,
+      "md5": "f8a7c96776c30b866893a8236fcb49f9",
+      "sha256": "4b7565a083b0fcb06a0d77fe91c15e66bd7296ab8eedd784a68238762e2aac9c"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110601_n4_logistic_outer0/final.json": {
+      "bytes": 49436,
+      "md5": "81df60392805ce8092b7170c978decd4",
+      "sha256": "5e926e03c5c6c37d0bc8f54e4b6817054dca72a5eef896356b11ac65ce39b621"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110601_n4_logistic_outer0/inner0.json": {
+      "bytes": 60517,
+      "md5": "9635ccf490ed229f8c04cb689cae03e5",
+      "sha256": "534f13e1a5e78ba53a3e049f6f9af7b8421b75487e157112d96fb30676aa5522"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110601_n4_logistic_outer0/inner1.json": {
+      "bytes": 62879,
+      "md5": "91b55ce678e336f8a4de215e845bad75",
+      "sha256": "e9ada0c13cd0eedd6b8355a67737de0862dee2f2d69a9aff82f1f49af2f0c662"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110601_n4_logistic_outer0/inner2.json": {
+      "bytes": 59939,
+      "md5": "4626ed1d65b34682e2051ff900e04ed3",
+      "sha256": "75dc9e329f900bfb3e52adbbafcc3d364360e5e34b9b1b1f5e02d1b68a02b8c6"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110601_n4_logistic_outer1/final.json": {
+      "bytes": 54481,
+      "md5": "f7d403183b0c95100e342c9ccf6a67da",
+      "sha256": "f891b43d3bbfda1b18376ec986a1989e715df5734001f4ec00c9d7d9a6a6744f"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110601_n4_logistic_outer1/inner0.json": {
+      "bytes": 57582,
+      "md5": "bff7256274c201d673f9a922bbcdc53c",
+      "sha256": "89ab2cd63d194062b8b7e4eca72eb7eb0bec3672b6ba047f6af511b6c282eef8"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110601_n4_logistic_outer1/inner1.json": {
+      "bytes": 60477,
+      "md5": "3eea0640671176bde911c59954f9cb43",
+      "sha256": "f19af72904670a7410756ec1fbf7bb829c1bd73522f6f06f9f46487defa9a383"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110601_n4_logistic_outer1/inner2.json": {
+      "bytes": 60389,
+      "md5": "f5a6e4bd863398b568b99356ba100c10",
+      "sha256": "b50d84c72ae62d534d09572f83dacad07ae169c90002e11a6c0854657b7a78ac"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110601_n4_logistic_outer2/final.json": {
+      "bytes": 51701,
+      "md5": "ed3343e5dbb0437906d01d6ac811d96b",
+      "sha256": "d7ffeceb35df2afd680e917a940a9940ea2a6199dfb890918b94cebce36eb826"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110601_n4_logistic_outer2/inner0.json": {
+      "bytes": 60858,
+      "md5": "012c9ba81d8e2e47935be5d6af725844",
+      "sha256": "81109dc7106462d8ceb72ad4043b57e644c03a7bd0a7e5aaca6b6cfba00917e9"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110601_n4_logistic_outer2/inner1.json": {
+      "bytes": 61703,
+      "md5": "d9636965e7494c7f35dc0d91d7d87561",
+      "sha256": "2b18dfa6f712b0869f3e7062b7d5297d64ac717e30537985ecc8ad005f5e191c"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110601_n4_logistic_outer2/inner2.json": {
+      "bytes": 58631,
+      "md5": "bd81e92b6337c048f592440e94e9593e",
+      "sha256": "25b365cbc6f2a1a76f466d62b2fd9ade0e02069b334bb1659ee77f190fc85464"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110601_n4_logistic_outer3/final.json": {
+      "bytes": 52148,
+      "md5": "1fb9f4fd2b1eeba42a30e6ca289dac89",
+      "sha256": "fc7fe4413e0d67b65f6738afd89855afbcd13467999a1c104b8aa2e39cbafafd"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110601_n4_logistic_outer3/inner0.json": {
+      "bytes": 58820,
+      "md5": "8959bdc39b6f71172de5415a005fd2b2",
+      "sha256": "d6042b0524bb3cc226faf195f8c30c03631d2901a8f6165d23197669b4738dd2"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110601_n4_logistic_outer3/inner1.json": {
+      "bytes": 63935,
+      "md5": "a617b2030d08ab9c49e2155531f3cfa2",
+      "sha256": "eb7ba67b0d17cae9f853aabd7289767aa4453ee16c622817cd6a92f073d5c0c1"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110601_n4_logistic_outer3/inner2.json": {
+      "bytes": 57916,
+      "md5": "ca043bc8c35e6309021ae496fafc4cf2",
+      "sha256": "1a1d893ba7f768f8a0c6317b92484c5a03d65c145399a45851354e23b3b4ed3b"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110601_n4_logistic_outer4/final.json": {
+      "bytes": 52319,
+      "md5": "cfe37a4bed08adc46b4d05ee37fbe597",
+      "sha256": "93c00b981194f93dd2ecfde32b77768cb04bfa257bc77222cf2e69a172129265"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110601_n4_logistic_outer4/inner0.json": {
+      "bytes": 60334,
+      "md5": "049aa75913de7fb2876101a6f97a9c44",
+      "sha256": "34981cc3320400fc4194d484808e817cff8dbf9ee75e582ca10410649039d190"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110601_n4_logistic_outer4/inner1.json": {
+      "bytes": 60179,
+      "md5": "b8e196f6743e32d266040127f7912f43",
+      "sha256": "a3191b17c759a5c76c667b918a7bf14ed03c62617a487d555e04678fa4064ea2"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110601_n4_logistic_outer4/inner2.json": {
+      "bytes": 59882,
+      "md5": "b2bc8b668fb9a18c3f7202666fae182f",
+      "sha256": "7b2b81a7451dcf795ab154301238f4e177de5c92c80ed9dec7d6c36ad284523f"
+    },
+    "instrument_reads/five_fold/s42_p2026110601_n4_logistic.json": {
+      "bytes": 151672,
+      "md5": "8b6130b81ecad0b2fc372ddf91f4c3e2",
+      "sha256": "9d57cb4b0b4b0f164c760c8dac7483f3b9b066895a2d14c0af1a39a72abd1091"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110604_n4_logistic_outer0/final.json": {
+      "bytes": 52039,
+      "md5": "bf1b67d6b7123e0ea7ba0f9eb05fe132",
+      "sha256": "81a2883bee712e9bbac27de6ba4e58f75dc8edb55f208921f368aab6071cc30e"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110604_n4_logistic_outer0/inner0.json": {
+      "bytes": 58585,
+      "md5": "7d55fafdc6f44a98db26f3b96c18b42f",
+      "sha256": "1d6bedcbac84fc7caf4dfad5331a504601ab1aa9ad5943980e7221e17c51b06e"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110604_n4_logistic_outer0/inner1.json": {
+      "bytes": 61736,
+      "md5": "4fd415821139d719d3c8443fc7effd78",
+      "sha256": "bb8f28b2cb087acd551784f133b3e6937ebab6a993f21c3fc21f278e997b2ab9"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110604_n4_logistic_outer0/inner2.json": {
+      "bytes": 60435,
+      "md5": "c0a2991edcd2fc7b9fca7109b6d63ff3",
+      "sha256": "b48e23e6d0b66238f3f668cc84ebf3426cab94dcb102fb3c521f9424dd0e027c"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110604_n4_logistic_outer1/final.json": {
+      "bytes": 52275,
+      "md5": "351d26a2efdb08db275245007a7181ae",
+      "sha256": "55ea202b15e4529841a91df4ca0cdfb42cb6a178c38b0954ad602818040ec41d"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110604_n4_logistic_outer1/inner0.json": {
+      "bytes": 60985,
+      "md5": "8d74dd7410e60e8e53ab8d5f7ac1f093",
+      "sha256": "b2dab285946e33580364dfb34f05d5693a9ddd18d7484bbbfa58ffd515bc0811"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110604_n4_logistic_outer1/inner1.json": {
+      "bytes": 60103,
+      "md5": "87fbcecd128ef884bd46ed4936603aa6",
+      "sha256": "52442f165c3c013d400a9c5d25f1aa9e1222e70fa7cd1782bbefa7ea74aa72bf"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110604_n4_logistic_outer1/inner2.json": {
+      "bytes": 59445,
+      "md5": "8a668cc9f9b1d81c7677e2c3f828a91c",
+      "sha256": "d072ac7ef2deeb2c22509769ae49adf685416042e51ad3620f57038e36028963"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110604_n4_logistic_outer2/final.json": {
+      "bytes": 51822,
+      "md5": "23e16058bde261e12485fbcbe07b959d",
+      "sha256": "43ce774454686103f5917da58b385278bb932a79e36d464da6f5babdb8513775"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110604_n4_logistic_outer2/inner0.json": {
+      "bytes": 61498,
+      "md5": "845d882d0265f96e3417ae591db23d16",
+      "sha256": "d086ca343097c3927d5c11fabcf472293585e447d96a94e5a5edaad94ece345f"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110604_n4_logistic_outer2/inner1.json": {
+      "bytes": 59914,
+      "md5": "7c5ae3a14e5fbb82546852ff7be55000",
+      "sha256": "d2f8e54bffb5b71f19da303205f42e0ec20e66e6be7852956858fa13a40ce2f1"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110604_n4_logistic_outer2/inner2.json": {
+      "bytes": 59537,
+      "md5": "3e01fee692663fa71be63076351a7c12",
+      "sha256": "6e7e6fcc9c83c39f7349dfd0ea09bcb66fbe7411571ab27d62e05c69fd804934"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110604_n4_logistic_outer3/final.json": {
+      "bytes": 51262,
+      "md5": "700d5e7a4e040a8f0c559d85285b6dd8",
+      "sha256": "b2edb008d05cba20085ba33d210b808572c4ef85d6ba72a412351fdae55215ed"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110604_n4_logistic_outer3/inner0.json": {
+      "bytes": 61612,
+      "md5": "f869220e7489f9a3ec7fdaa4fc89c3a5",
+      "sha256": "5ffb3ca0da64234e4fc76b8f24b4e177c26da6bb6d43e418a94c88884133ac33"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110604_n4_logistic_outer3/inner1.json": {
+      "bytes": 60536,
+      "md5": "f417f6cf53d1ddacf108e94d881ef7fa",
+      "sha256": "3579ac311dabc811f05da008d4a9e00afea09b049747114c857969e27f19ab90"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110604_n4_logistic_outer3/inner2.json": {
+      "bytes": 59345,
+      "md5": "3e7a1601c371510d9f011f70289d84b1",
+      "sha256": "baa5169cb250ab629a062e12527748338608b37a00af19c858b3325256374214"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110604_n4_logistic_outer4/final.json": {
+      "bytes": 52629,
+      "md5": "e0428142cc879ecd38ff74527052f761",
+      "sha256": "36b986a4332662e6ce9d33da19f0eb169ee4dc1d24faf836ba5329dc51777d33"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110604_n4_logistic_outer4/inner0.json": {
+      "bytes": 60668,
+      "md5": "0ab662c3d40a95a1d92bcc9e990621b0",
+      "sha256": "c0f48980d2fec23711565be52bee3d2dbc13de4f790f715343ba0d7b1befd205"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110604_n4_logistic_outer4/inner1.json": {
+      "bytes": 59193,
+      "md5": "1449c964dbf9d503b783b851177c3229",
+      "sha256": "5fb0cf6e91e13c8edf697683fe7361af233239329e15ad98a352ea42cf8821af"
+    },
+    "instrument_reads/five_fold/fits/s42_p2026110604_n4_logistic_outer4/inner2.json": {
+      "bytes": 60288,
+      "md5": "182a3483e2912fd98fcfc2d2490e1ed6",
+      "sha256": "a29d328f90d494734f253802f8c92e52bde683be0e137c8010f0ef0e5e25c048"
+    },
+    "instrument_reads/five_fold/s42_p2026110604_n4_logistic.json": {
+      "bytes": 151708,
+      "md5": "1fdf2602fae557dfda34af6e7d62dd81",
+      "sha256": "fa32c720eaa2722db5de5aa700cb8b768242b729f01c68d14b76a45dd3bc0982"
+    }
+  }
+}

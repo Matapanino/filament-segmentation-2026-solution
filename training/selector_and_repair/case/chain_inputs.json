@@ -1,0 +1,674 @@
+{
+ "label": "ms125",
+ "folds": [
+  "c1536_f0_d4+c1536s125_f0",
+  "c1536_f1_d4+c1536s125_f1",
+  "w3_c1536_4k_d4+c1536s125_f2",
+  "c1536_f3_d4+c1536s125_f3",
+  "c1536_f4_d4+c1536s125_f4"
+ ],
+ "weights": [
+  0.55
+ ],
+ "sets": 2,
+ "dataset": "<kaggle-user>/filament-mainpc-chainf-ms125-maps",
+ "dataset_scope": "filament-mainpc-chainf-ms125-maps",
+ "oof": {
+  "0": [
+   {
+    "file": "chain2-ms125-oof_f0_s0.npz",
+    "run_id": "c1536_f0_d4",
+    "set": 0,
+    "source": "<workspace>/filament-main/a1native/artifacts/c1536_f0_d4/MF_f0_val.npz",
+    "bytes": 11633846,
+    "sha256": "bfca7dac468d4e12ac7e22abfaefa2e9cd2680195a3a2dff3954bbc5f3a9668b",
+    "md5": "c73604b60378435b1384b445a05cf598"
+   },
+   {
+    "file": "chain2-ms125-oof_f0_s1.npz",
+    "run_id": "c1536s125_f0",
+    "set": 1,
+    "source": "<workspace>/filament-main/a1native/artifacts/c1536s125_f0/MF_f0_val.npz",
+    "bytes": 10595583,
+    "sha256": "998079d4c4b19a7466b41396477af4d307d2a5607c6c27d780e75ffe8bae36e1",
+    "md5": "2d980ea9ccc38eda6fb7564c053125f5"
+   }
+  ],
+  "1": [
+   {
+    "file": "chain2-ms125-oof_f1_s0.npz",
+    "run_id": "c1536_f1_d4",
+    "set": 0,
+    "source": "<workspace>/filament-main/a1native/artifacts/c1536_f1_d4/MF_f1_val.npz",
+    "bytes": 11439674,
+    "sha256": "5d2d744942eaa21eb48e0995cd82bc4d82e2ca37384807228750a3d8556a4e72",
+    "md5": "b640929514b5939c94824ca71fa0943c"
+   },
+   {
+    "file": "chain2-ms125-oof_f1_s1.npz",
+    "run_id": "c1536s125_f1",
+    "set": 1,
+    "source": "<workspace>/filament-main/a1native/artifacts/c1536s125_f1/MF_f1_val.npz",
+    "bytes": 10482383,
+    "sha256": "88f042b321adfbfaac89533e9d168707364b54c228401e4e63c130fa3128a9a5",
+    "md5": "81c5ee846596432c03035697c95837be"
+   }
+  ],
+  "2": [
+   {
+    "file": "chain2-ms125-oof_f2_s0.npz",
+    "run_id": "w3_c1536_4k_d4",
+    "set": 0,
+    "source": "<workspace>/filament-main/a1native/artifacts/w3_c1536_4k_d4/MF_f2_val.npz",
+    "bytes": 12698524,
+    "sha256": "4469ed616877ae70dbfc8f4ba9e37dc06e74a456d316a17bbc04945504b5dd2b",
+    "md5": "91e42df6b7e0c1c1c16273416d296847"
+   },
+   {
+    "file": "chain2-ms125-oof_f2_s1.npz",
+    "run_id": "c1536s125_f2",
+    "set": 1,
+    "source": "<workspace>/filament-main/a1native/artifacts/c1536s125_f2/MF_f2_val.npz",
+    "bytes": 11433427,
+    "sha256": "b0370927a23f9ef17a92c66120523b45a18700c80476e05bc8b828393a0ea0d7",
+    "md5": "fa2e25e459bf27234a418740144a6b1d"
+   }
+  ],
+  "3": [
+   {
+    "file": "chain2-ms125-oof_f3_s0.npz",
+    "run_id": "c1536_f3_d4",
+    "set": 0,
+    "source": "<workspace>/filament-main/a1native/artifacts/c1536_f3_d4/MF_f3_val.npz",
+    "bytes": 11191889,
+    "sha256": "061659db5e91ddfd75bd8cb3e4a7ba2e62eb593fc026546e3b2af4c891ba42c1",
+    "md5": "50c2cc08b2ed97533c8befebd4b03fa6"
+   },
+   {
+    "file": "chain2-ms125-oof_f3_s1.npz",
+    "run_id": "c1536s125_f3",
+    "set": 1,
+    "source": "<workspace>/filament-main/a1native/artifacts/c1536s125_f3/MF_f3_val.npz",
+    "bytes": 10015614,
+    "sha256": "eb20ec08fdc81b2bc48a328e11d79ed363dfc83cce4ebb1f6fa7c5f2aee6b642",
+    "md5": "ca9ffc5b1f181acaa480100065cae6cb"
+   }
+  ],
+  "4": [
+   {
+    "file": "chain2-ms125-oof_f4_s0.npz",
+    "run_id": "c1536_f4_d4",
+    "set": 0,
+    "source": "<workspace>/filament-main/a1native/artifacts/c1536_f4_d4/MF_f4_val.npz",
+    "bytes": 11607734,
+    "sha256": "5480ea91b7a5269582db01bb8966bebbc4e2ab5f7777da42f118492b9a414a6b",
+    "md5": "a5fb9eed656946d9d54cc13d23d88be6"
+   },
+   {
+    "file": "chain2-ms125-oof_f4_s1.npz",
+    "run_id": "c1536s125_f4",
+    "set": 1,
+    "source": "<workspace>/filament-main/a1native/artifacts/c1536s125_f4/MF_f4_val.npz",
+    "bytes": 10561500,
+    "sha256": "b677857b8f9939b68b5f9566171a2cd2605bbac040a45a5c643b8b89553f962c",
+    "md5": "fe4d428d23a2c185f7302d5c037c1c7a"
+   }
+  ]
+ },
+ "test": {
+  "0": [
+   {
+    "file": "chain2-ms125-test_f0_s0.npz",
+    "run_id": "c1536_f0_d4",
+    "set": 0,
+    "source": "<workspace>/filament-main/a1native/artifacts/c1536_f0_d4/MF_f0_test.npz",
+    "bytes": 14559690,
+    "sha256": "f9eefef116cf7f8631ee944a62bbfdc86619d79705ca40c951bd08be62c5aa31",
+    "md5": "5a4965f4a59cfc9ce7b3865e68d65d27"
+   },
+   {
+    "file": "chain2-ms125-test_f0_s1.npz",
+    "run_id": "c1536s125_f0",
+    "set": 1,
+    "source": "<workspace>/filament-main/a1native/artifacts/c1536s125_f0/MF_f0_test.npz",
+    "bytes": 13179811,
+    "sha256": "0b4192bf360ae57f0672ab8561d2cb027b836edbf16918709c421a7de134207b",
+    "md5": "bcd80632343d4960d2e2df3fbbb7e186"
+   }
+  ],
+  "1": [
+   {
+    "file": "chain2-ms125-test_f1_s0.npz",
+    "run_id": "c1536_f1_d4",
+    "set": 0,
+    "source": "<workspace>/filament-main/a1native/artifacts/c1536_f1_d4/MF_f1_test.npz",
+    "bytes": 14520154,
+    "sha256": "de8eb284cd173199a1bf8109052bfecad663640855960226b023403969a6ff23",
+    "md5": "4a6e2e3291f9154b5c85a3d188703cde"
+   },
+   {
+    "file": "chain2-ms125-test_f1_s1.npz",
+    "run_id": "c1536s125_f1",
+    "set": 1,
+    "source": "<workspace>/filament-main/a1native/artifacts/c1536s125_f1/MF_f1_test.npz",
+    "bytes": 13240051,
+    "sha256": "f5c3e5121acd668fc4ecdf64ab67672f5e90556342dc581c95247eef318d3b20",
+    "md5": "42781b074bbaf8a2f19c0ff0a8e07816"
+   }
+  ],
+  "2": [
+   {
+    "file": "chain2-ms125-test_f2_s0.npz",
+    "run_id": "w3_c1536_4k_d4",
+    "set": 0,
+    "source": "<workspace>/filament-main/a1native/artifacts/w3_c1536_4k_d4/MF_f2_test.npz",
+    "bytes": 15543651,
+    "sha256": "a58b708a93f57940aa9cbf618132f1f620c890394fda49cfd7d61e6bbf4f86b5",
+    "md5": "107ac4827933af7d58fbb72e8d35690a"
+   },
+   {
+    "file": "chain2-ms125-test_f2_s1.npz",
+    "run_id": "c1536s125_f2",
+    "set": 1,
+    "source": "<workspace>/filament-main/a1native/artifacts/c1536s125_f2/MF_f2_test.npz",
+    "bytes": 14068990,
+    "sha256": "e934bc841a1c6474664bd9859e6f9f5ccdc4a63930b7e5d6416bbbde76443f7f",
+    "md5": "6d3f08c713a620bce67fff45e7715564"
+   }
+  ],
+  "3": [
+   {
+    "file": "chain2-ms125-test_f3_s0.npz",
+    "run_id": "c1536_f3_d4",
+    "set": 0,
+    "source": "<workspace>/filament-main/a1native/artifacts/c1536_f3_d4/MF_f3_test.npz",
+    "bytes": 14684019,
+    "sha256": "563c9e41bf677cf0a1b4c2f25cc38f302a973ff8a5894d6a727463a053972a69",
+    "md5": "3558fc86ea12f6fe10969cbc861643cc"
+   },
+   {
+    "file": "chain2-ms125-test_f3_s1.npz",
+    "run_id": "c1536s125_f3",
+    "set": 1,
+    "source": "<workspace>/filament-main/a1native/artifacts/c1536s125_f3/MF_f3_test.npz",
+    "bytes": 13296444,
+    "sha256": "9b985aa84dd415589c3507f428a5a5e11a926862b2efd54f3e9d9f82bbf3e64a",
+    "md5": "68031297c6818150738b76b7bae11a72"
+   }
+  ],
+  "4": [
+   {
+    "file": "chain2-ms125-test_f4_s0.npz",
+    "run_id": "c1536_f4_d4",
+    "set": 0,
+    "source": "<workspace>/filament-main/a1native/artifacts/c1536_f4_d4/MF_f4_test.npz",
+    "bytes": 14836383,
+    "sha256": "795c9aa24962bc58fb69a4e67a5e21905463a068f03e9f8fd76c1ddf9cd1e140",
+    "md5": "f5c648c4c7b2b7ae32717e80027e1c98"
+   },
+   {
+    "file": "chain2-ms125-test_f4_s1.npz",
+    "run_id": "c1536s125_f4",
+    "set": 1,
+    "source": "<workspace>/filament-main/a1native/artifacts/c1536s125_f4/MF_f4_test.npz",
+    "bytes": 13528025,
+    "sha256": "d1d6f4a454ee5659f367fbc8cb1ad220249d8e1ff1cff23fe54bc18e6eb05aab",
+    "md5": "6018d60394ec2394eecb9c5a06d47854"
+   }
+  ]
+ },
+ "exports": {
+  "0": [
+   {
+    "run_id": "c1536_f0_d4",
+    "set": 0,
+    "step": 4000,
+    "time": "2026-11-14 21:11:28 JST",
+    "cfg_sha256": "a99c898c56b6569cabd9442650bfc788f4e93ad03c0dbd30c2fdd5adba1f63a6",
+    "view": "native 2048",
+    "formula": "max_q(sigmoid(mask_q)*score_q), bilinear to 2048 (pkg inference.mf_map)",
+    "metrics": {
+     "pq": {
+      "pq": null,
+      "note": "not computed for the TTA map"
+     },
+     "pixel_ap": {
+      "disk_ap": 0.722856282110354,
+      "small_ap": 0.273121171769893,
+      "positives": 2433260,
+      "negatives": 363493673,
+      "small_positives": 258620,
+      "definition": "solar disk (Otsu, largest component, filled); positives = GT union of all sets; small = GT-union components < 1024 px"
+     },
+     "pixel_ap_identity_view": {
+      "disk_ap": 0.7037361336486464,
+      "small_ap": 0.25543591398858007,
+      "positives": 2433260,
+      "negatives": 363493673,
+      "small_positives": 258620,
+      "definition": "solar disk (Otsu, largest component, filled); positives = GT union of all sets; small = GT-union components < 1024 px"
+     },
+     "tta_views": 8
+    }
+   },
+   {
+    "run_id": "c1536s125_f0",
+    "set": 1,
+    "step": 4000,
+    "time": "2026-11-15 10:30:56 JST",
+    "cfg_sha256": "a99c898c56b6569cabd9442650bfc788f4e93ad03c0dbd30c2fdd5adba1f63a6",
+    "view": "native 2048 resized to 2560 (torch bilinear, align_corners=False)",
+    "formula": "max_q(sigmoid(mask_q)*score_q), bilinear to 2048 (pkg inference.mf_map)",
+    "metrics": {
+     "pq": {
+      "pq": null,
+      "note": "not computed for the scale-TTA map"
+     },
+     "pixel_ap": {
+      "disk_ap": 0.7095283837895364,
+      "small_ap": 0.271428148127038,
+      "positives": 2433260,
+      "negatives": 363493673,
+      "small_positives": 258620,
+      "definition": "solar disk (Otsu, largest component, filled); positives = GT union of all sets; small = GT-union components < 1024 px"
+     },
+     "pixel_ap_identity_view": null,
+     "tta_views": 2,
+     "size": 2560
+    }
+   }
+  ],
+  "1": [
+   {
+    "run_id": "c1536_f1_d4",
+    "set": 0,
+    "step": 4000,
+    "time": "2026-11-14 22:28:11 JST",
+    "cfg_sha256": "7e7741695239df068e71a2071b5e1dea33c602799592f8da045cd17f9c530963",
+    "view": "native 2048",
+    "formula": "max_q(sigmoid(mask_q)*score_q), bilinear to 2048 (pkg inference.mf_map)",
+    "metrics": {
+     "pq": {
+      "pq": null,
+      "note": "not computed for the TTA map"
+     },
+     "pixel_ap": {
+      "disk_ap": 0.7286865224324539,
+      "small_ap": 0.31772353089074407,
+      "positives": 2534338,
+      "negatives": 364813524,
+      "small_positives": 269325,
+      "definition": "solar disk (Otsu, largest component, filled); positives = GT union of all sets; small = GT-union components < 1024 px"
+     },
+     "pixel_ap_identity_view": {
+      "disk_ap": 0.7088524941716213,
+      "small_ap": 0.30086351069487904,
+      "positives": 2534338,
+      "negatives": 364813524,
+      "small_positives": 269325,
+      "definition": "solar disk (Otsu, largest component, filled); positives = GT union of all sets; small = GT-union components < 1024 px"
+     },
+     "tta_views": 8
+    }
+   },
+   {
+    "run_id": "c1536s125_f1",
+    "set": 1,
+    "step": 4000,
+    "time": "2026-11-15 10:36:23 JST",
+    "cfg_sha256": "7e7741695239df068e71a2071b5e1dea33c602799592f8da045cd17f9c530963",
+    "view": "native 2048 resized to 2560 (torch bilinear, align_corners=False)",
+    "formula": "max_q(sigmoid(mask_q)*score_q), bilinear to 2048 (pkg inference.mf_map)",
+    "metrics": {
+     "pq": {
+      "pq": null,
+      "note": "not computed for the scale-TTA map"
+     },
+     "pixel_ap": {
+      "disk_ap": 0.7130636403001351,
+      "small_ap": 0.3265297693494251,
+      "positives": 2534338,
+      "negatives": 364813524,
+      "small_positives": 269325,
+      "definition": "solar disk (Otsu, largest component, filled); positives = GT union of all sets; small = GT-union components < 1024 px"
+     },
+     "pixel_ap_identity_view": null,
+     "tta_views": 2,
+     "size": 2560
+    }
+   }
+  ],
+  "2": [
+   {
+    "run_id": "w3_c1536_4k_d4",
+    "set": 0,
+    "step": 4000,
+    "time": "2026-11-14 14:06:40 JST",
+    "cfg_sha256": "c63eb9e04d257b3474c5a613a191f84382ebf84be7dae5c5ef23de4ac45fb0ae",
+    "view": "native 2048",
+    "formula": "max_q(sigmoid(mask_q)*score_q), bilinear to 2048 (pkg inference.mf_map)",
+    "metrics": {
+     "pq": {
+      "pq": null,
+      "note": "not computed for the TTA map"
+     },
+     "pixel_ap": {
+      "disk_ap": 0.7594462618555449,
+      "small_ap": 0.30946277507783576,
+      "positives": 2648450,
+      "negatives": 362041019,
+      "small_positives": 291031,
+      "definition": "solar disk (Otsu, largest component, filled); positives = GT union of all sets; small = GT-union components < 1024 px"
+     },
+     "pixel_ap_identity_view": {
+      "disk_ap": 0.7394781098106153,
+      "small_ap": 0.28139223563424587,
+      "positives": 2648450,
+      "negatives": 362041019,
+      "small_positives": 291031,
+      "definition": "solar disk (Otsu, largest component, filled); positives = GT union of all sets; small = GT-union components < 1024 px"
+     },
+     "tta_views": 8
+    }
+   },
+   {
+    "run_id": "c1536s125_f2",
+    "set": 1,
+    "step": 4000,
+    "time": "2026-11-15 10:41:52 JST",
+    "cfg_sha256": "c63eb9e04d257b3474c5a613a191f84382ebf84be7dae5c5ef23de4ac45fb0ae",
+    "view": "native 2048 resized to 2560 (torch bilinear, align_corners=False)",
+    "formula": "max_q(sigmoid(mask_q)*score_q), bilinear to 2048 (pkg inference.mf_map)",
+    "metrics": {
+     "pq": {
+      "pq": null,
+      "note": "not computed for the scale-TTA map"
+     },
+     "pixel_ap": {
+      "disk_ap": 0.7529310213341411,
+      "small_ap": 0.30747432992702034,
+      "positives": 2648450,
+      "negatives": 362041019,
+      "small_positives": 291031,
+      "definition": "solar disk (Otsu, largest component, filled); positives = GT union of all sets; small = GT-union components < 1024 px"
+     },
+     "pixel_ap_identity_view": null,
+     "tta_views": 2,
+     "size": 2560
+    }
+   }
+  ],
+  "3": [
+   {
+    "run_id": "c1536_f3_d4",
+    "set": 0,
+    "step": 4000,
+    "time": "2026-11-14 20:47:40 JST",
+    "cfg_sha256": "3c7a185572ba6af64e1616edfd5067f7fbc1bdbcfd089ce6203688134c3ef2dc",
+    "view": "native 2048",
+    "formula": "max_q(sigmoid(mask_q)*score_q), bilinear to 2048 (pkg inference.mf_map)",
+    "metrics": {
+     "pq": {
+      "pq": null,
+      "note": "not computed for the TTA map"
+     },
+     "pixel_ap": {
+      "disk_ap": 0.7451483103166948,
+      "small_ap": 0.3209823099683369,
+      "positives": 2457545,
+      "negatives": 361791638,
+      "small_positives": 289137,
+      "definition": "solar disk (Otsu, largest component, filled); positives = GT union of all sets; small = GT-union components < 1024 px"
+     },
+     "pixel_ap_identity_view": {
+      "disk_ap": 0.7254234583287884,
+      "small_ap": 0.28626035582485876,
+      "positives": 2457545,
+      "negatives": 361791638,
+      "small_positives": 289137,
+      "definition": "solar disk (Otsu, largest component, filled); positives = GT union of all sets; small = GT-union components < 1024 px"
+     },
+     "tta_views": 8
+    }
+   },
+   {
+    "run_id": "c1536s125_f3",
+    "set": 1,
+    "step": 4000,
+    "time": "2026-11-15 10:47:18 JST",
+    "cfg_sha256": "3c7a185572ba6af64e1616edfd5067f7fbc1bdbcfd089ce6203688134c3ef2dc",
+    "view": "native 2048 resized to 2560 (torch bilinear, align_corners=False)",
+    "formula": "max_q(sigmoid(mask_q)*score_q), bilinear to 2048 (pkg inference.mf_map)",
+    "metrics": {
+     "pq": {
+      "pq": null,
+      "note": "not computed for the scale-TTA map"
+     },
+     "pixel_ap": {
+      "disk_ap": 0.7305292500716694,
+      "small_ap": 0.3066382340628128,
+      "positives": 2457545,
+      "negatives": 361791638,
+      "small_positives": 289137,
+      "definition": "solar disk (Otsu, largest component, filled); positives = GT union of all sets; small = GT-union components < 1024 px"
+     },
+     "pixel_ap_identity_view": null,
+     "tta_views": 2,
+     "size": 2560
+    }
+   }
+  ],
+  "4": [
+   {
+    "run_id": "c1536_f4_d4",
+    "set": 0,
+    "step": 4000,
+    "time": "2026-11-14 22:11:36 JST",
+    "cfg_sha256": "8d9eedc3ea03086bbbdb165231f870c1854fafc761bdb7beba496d55b4756ee1",
+    "view": "native 2048",
+    "formula": "max_q(sigmoid(mask_q)*score_q), bilinear to 2048 (pkg inference.mf_map)",
+    "metrics": {
+     "pq": {
+      "pq": null,
+      "note": "not computed for the TTA map"
+     },
+     "pixel_ap": {
+      "disk_ap": 0.7617249496947976,
+      "small_ap": 0.30251767031771215,
+      "positives": 2659109,
+      "negatives": 362537032,
+      "small_positives": 265891,
+      "definition": "solar disk (Otsu, largest component, filled); positives = GT union of all sets; small = GT-union components < 1024 px"
+     },
+     "pixel_ap_identity_view": {
+      "disk_ap": 0.7423203667744543,
+      "small_ap": 0.2809062486708083,
+      "positives": 2659109,
+      "negatives": 362537032,
+      "small_positives": 265891,
+      "definition": "solar disk (Otsu, largest component, filled); positives = GT union of all sets; small = GT-union components < 1024 px"
+     },
+     "tta_views": 8
+    }
+   },
+   {
+    "run_id": "c1536s125_f4",
+    "set": 1,
+    "step": 4000,
+    "time": "2026-11-15 10:52:45 JST",
+    "cfg_sha256": "8d9eedc3ea03086bbbdb165231f870c1854fafc761bdb7beba496d55b4756ee1",
+    "view": "native 2048 resized to 2560 (torch bilinear, align_corners=False)",
+    "formula": "max_q(sigmoid(mask_q)*score_q), bilinear to 2048 (pkg inference.mf_map)",
+    "metrics": {
+     "pq": {
+      "pq": null,
+      "note": "not computed for the scale-TTA map"
+     },
+     "pixel_ap": {
+      "disk_ap": 0.7502979863684069,
+      "small_ap": 0.3116718993779274,
+      "positives": 2659109,
+      "negatives": 362537032,
+      "small_positives": 265891,
+      "definition": "solar disk (Otsu, largest component, filled); positives = GT union of all sets; small = GT-union components < 1024 px"
+     },
+     "pixel_ap_identity_view": null,
+     "tta_views": 2,
+     "size": 2560
+    }
+   }
+  ]
+ },
+ "checks": {
+  "oof_f0_s0": {
+   "arrays": 142,
+   "max_level": 510,
+   "min_level": 0,
+   "mean_probability": 0.0045210315489169805
+  },
+  "test_f0_s0": {
+   "arrays": 180,
+   "max_level": 510,
+   "min_level": 0,
+   "mean_probability": 0.0046167333193594074
+  },
+  "oof_f0_s1": {
+   "arrays": 142,
+   "max_level": 510,
+   "min_level": 0,
+   "mean_probability": 0.004498547544402991
+  },
+  "test_f0_s1": {
+   "arrays": 180,
+   "max_level": 510,
+   "min_level": 0,
+   "mean_probability": 0.004575302598263443
+  },
+  "oof_f1_s0": {
+   "arrays": 142,
+   "max_level": 510,
+   "min_level": 0,
+   "mean_probability": 0.004585401019612849
+  },
+  "test_f1_s0": {
+   "arrays": 180,
+   "max_level": 510,
+   "min_level": 0,
+   "mean_probability": 0.0046642887046913694
+  },
+  "oof_f1_s1": {
+   "arrays": 142,
+   "max_level": 510,
+   "min_level": 0,
+   "mean_probability": 0.004516862219652725
+  },
+  "test_f1_s1": {
+   "arrays": 180,
+   "max_level": 510,
+   "min_level": 0,
+   "mean_probability": 0.0046014168007960776
+  },
+  "oof_f2_s0": {
+   "arrays": 141,
+   "max_level": 510,
+   "min_level": 0,
+   "mean_probability": 0.005060787791752249
+  },
+  "test_f2_s0": {
+   "arrays": 180,
+   "max_level": 510,
+   "min_level": 0,
+   "mean_probability": 0.004787417393104703
+  },
+  "oof_f2_s1": {
+   "arrays": 141,
+   "max_level": 510,
+   "min_level": 0,
+   "mean_probability": 0.005016614428947108
+  },
+  "test_f2_s1": {
+   "arrays": 180,
+   "max_level": 510,
+   "min_level": 0,
+   "mean_probability": 0.004719866436291364
+  },
+  "oof_f3_s0": {
+   "arrays": 141,
+   "max_level": 510,
+   "min_level": 0,
+   "mean_probability": 0.004416124447050852
+  },
+  "test_f3_s0": {
+   "arrays": 180,
+   "max_level": 510,
+   "min_level": 0,
+   "mean_probability": 0.004602173478515059
+  },
+  "oof_f3_s1": {
+   "arrays": 141,
+   "max_level": 510,
+   "min_level": 0,
+   "mean_probability": 0.004378938797600759
+  },
+  "test_f3_s1": {
+   "arrays": 180,
+   "max_level": 510,
+   "min_level": 0,
+   "mean_probability": 0.0045562357632423015
+  },
+  "oof_f4_s0": {
+   "arrays": 141,
+   "max_level": 510,
+   "min_level": 0,
+   "mean_probability": 0.004686290149213939
+  },
+  "test_f4_s0": {
+   "arrays": 180,
+   "max_level": 510,
+   "min_level": 0,
+   "mean_probability": 0.004610031843185425
+  },
+  "oof_f4_s1": {
+   "arrays": 141,
+   "max_level": 510,
+   "min_level": 0,
+   "mean_probability": 0.00469692691014682
+  },
+  "test_f4_s1": {
+   "arrays": 180,
+   "max_level": 510,
+   "min_level": 0,
+   "mean_probability": 0.004626738012226578
+  }
+ },
+ "pcand_refit": {
+  "arms": [
+   "w55"
+  ],
+  "deployed_selector": {
+   "quality_model_sha256": "dbb530cf270b69e049380d7b9ff1690ce5a57be6c3ae04f1ea1675fc08740606",
+   "dataset": "<kaggle-user>/filament-repro-weights-1111",
+   "role": "deployment_full707_original_only",
+   "threshold": 0.35
+  }
+ },
+ "test_unet": {
+  "name": "fold5mean",
+  "dataset": "<kaggle-user>/filament-mainpc-chain3-un5-c7c10d4-w55-maps",
+  "full": {
+   "file": "chain3-un5_c7c10d4_w55-full_u0.npz",
+   "bytes": 4814728,
+   "sha256": "ff0c7a809993de4ac99681ff83ea0175118ec274c4dae75cf065469e42695fb9",
+   "md5": "27f8bfbd2d3bc27c9dbb78bef2946355",
+   "source": "<workspace>/filament-main/unet_refit/out/fold5mean/full.npz"
+  },
+  "local": {
+   "file": "chain3-un5_c7c10d4_w55-local_u0.npz",
+   "bytes": 4612569,
+   "sha256": "c62d6e2aa7273c4e8c57a994e11e47737c13f9e0a2a2a4c9696f479e479cfccf",
+   "md5": "f0095d264836652b4eb25bd8753a652e",
+   "source": "<workspace>/filament-main/unet_refit/out/fold5mean/local.npz"
+  }
+ },
+ "no_w25": true
+}

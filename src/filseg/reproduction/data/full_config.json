@@ -1,0 +1,28 @@
+{
+  "id": "original_full_raw_1024_f2_s42",
+  "view": {
+    "name": "full_raw_1024",
+    "size": 1024,
+    "extent": 2048,
+    "transform": "raw",
+    "channels": "repeat",
+    "family": "geometry"
+  },
+  "fold": 2,
+  "seed": 42,
+  "epochs": 12,
+  "smoke": false,
+  "batch_size": 2,
+  "accumulation": 4,
+  "samples_per_epoch": 1136,
+  "learning_rate": 0.0002,
+  "weight_decay": 0.0001,
+  "encoder": "efficientnet-b0",
+  "supervision": "mean_loss",
+  "augmentation": "horizontal_vertical_flip",
+  "precision": "CUDA FP16",
+  "smoke_steps": 2,
+  "smoke_train_files": 4,
+  "smoke_val_files": 1,
+  "arm": "original"
+}

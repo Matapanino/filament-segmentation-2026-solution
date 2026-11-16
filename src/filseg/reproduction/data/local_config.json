@@ -1,0 +1,28 @@
+{
+  "id": "original_local_raw_clahe_detail_f2_s42",
+  "view": {
+    "name": "local_raw_clahe_detail",
+    "size": 1024,
+    "extent": 1024,
+    "transform": "raw",
+    "channels": "raw_clahe_detail",
+    "family": "channels"
+  },
+  "fold": 2,
+  "seed": 42,
+  "epochs": 12,
+  "smoke": false,
+  "batch_size": 2,
+  "accumulation": 4,
+  "samples_per_epoch": 1136,
+  "learning_rate": 0.0002,
+  "weight_decay": 0.0001,
+  "encoder": "efficientnet-b0",
+  "supervision": "mean_loss",
+  "augmentation": "horizontal_vertical_flip",
+  "precision": "CUDA FP16",
+  "smoke_steps": 2,
+  "smoke_train_files": 4,
+  "smoke_val_files": 1,
+  "arm": "original"
+}

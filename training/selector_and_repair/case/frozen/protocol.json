@@ -1,0 +1,124 @@
+{
+  "status": "addendum_2_preregistered",
+  "frozen_at": "2026-11-10 17:03:23 JST",
+  "submission": false,
+  "execution_authorized": true,
+  "folds": [
+    0,
+    1
+  ],
+  "expected_images": [
+    142,
+    142
+  ],
+  "combined_images": 425,
+  "seed": 42,
+  "epochs": 12,
+  "quality_fits": 0,
+  "quality_models_sha256": "d56b5ba501600d1af7db725b911296f355e66aaacc25927c0f0af8ba74eecd92",
+  "quality_leakage_rule": "Historical OOF-bank decision-layer cross-fit: exclude own query images; no strict outer-base-fold exclusion",
+  "weights": {
+    "incumbent": {
+      "m2f_public": 0.25,
+      "full": 0.375,
+      "local": 0.375
+    },
+    "yolo25": {
+      "m2f_public": 0.1875,
+      "full": 0.28125,
+      "local": 0.28125,
+      "yolo_roi": 0.25
+    }
+  },
+  "denominators": {
+    "full": 255,
+    "local": 255,
+    "m2f_public": 510,
+    "yolo_roi": 510
+  },
+  "arithmetic": "flat ordered float32 sum; no requantization",
+  "partition_seeds": [
+    2026110600,
+    2026110601,
+    2026110602,
+    2026110603,
+    2026110604,
+    2026110605,
+    2026110606,
+    2026110607,
+    2026110608,
+    2026110609,
+    2026110610,
+    2026110611,
+    2026110612,
+    2026110613,
+    2026110614,
+    2026110615,
+    2026110616,
+    2026110617,
+    2026110618,
+    2026110619
+  ],
+  "bootstrap": {
+    "draws": 2000,
+    "seed": 202611090425,
+    "group_hours": 24
+  },
+  "gate": {
+    "required_cohorts": [
+      "new284",
+      "combined425"
+    ],
+    "ci95_lower_strictly_positive": true,
+    "min_positive_partitions": 16,
+    "each_fold_mean_delta_positive": true,
+    "require_full_pipeline_replay": true,
+    "require_fold_disjointness": true
+  },
+  "compute": {
+    "provider": "Kaggle",
+    "default_gpu": "T4",
+    "gpu_total_seconds": 32400,
+    "per_job_seconds": 16200,
+    "max_concurrent": 2,
+    "profile_before_production": true,
+    "profile_status": "complete_not_restarted",
+    "profile_cap_seconds": 1200,
+    "requested_gpu": "NvidiaTeslaT4",
+    "reason": "Exact BF16 recipe passed the bounded T4 profile; Addendum 2 funds its conservative 8.609 hour projection."
+  },
+  "preregistration_sha256": "00b088cb743eafae94ee70739de75227b39722c761b43119367d7cdd4cc6e377",
+  "design_frozen_for_execution": true,
+  "base_leakage_rule": "Every base prediction excludes the entire corresponding validation fold",
+  "threshold_policy": "Saved per-selector thresholds in CV; .35 deployment only",
+  "raw_source": {
+    "kernel": "filament-h1-radial-prepare-cpu-1104",
+    "file": "raw_inputs.tar.gz",
+    "bytes": 705047904,
+    "md5": "e7bc2c890142a894de1b981da0be71ab",
+    "sha256": "0eb760107a522d4485e3d0b26db44fcf5fae826ea6f9f613d383fb2566a8584a"
+  },
+  "annotation_sha256": "5da9e92b5a1a1947fd5d57adb6688269625c48ec1ef884daf2a01618c9ed54a1",
+  "yolo_initializer_sha256": "85a76fe86dd8afe384648546b56a7a78580c7cb7b404fc595f97969322d502d5",
+  "profile_fold": 0,
+  "replay_targets": {
+    "fold2_incumbent": 0.4157512285,
+    "fold2_yolo25": 0.4205296077,
+    "new284_incumbent": 0.41850225
+  },
+  "profile": {
+    "upp_updates": 12,
+    "yolo_updates": 20,
+    "cap_seconds": 1200,
+    "discard_weights": true,
+    "inference_timing_train_images": 4
+  },
+  "amended_at": "2026-11-10 17:46:19 JST",
+  "production_budget_guard": {
+    "profile_seconds": 336.75516390800476,
+    "upp_epoch": 500.95298038710087,
+    "yolo_epoch": 164.50139646699918,
+    "upload_seconds": 4633.984785714286,
+    "allocation_policy": "equal remaining GPU-session budget for concurrent folds; checkpoint-boundary projection includes all upload reserve"
+  }
+}
