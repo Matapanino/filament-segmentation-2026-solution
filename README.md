@@ -4,13 +4,13 @@ Our solution to the Solar Filament Segmentation Challenge 2026 (IEEE BigData Cup
 
 ![The pipeline: Mask2Former and two U-Nets give probability maps, a weighted mean, then threshold/close/link into candidates, keep or drop each candidate, and a per-mask threshold; the bottom row shows each stage on one test image](docs/pipeline.png)
 
-[Technical report](docs/technical_report.pdf) · [Pipeline notebook](notebooks/pipeline.ipynb) · [Competition](https://www.kaggle.com/competitions/filament-segmentation-2026)
+[Technical report](docs/technical_report.pdf) · [Pipeline notebook](notebooks/pipeline.ipynb) · [Run on Kaggle](https://www.kaggle.com/code/masayakawamata/solar-filament-2026-reproduce-final-submission) · [Competition](https://www.kaggle.com/competitions/filament-segmentation-2026)
 
 ## Reproduce the final submission
 
 One Kaggle notebook rebuilds the submitted CSV, with no retraining and no manual downloads. It reads the networks' probability maps for the 180 test images, stored in this repository with the models that made them, and runs every later step on CPU; this makes the result exact.
 
-1. In Kaggle, create a notebook and import [`notebooks/pipeline.ipynb`](notebooks/pipeline.ipynb) (File → Import Notebook).
+1. In Kaggle, copy [our public notebook](https://www.kaggle.com/code/masayakawamata/solar-filament-2026-reproduce-final-submission) (already run, with its output), or create a notebook and import [`notebooks/pipeline.ipynb`](notebooks/pipeline.ipynb) (File → Import Notebook).
 2. Settings: **Internet on** (the notebook clones this repository at its release tag `v1.1`; the repository holds every weight and stored map it reads, 1.4 GB in `weights/final/`); input: only the competition data `filament-segmentation-2026`; a **CPU** runtime is enough.
 3. Run all. It takes about 9 minutes on Kaggle CPU, plus installing the pinned environment.
 
